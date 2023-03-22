@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import LandingPage from './screens/landing/LandingPage';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <LandingPage />
         <a
           className="App-link"
