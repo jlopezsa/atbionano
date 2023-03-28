@@ -1,5 +1,3 @@
-//import image from "../../../images/laboratory-unsplash.jpg"
-
 const CallsProcesses = ({props}) => {
 
     return(

@@ -5,7 +5,9 @@ const Header = () => {
     return(
         <div class="relative h-[80px] bg-[#151F12] flex flex-nowrap justify-between items-center z-1">
             <div class="inset-y-0 right-0  w-[400px]">
-                <img class="float-right h-[70px]" src={logoAtbionano} alt="logo" />
+                <a href="#top">
+                    <img class="float-right h-[70px]" src={logoAtbionano} alt="logo" />
+                </a>
             </div>
             <div class="w-[700px]">
                 <Menu />
