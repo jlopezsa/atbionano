@@ -5,11 +5,11 @@ import Header from './components/header/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <header className="App-header">
-        <LandingPage />
+    <div>
+      <header class="bg-white sticky top-0">
+        <Header />
       </header>
+      <LandingPage />
     </div>
   );
 }
