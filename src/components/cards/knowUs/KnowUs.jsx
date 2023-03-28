@@ -1,9 +1,13 @@
 const KnowUs = ({props}) => {
     return(
-        <div class="w-80 h-[400px] mt-6 bg-green-200 rounded-xl grid justify-items-center drop-shadow-md hover:drop-shadow-xl" >
+        <div class="-z-10 w-80 h-[400px] mt-6 bg-green-200 rounded-xl grid justify-items-center drop-shadow-md hover:drop-shadow-xl" 
+        data-te-animation-init
+            data-te-animation-reset="true"
+            data-te-animation="[slide-right_1s_ease-in-out]"
+            >
             <div class="w-[300px]">
                 <div class="h-[170px]">
-                    <p>Imagen</p>
+                    <img class="w-[120px] h-[120px] pt-[20px]" src={props.imagePath} alt="icon" />
                 </div>
                 <div class="h-[35px]">
                     <p class="text-xl font-bold">{props.title}</p>

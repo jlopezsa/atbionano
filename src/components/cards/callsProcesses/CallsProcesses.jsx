@@ -3,7 +3,7 @@
 const CallsProcesses = ({props}) => {
 
     return(
-        <div class="relative w-80 h-[400px] mt-6 bg-[#151F12] rounded-xl drop-shadow-md hover:drop-shadow-xl">
+        <div class="relative -z-10 w-80 h-[400px] mt-6 bg-[#151F12] rounded-xl drop-shadow-md hover:drop-shadow-xl">
             <div class="w-80 h-[200px] bg-[#c2e4b8] rounded-t-xl">
                 <img class="w-80 h-[200px] rounded-t-xl" src={props.imagePath} alt="logo" />
             </div>
