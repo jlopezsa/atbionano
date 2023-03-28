@@ -1,4 +1,4 @@
-import image from "C:/DevJulian/atbionano/src/images/laboratory-unsplash.jpg"
+import image from "../images/laboratory-unsplash.jpg"
 
 export const CallsMessages = {
     call1: {
