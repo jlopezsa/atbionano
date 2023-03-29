@@ -1,4 +1,4 @@
-import backgroundImage from "C:/DevJulian/atbionano/src/images/main-background-2.jpg";
+import backgroundImage from "../../images/main-background-2.jpg";
 
 const Slides = () => {
     return(
