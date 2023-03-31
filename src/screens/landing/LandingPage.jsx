@@ -13,6 +13,7 @@ import {
     ROUTE_SECTION_PROCESS,
     ROUTE_SECTION_CONTACT
 } from "../../routes/routes"
+import { Fade, Slide } from "react-awesome-reveal";
 
 
 const LandingPage = () => {
@@ -23,10 +24,12 @@ const LandingPage = () => {
             </div>
             <div id={ROUTE_SECTION_KNOW_US} class="js-show-on-scroll">
                 <p class="text-3xl font-bold text-center pt-[80px]">Conocenos!</p>
-                <div class="flex flex-row justify-around flex-wrap">
-                    <KnowUs props={InformativeMessages.quienesSomos}/>
-                    <KnowUs props={InformativeMessages.queHacemos}/>
-                    <KnowUs props={InformativeMessages.comoHacemos}/>
+                <div class="flex flex-row justify-around flex-wrap relative -z-10">
+                    <Fade cascade>
+                        <KnowUs props={InformativeMessages.quienesSomos}/>
+                        <KnowUs props={InformativeMessages.queHacemos}/>
+                        <KnowUs props={InformativeMessages.comoHacemos}/>
+                    </Fade>
                 </div>
             </div>
             <div id={ROUTE_SECTION_PARTNERS} class="relative -z-10">
@@ -39,10 +42,12 @@ const LandingPage = () => {
             </div>
             <div id={ROUTE_SECTION_PROCESS}>
                 <p class="text-3xl font-bold text-center pt-[80px]">Nuestro proceso</p>
-                <div class="flex flex-row justify-around flex-wrap">
-                    <CallsProcesses props={CallsMessages.call1}/>
-                    <CallsProcesses props={CallsMessages.call2}/>
-                    <CallsProcesses props={CallsMessages.call3}/>
+                <div class="flex flex-row justify-around flex-wrap relative -z-10">
+                    <Slide cascade damping={0.1}>
+                        <CallsProcesses props={CallsMessages.call1}/>
+                        <CallsProcesses props={CallsMessages.call2}/>
+                        <CallsProcesses props={CallsMessages.call3}/>
+                    </Slide>
                 </div>
             </div>
             <div class="h-[100px]"></div>
