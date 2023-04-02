@@ -1,6 +1,6 @@
 import logoEcos from "../images/companies/logo-ecosphaira.png"
 import logoCoat from "../images/companies/logo-coatings.png"
-import logoCeco from "../images/companies/logo-cecoltec.svg"
+import logoCeco from "../images/companies/logo-cecoltec.png"
 
 export const CompaniesMessages = {
     company1: {
