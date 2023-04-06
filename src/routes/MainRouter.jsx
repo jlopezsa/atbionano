@@ -17,9 +17,7 @@ import {
 const MainRouter = () => {
     return(
         <div>
-            <header class="bg-white sticky top-0">
-                <Header />
-            </header>
+            <Header />
             <Routes>
                 <Route path={ROUTE_HOME} element={<LandingPage />}/>
                 <Route path={ROUTE_SECTION_KNOW_US} element={<ContainerKnowUs />}/>
