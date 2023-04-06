@@ -21,7 +21,7 @@ const Menu = () => {
     return (
       <nav>
         <div class="md:hidden">
-          <ul class="absolute inline mt-[0px] pt-[40px] bg-[#151F12] opacity-95 w-full h-screen flex flex-col content-center items-center">
+          <ul class="absolute inline mt-[0px] pt-[40px] bg-[#151F12] opacity-95 w-full h-[350px] flex flex-col content-center items-center">
             <a
               href={`#${ROUTE_SECTION_KNOW_US}`}
               class="h-[80px] text-base block text-white hover:text-lime-400 align-middle"
