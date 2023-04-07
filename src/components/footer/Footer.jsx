@@ -1,14 +1,15 @@
 import logoAtbionano from "../../images/logo_letraBlanca.png"
 import { ROUTE_HOME_TOP, ROUTE_SECTION_CONTACT } from "../../routes/routes";
+import {Color} from "../../configs/colors"
 
 const Footer = () => {
     return(
         <div id={ROUTE_SECTION_CONTACT}>
-            <div class="relative h-[400px] bg-[#151F12] flex flex-row flex-wrap place-content-evenly items-center">
+            <div class={`relative h-[400px] bg-[${Color.greenDark}] flex flex-row flex-wrap place-content-evenly items-center`}>
                 <div class="w-[300px]">
-                <a href={`#${ROUTE_HOME_TOP}`}>
-                    <img class="float-right h-[100px]" src={logoAtbionano} alt="logo" />
-                </a>
+                    <a href={`#${ROUTE_HOME_TOP}`}>
+                        <img class="float-right h-[100px]" src={logoAtbionano} alt="logo" />
+                    </a>
                 </div>
                 <div class="w-[300px] flex flex-col text-white items-center">
                     <p>Contacto</p>
@@ -20,8 +21,8 @@ const Footer = () => {
                     <p>Próximante síguenos en nuestras redes</p>
                 </div>
             </div>
-            <div class="relative h-[30px] bg-[#151F12] text-white flex flex-row flex-wrap place-content-evenly items-center">
-                <p class="mb-[50px]">&copy; 2023 A&T-BioNano</p>
+            <div class={`relative h-[80px] mb-[0px] bg-[${Color.greenDark}] text-white flex flex-row flex-wrap place-content-evenly items-center`}>
+                <p>&copy; 2023 A&T-BioNano</p>
             </div>
         </div>
     )
