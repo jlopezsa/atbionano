@@ -7,8 +7,6 @@ import {
   ROUTE_SECTION_CONTACT,
 } from "../../routes/routes";
 
-import {Color} from "../../configs/colors"
-
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,31 +21,31 @@ const Menu = () => {
     return (
       <nav>
         <div class="md:hidden">
-          <ul class={`absolute inline mt-[0px] pt-[40px] bg-[${Color.greenDark}] opacity-95 w-full h-[350px] flex flex-col content-center items-center`}>
+          <ul class={`absolute inline mt-[0px] pt-[40px] bg-primary opacity-95 w-full h-[350px] flex flex-col content-center items-center`}>
             <a
               href={`#${ROUTE_SECTION_KNOW_US}`}
-              class={`h-[80px] text-base block text-white hover:text-[${Color.greenLime}] align-middle`}
+              class={`h-[80px] text-base block text-white hover:text-secondary align-middle`}
             >
               Conocenos
             </a>
 
             <a
               href={`#${ROUTE_SECTION_PARTNERS}`}
-              class={`h-[80px] text-base block text-white hover:text-[${Color.greenLime}] align-middle`}
+              class={`h-[80px] text-base block text-white hover:text-secondary align-middle`}
             >
               Aliados
             </a>
 
             <a
               href={`#${ROUTE_SECTION_PROCESS}`}
-              class={`h-[80px] text-base block text-white hover:text-[${Color.greenLime}] align-middle`}
+              class={`h-[80px] text-base block text-white hover:text-secondary align-middle`}
             >
               Nuestro proceso
             </a>
 
             <a
               href={`#${ROUTE_SECTION_CONTACT}`}
-              class={`h-[80px] text-base block text-white hover:text-[${Color.greenLime}] align-middle`}
+              class={`h-[80px] text-base block text-white hover:text-secondary align-middle`}
             >
               Contactanos
             </a>
@@ -64,28 +62,28 @@ const Menu = () => {
           <ul class="flex flex-row p-4 mt-4 border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
             <a
               href={`#${ROUTE_SECTION_KNOW_US}`}
-              class={`text-base block py-2 pl text-white hover:text-[${Color.greenLime}]`}
+              class={`text-base block py-2 pl text-white hover:text-secondary`}
             >
               Conocenos
             </a>
 
             <a
               href={`#${ROUTE_SECTION_PARTNERS}`}
-              class={`text-base block py-2 pl text-white hover:text-[${Color.greenLime}]`}
+              class={`text-base block py-2 pl text-white hover:text-secondary`}
             >
               Aliados
             </a>
 
             <a
               href={`#${ROUTE_SECTION_PROCESS}`}
-              class={`text-base block py-2 pl text-white hover:text-[${Color.greenLime}]`}
+              class={`text-base block py-2 pl text-white hover:text-secondary`}
             >
               Nuestro proceso
             </a>
 
             <a
               href={`#${ROUTE_SECTION_CONTACT}`}
-              class={`text-base block py-2 pl text-white hover:text-[${Color.greenLime}]`}
+              class={`text-base block py-2 pl text-white hover:text-secondary`}
             >
               Contactanos
             </a>

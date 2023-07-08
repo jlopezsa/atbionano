@@ -1,6 +1,6 @@
-export const Color = {
+module.exports = {
     greenDark: "#151F12",
-    greenLime: "#3cff00",
-    greenPastel: "#c2e4b8",
-    white: "#ffffff",
+    greenLime: "#3CFF00",
+    greenPastel: "#C2E4B8",
+    white: "#FFFFFF",    
 }

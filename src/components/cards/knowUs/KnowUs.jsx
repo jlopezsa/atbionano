@@ -1,11 +1,10 @@
-import { Color } from './../../../configs/colors';
-
 const KnowUs = ({props}) => {
     return(
-        <div class={`-z-10 w-80 h-[450px] mt-6 bg-[${Color.greenPastel}] rounded-xl grid justify-items-center drop-shadow-md hover:drop-shadow-xl`} 
+        <div class={`-z-10 w-80 h-[450px] mt-6 bg-tertiary rounded-xl grid justify-items-center drop-shadow-md hover:drop-shadow-xl`}
         data-te-animation-init
-            data-te-animation-reset="true"
-            data-te-animation="[slide-right_1s_ease-in-out]"
+        data-te-animation-reset="true"
+        data-te-animation="[slide-right_1s_ease-in-out]"
+
             >
             <div class="w-[300px]">
                 <div class="h-[170px]">

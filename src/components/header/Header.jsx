@@ -1,14 +1,13 @@
 import logoAtbionano from "../../images/logo_letraBlanca.png"
 import Menu from './../menu/Menu';
 import { ROUTE_HOME_TOP } from "../../routes/routes";
-import {Color} from "../../configs/colors"
 
 const Header = () => {
     return(
-        <div class={`relative sticky top-0 h-[80px] bg-[${Color.greenDark}] md:flex md:flex-nowrap md:justify-between md:items-center z-1`}>
-            <div class="max-w md:block inset-y-0 right-0 h-[80px]">
+        <div class={`fixed top-0 w-full h-[80px] bg-primary md:flex md:flex-nowrap md:justify-between md:items-center fixed`}>
+            <div class="max-w md:block inset-y-0 right-0 h-[80px] flex items-center">
                 <a href={`#${ROUTE_HOME_TOP}`}>
-                    <img class="float-none pl-[50px] md:float-right h-[80px] w-auto h-[80px] w-auto" src={logoAtbionano} alt="logo" />
+                    <img class="float-none pl-[50px] md:float-right h-[65px] w-auto h-[65px] w-auto" src={logoAtbionano} alt="logo" />
                 </a>
             </div>
             <Menu />
