@@ -1,4 +1,4 @@
- 
+import backgroundImage from "../../images/main-background-2.jpg";
 import { Carousel } from '@material-tailwind/react';
 import { ButtonLight } from './../buttons/ButtonLight/ButtonLight';
 
@@ -11,8 +11,8 @@ const CarouselMain = () => {
           alt="Beautiful landscape"
           className="h-full w-full object-cover"
         />
-        <div class="absolute bottom-[200px] ml-[20px]  sm:ml-[100px] z-10">
-          <ButtonLight message={"Conoce más sobre nuestra metodología"}/>
+        <div class="absolute bottom-[200px] start-[10px]  sm:start-[100px] z-10">
+          <ButtonLight message={"Conoce más sobre nuestra tecnología patentada"}/>
         </div>
       </div>
       <div className="m-[0] p-[0] h-[90vh]">
@@ -27,7 +27,7 @@ const CarouselMain = () => {
       </div>
       <div className="m-[0] p-[0] h-[90vh]">
         <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+          src={backgroundImage}
           alt="Colorful artwork"
           className="h-full w-full object-cover"
         />

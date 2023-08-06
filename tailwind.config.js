@@ -17,7 +17,12 @@ module.exports = withMT({
         secondary: colors.greenLime,
         tertiary: colors.greenPastel,
         white: colors.white,
-      }
+      },
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        serif: ['Congenial Black', 'serif'],
+        custom: ['Amaranth', 'serif'],
+      },
     },
   },
   plugins: [require("tailwindcss")],

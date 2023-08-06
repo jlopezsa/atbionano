@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
     {/* <ThemeProvider> */}
-      <div class="min-w-[350px]">
+      <div class="min-w-[350px] font-custom">
         <MainRouter />
       </div>  
     {/* </ThemeProvider> */}
