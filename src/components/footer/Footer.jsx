@@ -1,5 +1,6 @@
 import logoAtbionano from "../../images/logo_letraBlanca.png"
 import { ROUTE_HOME_TOP, ROUTE_SECTION_CONTACT } from "../../routes/routes";
+import SocialMediaIcons from "../socialMediaIcons/SocialMediaIcons";
 
 const Footer = () => {
     return(
@@ -17,7 +18,8 @@ const Footer = () => {
                     <p>aytbionano@gmail.com</p>
                 </div>
                 <div class="w-[300px] flex flex-col text-white">
-                    <p>Próximante síguenos en nuestras redes</p>
+                    <p class="text-center pb-[20px]">Síguenos en nuestras redes</p>
+                    <SocialMediaIcons />
                 </div>
             </div>
             <div class={`relative h-[80px] mb-[0px] bg-primary text-white flex flex-row flex-wrap place-content-evenly items-center`}>
