@@ -1,4 +1,6 @@
-import backgroundImage from "../../images/main-background-2.jpg";
+import backgroundImageGreen from "../../images/background_green_geometric.jpg";
+import backgroundImageGreenBlue from "../../images/background_green_blue.jpg";
+import backgroundImageBlack from "../../images/background_green_black.jpg";
 import { Carousel } from '@material-tailwind/react';
 import { ButtonLight } from './../buttons/ButtonLight/ButtonLight';
 
@@ -7,7 +9,7 @@ const CarouselMain = () => {
     <Carousel className="rounded-sm h-[90vh] w-[100%] absolute z-0 mt-[80px]" loop={true}>
       <div className="m-[0] p-[0] h-[90vh]">
         <img
-          src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80"
+          src={backgroundImageBlack}
           alt="Beautiful landscape"
           className="h-full w-full object-cover"
         />
@@ -17,7 +19,7 @@ const CarouselMain = () => {
       </div>
       <div className="m-[0] p-[0] h-[90vh]">
         <img
-          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+          src={backgroundImageGreen}
           alt="City skyline at night"
           className="h-full w-full object-cover"
         />
@@ -27,7 +29,7 @@ const CarouselMain = () => {
       </div>
       <div className="m-[0] p-[0] h-[90vh]">
         <img
-          src={backgroundImage}
+          src={backgroundImageGreenBlue}
           alt="Colorful artwork"
           className="h-full w-full object-cover"
         />
