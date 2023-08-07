@@ -1,8 +1,12 @@
+//import withMT from "@material-tailwind/react/utils/withMT";
+
+const withMT = require('@material-tailwind/react/utils/withMT');
+
 /** @type {import('tailwindcss').Config} */
 
 const colors = require('./src/configs/colors');
 
-module.exports = {
+module.exports = withMT({
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -13,8 +17,13 @@ module.exports = {
         secondary: colors.greenLime,
         tertiary: colors.greenPastel,
         white: colors.white,
-      }
+      },
+      fontFamily: {
+        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        serif: ['Congenial Black', 'serif'],
+        custom: ['Amaranth', 'serif'],
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("tailwindcss")],
+})

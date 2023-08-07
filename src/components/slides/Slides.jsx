@@ -1,12 +1,18 @@
-import backgroundImage from "../../images/main-background-2.jpg";
+// import backgroundImage from "../../images/main-background-2.jpg";
+import CarouselMain from "../carouselMain/CarouselMain";
 
 const Slides = () => {
     return(
         <div>
-            <div class="bg-fixed h-[700px]" style={{backgroundImage: `url(${backgroundImage})`}}>
-                <div class="pl-[20px] pt-[200px] text-3xl text-white md:pl-[100px] md:pt-[400px]">
-                    <p>Innovación y desarrollo de productos de base Bionanotecnológica.</p>
+            <div class="relative bg-fixed h-[100vh] ">
+                {/* <div class="bg-fixed h-[100vh] " style={{backgroundImage: `url(${backgroundImage})`} }> */}
+                <div class="absolute top-[150px] start-[10px] text-2xl text-white z-10 sm:top-[200px] sm:start-[100px] sm:text-3xl">
+                    <strong>Innovación y desarrollo de productos de base Bionanotecnológica</strong>
                 </div>
+                <div class="flex justify-center">
+                    <CarouselMain />
+                </div>
+                
             </div>
         </div>
     )
