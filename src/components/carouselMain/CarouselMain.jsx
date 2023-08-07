@@ -1,6 +1,8 @@
 import backgroundImageGreen from "../../images/background_green_geometric.jpg";
 import backgroundImageGreenBlue from "../../images/background_green_blue.jpg";
 import backgroundImageBlack from "../../images/background_green_black.jpg";
+import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
+import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel } from "@material-tailwind/react";
 import { ButtonLight } from "./../buttons/ButtonLight/ButtonLight";
 import CarouselSpecificContent from "./CarouselSpecificContent";
@@ -8,7 +10,7 @@ import CarouselSpecificContent from "./CarouselSpecificContent";
 const CarouselMain = () => {
   return (
     <Carousel
-      className="relative rounded-sm h-[90vh] w-[100%] absolute z-0 mt-[80px]"
+      className="relative rounded-sm h-[90vh] w-[100%] z-0 mt-[80px]"
       loop={true}
     >
       <div className="relative m-[0] p-[0] h-[90vh]">
@@ -18,10 +20,11 @@ const CarouselMain = () => {
           className="h-full w-full object-cover"
         />
         <CarouselSpecificContent
-        topMessage={"Producto diseñado, manufacturado y de venta en Colombia."}
-        bottomMessage={"Patente de invención en Colombia."} 
+          topMessage={"Nuestra patente"}
+          bottomMessage={"Producto diseñado, manufacturado y de venta en Colombia."}
+          image={atbionanoPatenteHorizantal}
         />
-        <div class="absolute bottom-[200px] start-[10px]  sm:start-[100px] z-10">
+        <div class="absolute bottom-[8%] start-[10px]  sm:start-[100px] z-10 sm:bottom-[20%]">
           <ButtonLight
             message={"Conoce más sobre nuestra tecnología patentada"}
           />
@@ -35,10 +38,11 @@ const CarouselMain = () => {
           className="h-full w-full object-cover"
         />
         <CarouselSpecificContent
-        topMessage={"Bionanoaxus."}
-        bottomMessage={"Nanotecnología antimicrobiana y fungicida."} 
+          topMessage={"Bionanoaxus"}
+          bottomMessage={"Nanotecnología antimicrobiana y fungicida."}
+          image={atbionanoProductBionanoaxus}
         />
-        <div class="absolute bottom-[200px] ml-[20px]  sm:ml-[100px] z-10">
+        <div class="absolute bottom-[8%] ml-[20px]  sm:ml-[100px] z-10 sm:bottom-[20%]">
           <ButtonLight message={"Conoce nuestros productos"} />
         </div>
       </div>
