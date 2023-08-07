@@ -24,7 +24,7 @@ const CarouselMain = () => {
           bottomMessage={"Producto diseñado, manufacturado y de venta en Colombia."}
           image={atbionanoPatenteHorizantal}
         />
-        <div class="absolute bottom-[8%] start-[10px]  sm:start-[100px] z-10 sm:bottom-[20%]">
+        <div class="absolute bottom-[15%] start-[20px]  sm:start-[100px] z-10 sm:bottom-[20%]">
           <ButtonLight
             message={"Conoce más sobre nuestra tecnología patentada"}
           />
@@ -42,7 +42,7 @@ const CarouselMain = () => {
           bottomMessage={"Nanotecnología antimicrobiana y fungicida."}
           image={atbionanoProductBionanoaxus}
         />
-        <div class="absolute bottom-[8%] ml-[20px]  sm:ml-[100px] z-10 sm:bottom-[20%]">
+        <div class="absolute bottom-[15%] start-[20px] sm:start-[100px] z-10 sm:bottom-[20%]">
           <ButtonLight message={"Conoce nuestros productos"} />
         </div>
       </div>
