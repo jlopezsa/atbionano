@@ -21,9 +21,13 @@ const CarouselMain = () => {
             className="w-full object-cover"
           />
           <CarouselSpecificContent
-            title={"Innovación y desarrollo de productos de base Bionanotecnológica"}
+            title={
+              "Innovación y desarrollo de productos de base Bionanotecnológica"
+            }
             topMessage={"Nuestra patente"}
-            bottomMessage={"Producto diseñado, manufacturado y de venta en Colombia."}
+            bottomMessage={
+              "Producto diseñado, manufacturado y de venta en Colombia."
+            }
             image={atbionanoPatenteHorizantal}
             messageButton={"Conoce más sobre nuestra tecnología patentada"}
           />
@@ -38,9 +42,11 @@ const CarouselMain = () => {
             className="w-full object-cover"
           />
           <CarouselSpecificContent
-            title={"Innovación y desarrollo de productos de base Bionanotecnológica"}
+            title={
+              "Innovación y desarrollo de productos de base Bionanotecnológica"
+            }
             topMessage={"Bionanoaxus"}
-            bottomMessage={"Nanotecnología antimicrobiana y fungicida."}
+            bottomMessage={"Producto con nanotecnología antimicrobiana y fungicida."}
             image={atbionanoProductBionanoaxus}
             messageButton={"Conoce nuestros productos"}
           />

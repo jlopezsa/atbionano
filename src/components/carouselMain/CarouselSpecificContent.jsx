@@ -13,7 +13,7 @@ const CarouselSpecificContent = ({ title, topMessage, bottomMessage, image, mess
         </strong>
       </div>
 
-      <div>
+      <div class="flex flex-col flex-nowrap">
         <div>
           <strong>{topMessage}</strong>
         </div>
@@ -22,7 +22,7 @@ const CarouselSpecificContent = ({ title, topMessage, bottomMessage, image, mess
         </div>
       </div>
 
-      <div class="w-[280px] h-[auto] md:w-[500px] mt-[20px] md:h-[auto]">
+      <div class="w-[280px] h-[auto] md:w-[600px] mt-[20px] md:h-[auto]">
         <img src={image} alt="atbionano patente" class="rounded-xl" />
       </div>
 
