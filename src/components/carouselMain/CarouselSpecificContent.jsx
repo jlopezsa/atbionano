@@ -19,7 +19,7 @@ const CarouselSpecificContent = ({ title, topMessage, bottomMessage, image, mess
             <p>{bottomMessage}</p>
           </div>
         </div>
-        <div class="w-[40%] min-w-[300px] min-h-[200px] flex items-center">
+        <div class="w-[40%] min-w-[250px] min-h-[200px] flex items-center">
           <img src={image} alt="atbionano patente" class="rounded-xl" />
         </div>
       </div>

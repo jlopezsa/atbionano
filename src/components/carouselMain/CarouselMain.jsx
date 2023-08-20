@@ -4,7 +4,6 @@ import backgroundImageBlack from "../../images/background_green_black.jpg";
 import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
 import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel } from "@material-tailwind/react";
-import { ButtonLight } from "./../buttons/ButtonLight/ButtonLight";
 import CarouselSpecificContent from "./CarouselSpecificContent";
 
 const CarouselMain = () => {
@@ -13,8 +12,8 @@ const CarouselMain = () => {
       className="relative rounded-sm w-[100%] z-0 mt-[80px]"
       loop={true}
     >
-      <div className="relative m-[0] p-[0] h-[700px] sm:h-[90vh]">
-        <div class="h-[90vh] flex flex-row justify-center">
+      <div class="relative">
+        <div class="h-[90vh] min-h-[600px] flex flex-row justify-center">
           <img
             src={backgroundImageBlack}
             alt="Beautiful landscape"
@@ -34,8 +33,8 @@ const CarouselMain = () => {
         </div>
       </div>
 
-      <div className="relative m-[0] p-[0] h-[700px] sm:h-[90vh]">
-        <div class="h-[90vh] flex flex-row justify-center">
+      <div className="relative">
+        <div class="h-[90vh] min-h-[600px] flex flex-row justify-center">
           <img
             src={backgroundImageGreen}
             alt="Beautiful landscape"
