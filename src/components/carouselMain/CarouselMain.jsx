@@ -53,24 +53,6 @@ const CarouselMain = () => {
       </div>
 
       {/* <div className="relative m-[0] p-[0] h-[700px] sm:h-[90vh]">
-        <div class="h-[90vh]">
-          <img
-            src={backgroundImageGreen}
-            alt="City skyline at night"
-            className="h-full w-full object-cover"
-          />
-          <CarouselSpecificContent
-            topMessage={"Bionanoaxus"}
-            bottomMessage={"Nanotecnología antimicrobiana y fungicida."}
-            image={atbionanoProductBionanoaxus}
-          />
-        </div>
-        <div class="absolute bottom-[15%] start-[20px] sm:start-[100px] z-10 sm:bottom-[20%]">
-          <ButtonLight message={"Conoce nuestros productos"} />
-        </div>
-      </div> */}
-
-      {/* <div className="relative m-[0] p-[0] h-[700px] sm:h-[90vh]">
         <img
           src={backgroundImageGreenBlue}
           alt="Colorful artwork"
