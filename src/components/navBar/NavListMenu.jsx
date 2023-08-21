@@ -22,7 +22,7 @@ const NavListMenu = ({
   const renderItems = itemsList.map(({ title, description, linkTo }) => (
     <a href={`${linkPage}#${linkTo}`} key={title}>
       <MenuItem>
-        <Typography variant="h6" color="light-green " className="mb-1">
+        <Typography variant="h6" color="light-green" className="mb-1">
           {title}
         </Typography>
         <Typography variant="small" color="gray" className="font-normal">
