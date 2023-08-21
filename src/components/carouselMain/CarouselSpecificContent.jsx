@@ -1,21 +1,34 @@
-const CarouselSpecificContent = ({ topMessage, bottomMessage, image }) => {
+import { ButtonLight } from "./../buttons/ButtonLight/ButtonLight";
+const CarouselSpecificContent = ({
+  title,
+  topMessage,
+  bottomMessage,
+  image,
+  messageButton,
+  navigateRoute,
+}) => {
   return (
-    <div class="absolute flex flex-col ml-[15%] w-[80%] top-[30%] text-2xl text-white 
-    sm:top-[40%] sm:start-[100px] sm:text-5xl sm:flex sm:flex-row sm:justify-between sm:ml-[0]">
-      <div>
+    <div class="absolute max-w-screen-2xl flex flex-wrap items-center w-[80%] top-[15%] text-white">
+      <div class="text-2xl z-10 w-full h-28">
+        <strong>{title}</strong>
+      </div>
+
+      <div class="text-3xl flex flex-row flex-wrap items-center justify-center sm:justify-between">
         <div>
-          <strong>{topMessage}</strong>
+          <div>
+            <strong>{topMessage}</strong>
+          </div>
+          <div class="text-2xl text-white">
+            <p>{bottomMessage}</p>
+          </div>
         </div>
-        <div class="text-2xl text-white">
-          <p>{bottomMessage}</p>
+        <div class="w-[40%] min-w-[250px] min-h-[200px] flex items-center">
+          <img src={image} alt="atbionano patente" class="rounded-xl" />
         </div>
       </div>
-      <div class="w-[80%] h-[auto] mt-[30px] sm:w-[40%] sm:h-[auto] sm:mt-[0]">
-        <img
-          src={image}
-          alt="atbionano patente"
-          class="object-cover rounded-xl"
-        />
+
+      <div class="z-10 w-full h-16 flex items-center justify-center sm:justify-start">
+        <ButtonLight message={messageButton} navigateRoute={navigateRoute} />
       </div>
     </div>
   );
