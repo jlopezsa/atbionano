@@ -5,6 +5,7 @@ import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erl
 import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel } from "@material-tailwind/react";
 import CarouselSpecificContent from "./CarouselSpecificContent";
+import { ROUTE_PATENT_PAGE, ROUTE_PRODUCTS_PAGE } from "../../routes/routes";
 
 const CarouselMain = () => {
   return (
@@ -29,6 +30,7 @@ const CarouselMain = () => {
             }
             image={atbionanoPatenteHorizantal}
             messageButton={"Conoce más sobre nuestra tecnología patentada"}
+            navigateRoute={ROUTE_PATENT_PAGE}
           />
         </div>
       </div>
@@ -50,6 +52,7 @@ const CarouselMain = () => {
             }
             image={atbionanoProductBionanoaxus}
             messageButton={"Conoce nuestros productos"}
+            navigateRoute={ROUTE_PRODUCTS_PAGE}
           />
         </div>
       </div>

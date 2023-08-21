@@ -6,3 +6,5 @@ export const ROUTE_SECTION_PROCESS = 'process';
 export const ROUTE_SECTION_CONTACT = 'contact';
 
 export const ROUTE_PRODUCTS_PAGE = "/products";
+
+export const ROUTE_PATENT_PAGE = "/patent";

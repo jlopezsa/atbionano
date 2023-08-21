@@ -5,6 +5,7 @@ const CarouselSpecificContent = ({
   bottomMessage,
   image,
   messageButton,
+  navigateRoute,
 }) => {
   return (
     <div class="absolute max-w-screen-2xl flex flex-wrap items-center w-[80%] top-[15%] text-white">
@@ -27,7 +28,7 @@ const CarouselSpecificContent = ({
       </div>
 
       <div class="z-10 w-full h-16 flex items-center justify-center sm:justify-start">
-        <ButtonLight message={messageButton} />
+        <ButtonLight message={messageButton} navigateRoute={navigateRoute} />
       </div>
     </div>
   );
