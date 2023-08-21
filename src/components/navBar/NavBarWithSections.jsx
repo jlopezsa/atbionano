@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
   Typography,
   Button,
   Menu,
@@ -14,20 +13,17 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import {
-  CubeTransparentIcon,
   UserCircleIcon,
-  CodeBracketSquareIcon,
-  Square3Stack3DIcon,
   ChevronDownIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
   LifebuoyIcon,
   PowerIcon,
-  RocketLaunchIcon,
   Bars2Icon,
 } from "@heroicons/react/24/outline";
 import logoAtbionano from "../../images/logo_letraBlanca.png";
 import { ROUTE_HOME } from "../../routes/routes";
+import NavListMenu from "./NavListMenu";
 
 // profile menu component
 const profileMenuItems = [
@@ -114,116 +110,59 @@ function ProfileMenu() {
   );
 }
 
-// nav list menu
-const navListMenuItems = [
+// nav list menu KnowUs
+const navListMenuItemsKnowUs = [
   {
-    title: "@material-tailwind/html",
-    description:
-      "Learn how to use @material-tailwind/html, packed with rich components and widgets.",
+    title: "Conocenos",
+    description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
   },
   {
-    title: "@material-tailwind/react",
-    description:
-      "Learn how to use @material-tailwind/react, packed with rich components for React.",
+    title: "Empresas aliadas",
+    description: "Conoce las empresas que nos acompañan",
   },
   {
-    title: "Material Tailwind PRO",
-    description:
-      "A complete set of UI Elements for building faster websites in less time.",
+    title: "Nuestro proceso",
+    description: "Conoce nuestro proceso",
+  },
+  {
+    title: "Contactanos",
+    description: "",
   },
 ];
 
-function NavListMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const renderItems = navListMenuItems.map(({ title, description }) => (
-    <a href="#" key={title}>
-      <MenuItem>
-        <Typography variant="h6" color="blue-gray" className="mb-1">
-          {title}
-        </Typography>
-        <Typography variant="small" color="gray" className="font-normal">
-          {description}
-        </Typography>
-      </MenuItem>
-    </a>
-  ));
-
-  return (
-    <React.Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
-        <MenuHandler>
-          <Typography as="a" href="#" variant="small" className="font-normal">
-            <MenuItem className="hidden items-center gap-2 text-blue-gray-100 lg:flex lg:rounded-full">
-              <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Conocenos{" "}
-              <ChevronDownIcon
-                strokeWidth={2}
-                className={`h-3 w-3 transition-transform ${
-                  isMenuOpen ? "rotate-180" : ""
-                }`}
-              />
-            </MenuItem>
-          </Typography>
-        </MenuHandler>
-        <MenuList className="hidden w-[36rem] grid-cols-7 gap-3 overflow-visible lg:grid">
-          <Card
-            color="blue"
-            shadow={false}
-            variant="gradient"
-            className="col-span-3 grid h-full w-full place-items-center rounded-md"
-          >
-            <RocketLaunchIcon strokeWidth={1} className="h-28 w-28" />
-          </Card>
-          <ul className="col-span-4 flex w-full flex-col gap-1">
-            {renderItems}
-          </ul>
-        </MenuList>
-      </Menu>
-      <MenuItem className="flex items-center gap-2 text-blue-gray-100 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
-      </MenuItem>
-      <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
-        {renderItems}
-      </ul>
-    </React.Fragment>
-  );
-}
-
-// nav list component
-const navListItems = [
+// nav list menu Tech patent
+const navListMenuItemsTech = [
   {
-    label: "Tecnología",
-    icon: UserCircleIcon,
+    title: "Patente",
+    description:
+      "Solución acuosa que sirve para el control de hongos y bacterias.",
   },
+];
+
+// nav list menu Products
+const navListMenuItemsProducts = [
   {
-    label: "Productos",
-    icon: CubeTransparentIcon,
+    title: "Bionanoaxus",
+    description:
+      "Alternativa ecológica a las composiciones antimicrobianas tradicionales.",
   },
-  /* {
-    label: "Docs",
-    icon: CodeBracketSquareIcon,
-  }, */
 ];
 
 function NavList() {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <NavListMenu />
-      {navListItems.map(({ label, icon }, key) => (
-        <Typography
-          key={label}
-          as="a"
-          href="#"
-          variant="small"
-          color="text-blue-gray-100"
-          className="font-normal"
-        >
-          <MenuItem className="flex items-center gap-2 lg:rounded-full">
-            {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
-            {label}
-          </MenuItem>
-        </Typography>
-      ))}
+      <NavListMenu
+        sectionName={"Conocenos"}
+        itemsList={navListMenuItemsKnowUs}
+      />
+      <NavListMenu
+        sectionName={"Tecnología"}
+        itemsList={navListMenuItemsTech}
+      />
+      <NavListMenu
+        sectionName={"Productos"}
+        itemsList={navListMenuItemsProducts}
+      />
     </ul>
   );
 }
