@@ -45,7 +45,9 @@ const CarouselMain = () => {
               "Innovación y desarrollo de productos de base Bionanotecnológica"
             }
             topMessage={"Bionanoaxus"}
-            bottomMessage={"Producto con nanotecnología antimicrobiana y fungicida."}
+            bottomMessage={
+              "Producto con nanotecnología antimicrobiana y fungicida."
+            }
             image={atbionanoProductBionanoaxus}
             messageButton={"Conoce nuestros productos"}
           />

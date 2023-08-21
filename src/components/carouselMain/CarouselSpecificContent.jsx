@@ -1,15 +1,15 @@
 import { ButtonLight } from "./../buttons/ButtonLight/ButtonLight";
-const CarouselSpecificContent = ({ title, topMessage, bottomMessage, image, messageButton }) => {
-  const teste1 = title;
-  const teste2 = image;
+const CarouselSpecificContent = ({
+  title,
+  topMessage,
+  bottomMessage,
+  image,
+  messageButton,
+}) => {
   return (
-      <div
-      class="absolute max-w-screen-2xl flex flex-wrap items-center w-[80%] top-[15%] text-white"
-    >
+    <div class="absolute max-w-screen-2xl flex flex-wrap items-center w-[80%] top-[15%] text-white">
       <div class="text-2xl z-10 w-full h-28">
-        <strong>
-          {title}
-        </strong>
+        <strong>{title}</strong>
       </div>
 
       <div class="text-3xl flex flex-row flex-wrap items-center justify-center sm:justify-between">
@@ -26,11 +26,8 @@ const CarouselSpecificContent = ({ title, topMessage, bottomMessage, image, mess
         </div>
       </div>
 
-
       <div class="z-10 w-full h-16 flex items-center justify-center sm:justify-start">
-        <ButtonLight
-          message={messageButton}
-        />
+        <ButtonLight message={messageButton} />
       </div>
     </div>
   );
