@@ -5,6 +5,7 @@ import { Typography } from "@material-tailwind/react";
 const ProductsPage = () => {
   return (
     <div class="h-full mt-[80px]">
+      <Typography variant="h2">... En construcción</Typography>
       <Typography variant="h1">Bionanoaxus</Typography>
       <Typography variant="h2">Producto bionanotecnologico</Typography>
       <Typography variant="h6">

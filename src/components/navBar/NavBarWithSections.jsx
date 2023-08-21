@@ -1,132 +1,39 @@
 import React from "react";
-import {
-  Navbar,
-  Typography,
-  Button,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Avatar,
-  Card,
-  IconButton,
-  Collapse,
-} from "@material-tailwind/react";
-import {
-  UserCircleIcon,
-  ChevronDownIcon,
-  Cog6ToothIcon,
-  InboxArrowDownIcon,
-  LifebuoyIcon,
-  PowerIcon,
-  Bars2Icon,
-} from "@heroicons/react/24/outline";
+import { Navbar, IconButton, Collapse } from "@material-tailwind/react";
+import { Bars2Icon } from "@heroicons/react/24/outline";
 import logoAtbionano from "../../images/logo_letraBlanca.png";
-import { ROUTE_HOME } from "../../routes/routes";
+import {
+  ROUTE_HOME,
+  ROUTE_PATENT_PAGE,
+  ROUTE_PRODUCTS_PAGE,
+  ROUTE_SECTION_CONTACT,
+  ROUTE_SECTION_KNOW_US,
+  ROUTE_SECTION_PARTNERS,
+  ROUTE_SECTION_PROCESS,
+} from "../../routes/routes";
 import NavListMenu from "./NavListMenu";
-
-// profile menu component
-const profileMenuItems = [
-  {
-    label: "My Profile",
-    icon: UserCircleIcon,
-  },
-  {
-    label: "Edit Profile",
-    icon: Cog6ToothIcon,
-  },
-  {
-    label: "Inbox",
-    icon: InboxArrowDownIcon,
-  },
-  {
-    label: "Help",
-    icon: LifebuoyIcon,
-  },
-  {
-    label: "Sign Out",
-    icon: PowerIcon,
-  },
-];
-
-function ProfileMenu() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const closeMenu = () => setIsMenuOpen(false);
-
-  return (
-    <Menu open={isMenuOpen} handler={setIsMenuOpen} placement="bottom-end">
-      <MenuHandler>
-        <Button
-          variant="text"
-          color="blue-gray"
-          className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto"
-        >
-          <Avatar
-            variant="circular"
-            size="sm"
-            alt="tania andrew"
-            className="border border-gray-900 p-0.5"
-            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-          />
-          <ChevronDownIcon
-            strokeWidth={2.5}
-            className={`h-3 w-3 transition-transform ${
-              isMenuOpen ? "rotate-180" : ""
-            }`}
-          />
-        </Button>
-      </MenuHandler>
-      <MenuList className="p-1">
-        {profileMenuItems.map(({ label, icon }, key) => {
-          const isLastItem = key === profileMenuItems.length - 1;
-          return (
-            <MenuItem
-              key={label}
-              onClick={closeMenu}
-              className={`flex items-center gap-2 rounded ${
-                isLastItem
-                  ? "hover:bg-red-500/10 focus:bg-red-500/10 active:bg-red-500/10"
-                  : ""
-              }`}
-            >
-              {React.createElement(icon, {
-                className: `h-4 w-4 ${isLastItem ? "text-red-500" : ""}`,
-                strokeWidth: 2,
-              })}
-              <Typography
-                as="span"
-                variant="small"
-                className="font-normal"
-                color={isLastItem ? "red" : "inherit"}
-              >
-                {label}
-              </Typography>
-            </MenuItem>
-          );
-        })}
-      </MenuList>
-    </Menu>
-  );
-}
 
 // nav list menu KnowUs
 const navListMenuItemsKnowUs = [
   {
     title: "Conocenos",
     description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
+    linkTo: ROUTE_SECTION_KNOW_US,
   },
   {
     title: "Empresas aliadas",
     description: "Conoce las empresas que nos acompañan",
+    linkTo: ROUTE_SECTION_PARTNERS,
   },
   {
     title: "Nuestro proceso",
     description: "Conoce nuestro proceso",
+    linkTo: ROUTE_SECTION_PROCESS,
   },
   {
     title: "Contactanos",
     description: "",
+    linkTo: ROUTE_SECTION_CONTACT,
   },
 ];
 
@@ -154,14 +61,17 @@ function NavList() {
       <NavListMenu
         sectionName={"Conocenos"}
         itemsList={navListMenuItemsKnowUs}
+        linkPage={ROUTE_HOME}
       />
       <NavListMenu
         sectionName={"Tecnología"}
         itemsList={navListMenuItemsTech}
+        linkPage={ROUTE_PATENT_PAGE}
       />
       <NavListMenu
         sectionName={"Productos"}
         itemsList={navListMenuItemsProducts}
+        linkPage={ROUTE_PRODUCTS_PAGE}
       />
     </ul>
   );
@@ -180,7 +90,7 @@ const NavBarWithSections = () => {
   }, []);
 
   return (
-    <Navbar className="bg-primary mx-auto max-w-screen-xl p-1 lg:rounded-xl lg:pl-6">
+    <Navbar className="bg-primary mx-auto max-w-screen-xl p-4 my-2 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-100">
         <a href={`${ROUTE_HOME}`}>
           <img
@@ -203,7 +113,7 @@ const NavBarWithSections = () => {
         </IconButton>
         {/* <ProfileMenu /> */}
       </div>
-      <Collapse open={isNavOpen} className="overflow-scroll">
+      <Collapse open={isNavOpen} className="overflow-scroll text-blue-gray-100">
         <NavList />
       </Collapse>
     </Navbar>

@@ -14,15 +14,15 @@ import {
 
 const NavListMenu = ({
   sectionName,
-  itemsList = [{ title: "", description: "" }],
-  linkTo = "",
+  itemsList = [{ title: "", description: "", linkTo: "" }],
+  linkPage,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const renderItems = itemsList.map(({ title, description }) => (
-    <a href="#" key={title}>
+  const renderItems = itemsList.map(({ title, description, linkTo }) => (
+    <a href={`${linkPage}#${linkTo}`} key={title}>
       <MenuItem>
-        <Typography variant="h6" color="blue-gray" className="mb-1">
+        <Typography variant="h6" color="light-green " className="mb-1">
           {title}
         </Typography>
         <Typography variant="small" color="gray" className="font-normal">
@@ -36,7 +36,12 @@ const NavListMenu = ({
     <Fragment>
       <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
-          <Typography as="a" href="#" variant="small" className="font-normal">
+          <Typography
+            as="a"
+            href={`${linkPage}`}
+            variant="small"
+            className="font-normal"
+          >
             <MenuItem className="hidden items-center gap-2 text-blue-gray-100 lg:flex lg:rounded-full">
               <Square3Stack3DIcon className="h-[18px] w-[18px]" /> {sectionName}{" "}
               <ChevronDownIcon
