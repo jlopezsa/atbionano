@@ -1,5 +1,4 @@
 import backgroundImageGreen from "../../images/background_green_geometric.jpg";
-import backgroundImageGreenBlue from "../../images/background_green_blue.jpg";
 import backgroundImageBlack from "../../images/background_green_black.jpg";
 import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
 import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
