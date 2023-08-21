@@ -25,5 +25,7 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [require("tailwindcss")],
+  plugins: [
+    require("tailwindcss")
+  ],
 })
