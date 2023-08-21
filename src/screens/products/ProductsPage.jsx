@@ -1,10 +1,10 @@
 // https://www.material-tailwind.com/docs/react/typography
 
-import { Typography, List, ListItem } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 const ProductsPage = () => {
   return (
-    <div class="h-full mt-[80px] font-custom">
+    <div class="h-full mt-[80px]">
       <Typography variant="h1">Bionanoaxus</Typography>
       <Typography variant="h2">Producto bionanotecnologico</Typography>
       <Typography variant="h6">
@@ -13,27 +13,6 @@ const ProductsPage = () => {
         industria agrícola, así como para desinfección de múltiples materiales
         en la industria de alimentos y textil.
       </Typography>
-      <section>
-        <Typography variant="h2">Características</Typography>
-        <Typography variant="h6">
-          Solución acuosa que sirve para el control de hongos y bacterias,
-          presentes en cultivos de frutas y verduras como tomate, plátano,
-          banano y papa que causan enfermedades en las plantas con grandes
-          pérdidas económicas Esta basada en tecnología biológica para obtener
-          un producto de tipo nano que le permite una mayor eficacia en dosis y
-          tiempo de acción.
-        </Typography>
-        <ul>
-          <li>Antimicrobiana sobre diversos microorganismos.</li>
-          <li>
-            No posee elementos organoclorados, ni oxidantes, ni grupos OH libres
-            a los seres vivos y el medio ambiente.
-          </li>
-          <li>pH próximos al neutro</li>
-          <li>Rápida acción y menor dosificación</li>
-          <li>Inocuo</li>
-        </ul>
-      </section>
 
       <section>
         <Typography variant="h2">Sectores de aplicación</Typography>
