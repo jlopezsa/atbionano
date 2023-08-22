@@ -1,4 +1,5 @@
 // https://www.material-tailwind.com/docs/react/typography
+// template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
 
@@ -6,14 +7,20 @@ const ProductsPage = () => {
   return (
     <div class="h-full mt-[80px]">
       <Typography variant="h2">... En construcción</Typography>
-      <Typography variant="h1">Bionanoaxus</Typography>
-      <Typography variant="h2">Producto bionanotecnologico</Typography>
-      <Typography variant="h6">
-        Alternativa ecológica a las composiciones antimicrobianas tradicionales.
-        de especial interés para el tratamiento de agentes patógenos de la
-        industria agrícola, así como para desinfección de múltiples materiales
-        en la industria de alimentos y textil.
-      </Typography>
+      <div class="flex flex-row mx-auto max-w-screen-xl items-center justify-center">
+        <div class="w-1/2">
+          <Typography variant="h2">Bionanoaxus</Typography>
+          <Typography variant="h3">Producto bionanotecnologico</Typography>
+        </div>
+        <div class="w-1/2">
+          <Typography variant="h5">
+            Alternativa ecológica a las composiciones antimicrobianas
+            tradicionales. de especial interés para el tratamiento de agentes
+            patógenos de la industria agrícola, así como para desinfección de
+            múltiples materiales en la industria de alimentos y textil.
+          </Typography>
+        </div>
+      </div>
 
       <section>
         <Typography variant="h2">Sectores de aplicación</Typography>

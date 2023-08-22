@@ -90,7 +90,7 @@ const NavBarWithSections = () => {
   }, []);
 
   return (
-    <Navbar className="bg-primary mx-auto max-w-screen-xl p-4 my-2 lg:rounded-full lg:pl-6">
+    <Navbar className="bg-green-900 border-transparent mx-auto max-w-screen-xl p-4 my-2 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-100">
         <a href={`${ROUTE_HOME}`}>
           <img
