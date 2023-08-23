@@ -3,6 +3,8 @@
 
 import { Typography } from "@material-tailwind/react";
 import bionanoaxusPetri from "../../images/products/petri.jpeg";
+import ApplicationSectors from "../../components/cards/applicationSectors/ApplicationSectors";
+import { ApplicationsMessages } from "../../configs/applicationsMessages";
 
 const ProductsPage = () => {
   return (
@@ -84,30 +86,33 @@ const ProductsPage = () => {
 
       <div class="my-20"></div>
 
-      <section class="flex flex-row mx-auto max-w-screen-xl items-center justify-center">
-        <div class="w-1/2"></div>
-        <div class="w-1/2">
-          <Typography variant="h2" class="color text-base">
-            Sectores de aplicación
-          </Typography>
-          <ul class="text-base mt-5">
-            <li>Cosecha, como biopesticida.</li>
-            <li>Post cosecha, como biopesticida.</li>
-            <li>
-              Pecuario, como detergente para reducir la prevalencia de
-              infecciones fúngicas y bactericidas en las aves.
-            </li>
-            <li>
-              Industria de fabricación de Colchones, como agente antifúngico y
-              bactericida.
-            </li>
-            <li>
-              Construcción, como aditivo para reducir el desarrollo de hongos en
-              las estructuras.
-            </li>
-          </ul>
-        </div>
-      </section>
+      <div class="flex justify-center h-20">
+        <Typography variant="h2" class="color text-base">
+          Sectores de aplicación
+        </Typography>
+      </div>
+      <div class="flex flex-row">
+        <ApplicationSectors
+          isFigureTop={true}
+          {...ApplicationsMessages.cosecha}
+        />
+        <ApplicationSectors
+          isFigureTop={false}
+          {...ApplicationsMessages.poscosecha}
+        />
+        <ApplicationSectors
+          isFigureTop={true}
+          {...ApplicationsMessages.pecuario}
+        />
+        <ApplicationSectors
+          isFigureTop={false}
+          {...ApplicationsMessages.colchones}
+        />
+        <ApplicationSectors
+          isFigureTop={true}
+          {...ApplicationsMessages.construccion}
+        />
+      </div>
 
       <div class="my-10"></div>
 
