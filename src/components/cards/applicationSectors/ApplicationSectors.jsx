@@ -8,12 +8,14 @@ const ApplicationSectors = ({
 }) => {
   return (
     <div
-      class={`flex ${isFigureTop ? "flex-col" : "flex-col-reverse"} w-1/5 h-96`}
+      class={`flex flex-col ${
+        isFigureTop ? "lg:flex-col" : "lg:flex-col-reverse"
+      } w-[228px] min-w-[228px] h-96 bg-tertiary my-2 md:my-0`}
     >
       <div class="bg-primary h-[70%] overflow-hidden">
         <img class="w-full h-full" src={imagePath} alt="logo" />
       </div>
-      <div class="bg-tertiary h-[30%] p-5">
+      <div class="h-[30%] p-3">
         <Typography variant="paragraph">{description}</Typography>
       </div>
     </div>

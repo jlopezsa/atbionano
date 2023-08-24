@@ -8,7 +8,7 @@ import { ApplicationsMessages } from "../../configs/applicationsMessages";
 
 const ProductsPage = () => {
   return (
-    <div class="h-full mt-[90px]">
+    <div class="h-full mt-[95px]">
       <div class="w-[100vw]">
         <div
           class="w-full h-[400px] bg-fixed"
@@ -30,12 +30,14 @@ const ProductsPage = () => {
             </a>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
-            <p class="text-7xl font-bold text-white">Bionanoaxus</p>
+            <p class="text-6xl sm:text-7xl font-bold text-white">Bionanoaxus</p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
           <div class="w-1/2 flex flex-col justify-center items-center">
-            <Typography variant="h3">Producto bionanotecnologico</Typography>
+            <div style={{ textAlign: "center" }}>
+              <Typography variant="h3">Producto bionanotecnologico</Typography>
+            </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
                 Alternativa ecológica a las composiciones antimicrobianas
@@ -50,40 +52,6 @@ const ProductsPage = () => {
 
       <div class="my-20"></div>
 
-      {/* <div class="w-[100vw]">
-        <section class="flex flex-row mx-auto max-w-screen-xl items-center justify-center">
-          <div class="w-1/2 pr-20">
-            <Typography variant="h1" class="color text-base">
-              Bionanoaxus
-            </Typography>
-            <Typography variant="h3">Producto bionanotecnologico</Typography>
-            <Typography variant="paragraph">
-              Alternativa ecológica a las composiciones antimicrobianas
-              tradicionales de especial interés para el tratamiento de agentes
-              patógenos de la industria agrícola, así como para desinfección de
-              múltiples materiales en la industria de alimentos y textil.
-            </Typography>
-          </div>
-          <div class="w-1/2 h-[200px]">
-            <img
-              src={bionanoaxusPetri}
-              alt="Beautiful landscape"
-              className="object-cover w-full h-full"
-            />
-            <Typography variant="small">
-              Foto de{" "}
-              <a href="https://unsplash.com/es/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                CDC
-              </a>{" "}
-              en{" "}
-              <a href="https://unsplash.com/es/fotos/y--8fqaK1kY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                Unsplash
-              </a>
-            </Typography>
-          </div>
-        </section>
-      </div> */}
-
       <div class="my-20"></div>
 
       <div class="flex justify-center h-20">
@@ -91,28 +59,32 @@ const ProductsPage = () => {
           Sectores de aplicación
         </Typography>
       </div>
-      <div class="flex flex-row">
-        <ApplicationSectors
-          isFigureTop={true}
-          {...ApplicationsMessages.cosecha}
-        />
-        <ApplicationSectors
-          isFigureTop={false}
-          {...ApplicationsMessages.poscosecha}
-        />
-        <ApplicationSectors
-          isFigureTop={true}
-          {...ApplicationsMessages.pecuario}
-        />
-        <ApplicationSectors
-          isFigureTop={false}
-          {...ApplicationsMessages.colchones}
-        />
-        <ApplicationSectors
-          isFigureTop={true}
-          {...ApplicationsMessages.construccion}
-        />
+      {/* <div class="bg-gradient-to-b from-green-50 to-green-900 bg-fixed"> */}
+      <div class="max-w-screen-xl mx-auto w-[100vw]">
+        <div class="flex flex-row flex-wrap justify-center items-center">
+          <ApplicationSectors
+            isFigureTop={true}
+            {...ApplicationsMessages.cosecha}
+          />
+          <ApplicationSectors
+            isFigureTop={false}
+            {...ApplicationsMessages.poscosecha}
+          />
+          <ApplicationSectors
+            isFigureTop={true}
+            {...ApplicationsMessages.pecuario}
+          />
+          <ApplicationSectors
+            isFigureTop={false}
+            {...ApplicationsMessages.colchones}
+          />
+          <ApplicationSectors
+            isFigureTop={true}
+            {...ApplicationsMessages.construccion}
+          />
+        </div>
       </div>
+      {/* </div> */}
 
       <div class="my-10"></div>
 
