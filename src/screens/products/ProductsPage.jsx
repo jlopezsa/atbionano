@@ -7,7 +7,6 @@ import circleVinheta from "../../images/icons/circle-vinheta.jpeg";
 import ApplicationSectors from "../../components/cards/applicationSectors/ApplicationSectors";
 import { ApplicationsMessages } from "../../configs/applicationsMessages";
 import ItemListWithBackground from "../../components/cards/itemListWithBackground/ItemListWithBackground";
-import { customTheme } from "../../theme/customTheme";
 
 const ProductsPage = () => {
   return (

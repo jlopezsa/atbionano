@@ -11,7 +11,6 @@ const ItemListWithBackground = ({
       style={{
         backgroundImage: `url(${backgroundImageList})`,
         backgroundSize: "contain",
-        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "left center",
       }}
