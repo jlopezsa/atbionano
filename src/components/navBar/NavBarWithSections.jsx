@@ -16,7 +16,7 @@ import NavListMenu from "./NavListMenu";
 // nav list menu KnowUs
 const navListMenuItemsKnowUs = [
   {
-    title: "Conocenos",
+    title: "Propósito empresarial",
     description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
     linkTo: ROUTE_SECTION_KNOW_US,
   },
@@ -90,11 +90,11 @@ const NavBarWithSections = () => {
   }, []);
 
   return (
-    <Navbar className="bg-primary mx-auto max-w-screen-xl p-4 my-2 lg:rounded-full lg:pl-6">
+    <Navbar className="bg-primary border-transparent mx-auto max-w-screen-xl px-4 my-3 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-100">
         <a href={`${ROUTE_HOME}`}>
           <img
-            class="float-none pl-[50px] md:float-right h-[40px] w-auto"
+            class="float-none pl-[20px] sm:pl-[50px] md:float-right h-[40px] w-auto"
             src={logoAtbionano}
             alt="logo"
           />
