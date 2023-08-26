@@ -120,7 +120,7 @@ export const customTheme = {
             display: "block",
             fontSmoothing: "antialiased",
             fontFamily: "font-custom",
-            fontSize: "text-sm",
+            fontSize: "text-xs",
             fontWeight: "font-light",
             lineHeight: "leading-normal",
           },
