@@ -12,8 +12,8 @@ const ApplicationSectors = ({
         isFigureTop ? "lg:flex-col" : "lg:flex-col-reverse"
       } w-[228px] min-w-[228px] h-96 bg-tertiary my-2 md:my-0`}
     >
-      <div class="bg-primary h-[70%] overflow-hidden">
-        <img class="w-full h-full" src={imagePath} alt="logo" />
+      <div class=" bg-primary h-[70%] overflow-hidden">
+        <img class="h-full w-full object-none" src={imagePath} alt="logo" />
       </div>
       <div class="h-[30%] p-3">
         <Typography variant="paragraph">{description}</Typography>
