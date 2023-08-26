@@ -16,7 +16,7 @@ import NavListMenu from "./NavListMenu";
 // nav list menu KnowUs
 const navListMenuItemsKnowUs = [
   {
-    title: "Conocenos",
+    title: "Propósito empresarial",
     description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
     linkTo: ROUTE_SECTION_KNOW_US,
   },
