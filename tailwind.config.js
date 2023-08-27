@@ -16,7 +16,9 @@ module.exports = withMT({
         primary: colors.greenDark,
         secondary: colors.greenLime,
         tertiary: colors.greenPastel,
+        greenPastelLight: colors.greenPastelLight,
         white: colors.white,
+        linkedin: colors.linkedin,
       },
       fontFamily: {
         sans: ['Helvetica', 'Arial', 'sans-serif'],

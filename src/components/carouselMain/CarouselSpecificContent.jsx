@@ -18,7 +18,7 @@ const CarouselSpecificContent = ({
           <div>
             <strong>{topMessage}</strong>
           </div>
-          <div class="text-2xl text-white">
+          <div class="text-lg sm:text-2xl text-white">
             <p>{bottomMessage}</p>
           </div>
         </div>

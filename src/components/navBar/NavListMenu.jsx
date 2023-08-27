@@ -38,12 +38,12 @@ const NavListMenu = ({
 
   return (
     <Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
+      <Menu allowHover={true} open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography
             as="a"
             href={`${linkPage}`}
-            variant="small"
+            variant="paragraph"
             className="font-normal"
           >
             <MenuItem className="hidden items-center gap-2 text-blue-gray-100 lg:flex lg:rounded-full">
