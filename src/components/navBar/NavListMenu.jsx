@@ -22,11 +22,15 @@ const NavListMenu = ({
   const renderItems = itemsList.map(({ title, description, linkTo }) => (
     <a href={`${linkPage}#${linkTo}`} key={title}>
       <MenuItem>
-        <Typography variant="h6" color="light-green" className="mb-1">
+        <Typography
+          variant="paragraph"
+          color="text-blue-gray-500 lg:gray"
+          className="mb-1"
+        >
           {title}
         </Typography>
-        <Typography variant="small" color="gray" className="font-normal">
-          {description}
+        <Typography variant="small" color="gray">
+          {}
         </Typography>
       </MenuItem>
     </a>
@@ -34,12 +38,12 @@ const NavListMenu = ({
 
   return (
     <Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
+      <Menu allowHover={true} open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography
             as="a"
             href={`${linkPage}`}
-            variant="small"
+            variant="paragraph"
             className="font-normal"
           >
             <MenuItem className="hidden items-center gap-2 text-blue-gray-100 lg:flex lg:rounded-full">
@@ -59,9 +63,11 @@ const NavListMenu = ({
           </ul>
         </MenuList>
       </Menu>
-      <MenuItem className="flex items-center gap-2 text-blue-gray-100 lg:hidden">
-        <Square3Stack3DIcon className="h-[18px] w-[18px]" /> {sectionName}{" "}
-      </MenuItem>
+      <a href={`${linkPage}`} key={`${sectionName}-page`}>
+        <MenuItem className="flex items-center gap-2 text-blue-gray-100 lg:hidden">
+          <Square3Stack3DIcon className="h-[18px] w-[18px]" /> {sectionName}{" "}
+        </MenuItem>
+      </a>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
       </ul>
