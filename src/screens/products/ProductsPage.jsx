@@ -10,7 +10,7 @@ import ItemListWithBackground from "../../components/cards/itemListWithBackgroun
 
 const ProductsPage = () => {
   return (
-    <div class="h-full mt-[95px]">
+    <div class="h-full mt-[80px]">
       <div class="w-[100vw]">
         <div
           class="w-full h-[400px] bg-fixed"

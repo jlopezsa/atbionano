@@ -43,7 +43,7 @@ const NavListMenu = ({
           <Typography
             as="a"
             href={`${linkPage}`}
-            variant="small"
+            variant="paragraph"
             className="font-normal"
           >
             <MenuItem className="hidden items-center gap-2 text-blue-gray-100 lg:flex lg:rounded-full">

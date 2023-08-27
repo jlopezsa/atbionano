@@ -5,8 +5,8 @@ import { ROUTE_SECTION_KNOW_US } from "./../../routes/routes";
 
 const ContainerKnowUs = () => {
   return (
-    <div class="js-show-on-scroll" id={ROUTE_SECTION_KNOW_US}>
-      <p class="text-3xl font-bold text-center mt-[80px]">
+    <div id={ROUTE_SECTION_KNOW_US}>
+      <p class="text-3xl font-bold text-center pt-[80px]">
         Propósito empresarial!
       </p>
       <div class="flex flex-row justify-around flex-wrap relative -z-10">
