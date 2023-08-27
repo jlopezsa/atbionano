@@ -1,10 +1,11 @@
 import { Typography } from "@material-tailwind/react";
 import UserTeam from "../../components/cards/userTeam/UserTeam";
 import { UsersTeamInfo } from "../../configs/usersTeamInfo";
+import { ROUTE_SECTION_TEAM } from "../../routes/routes";
 
 const ContainerTeam = () => {
   return (
-    <div class="js-show-on-scroll">
+    <div class="js-show-on-scroll" id={ROUTE_SECTION_TEAM}>
       <Typography variant="h3" className="mt-[80px] text-center">
         Equipo de trabajo
       </Typography>

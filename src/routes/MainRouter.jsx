@@ -14,9 +14,11 @@ import {
   ROUTE_SECTION_PROCESS,
   ROUTE_PRODUCTS_PAGE,
   ROUTE_PATENT_PAGE,
+  ROUTE_SECTION_TEAM,
 } from "./routes";
 import ProductsPage from "../screens/products/ProductsPage";
 import PatentPage from "../screens/patent/PatentPage";
+import ContainerTeam from "../screens/landing/ContainerTeam";
 
 const MainRouter = () => {
   return (
@@ -25,6 +27,7 @@ const MainRouter = () => {
       <Routes>
         <Route path={ROUTE_HOME} element={<LandingPage />} />
         <Route path={ROUTE_SECTION_KNOW_US} element={<ContainerKnowUs />} />
+        <Route path={ROUTE_SECTION_TEAM} element={<ContainerTeam />} />
         <Route path={ROUTE_SECTION_PARTNERS} element={<ContainerCompanies />} />
         <Route path={ROUTE_SECTION_PROCESS} element={<CallsProcesses />} />
         <Route path={ROUTE_SECTION_CONTACT} element={<Footer />} />

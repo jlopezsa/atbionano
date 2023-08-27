@@ -4,7 +4,6 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Tooltip,
 } from "@material-tailwind/react";
 
 const UserTeam = ({ props }) => {

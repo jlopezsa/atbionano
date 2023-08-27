@@ -8,6 +8,7 @@ import {
   ROUTE_PRODUCTS_PAGE,
   ROUTE_SECTION_CONTACT,
   ROUTE_SECTION_KNOW_US,
+  ROUTE_SECTION_TEAM,
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
 } from "../../routes/routes";
@@ -19,6 +20,11 @@ const navListMenuItemsKnowUs = [
     title: "Propósito empresarial",
     description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
     linkTo: ROUTE_SECTION_KNOW_US,
+  },
+  {
+    title: "Equipo de trabajo",
+    description: "Conoce a cada uno de los integrantes del equipo.",
+    linkTo: ROUTE_SECTION_TEAM,
   },
   {
     title: "Empresas aliadas",
