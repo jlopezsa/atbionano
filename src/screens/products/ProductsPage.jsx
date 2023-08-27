@@ -7,11 +7,10 @@ import circleVinheta from "../../images/icons/circle-vinheta.jpeg";
 import ApplicationSectors from "../../components/cards/applicationSectors/ApplicationSectors";
 import { ApplicationsMessages } from "../../configs/applicationsMessages";
 import ItemListWithBackground from "../../components/cards/itemListWithBackground/ItemListWithBackground";
-import { customTheme } from "../../theme/customTheme";
 
 const ProductsPage = () => {
   return (
-    <div class="h-full mt-[95px]">
+    <div class="h-full mt-[80px]">
       <div class="w-[100vw]">
         <div
           class="w-full h-[400px] bg-fixed"

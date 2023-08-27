@@ -16,7 +16,7 @@ const CarouselMain = () => {
         <div class="h-[90vh] min-h-[600px] flex flex-row justify-center">
           <img
             src={backgroundImageBlack}
-            alt="main background image carousel"
+            alt="main background carousel"
             className="w-full object-cover"
           />
           <CarouselSpecificContent
