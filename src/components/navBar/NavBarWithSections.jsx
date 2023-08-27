@@ -8,6 +8,7 @@ import {
   ROUTE_PRODUCTS_PAGE,
   ROUTE_SECTION_CONTACT,
   ROUTE_SECTION_KNOW_US,
+  ROUTE_SECTION_TEAM,
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
 } from "../../routes/routes";
@@ -19,6 +20,11 @@ const navListMenuItemsKnowUs = [
     title: "Propósito empresarial",
     description: "Te presentamos quienes somos, qué y cómo lo hacemos.",
     linkTo: ROUTE_SECTION_KNOW_US,
+  },
+  {
+    title: "Equipo de trabajo",
+    description: "Conoce a cada uno de los integrantes del equipo.",
+    linkTo: ROUTE_SECTION_TEAM,
   },
   {
     title: "Empresas aliadas",
@@ -90,11 +96,11 @@ const NavBarWithSections = () => {
   }, []);
 
   return (
-    <Navbar className="bg-primary border-transparent mx-auto max-w-screen-xl px-4 my-3 lg:rounded-full lg:pl-6">
+    <Navbar className="bg-primary border-transparent mx-auto max-w-screen-xl px-4 my-0 lg:rounded-full lg:pl-6">
       <div className="relative mx-auto flex items-center text-blue-gray-100">
         <a href={`${ROUTE_HOME}`}>
           <img
-            class="float-none pl-[20px] sm:pl-[50px] md:float-right h-[40px] w-auto"
+            class="float-none pl-[20px] sm:pl-[50px] md:float-right h-[50px] w-auto"
             src={logoAtbionano}
             alt="logo"
           />
