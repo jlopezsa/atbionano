@@ -38,7 +38,7 @@ const NavListMenu = ({
 
   return (
     <Fragment>
-      <Menu allowHover open={isMenuOpen} handler={setIsMenuOpen}>
+      <Menu allowHover={true} open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
           <Typography
             as="a"
