@@ -1,9 +1,34 @@
 import { Typography } from "@material-tailwind/react";
+import imagePatent from "../../images/patent/skye-studios-NDLLFxTELrU-patent.jpeg";
 
 const PatentPage = () => {
   return (
     <div class="h-full mt-[80px]">
-      <Typography variant="h2">... En construcción</Typography>
+      <div
+        class="w-full h-[400px] bg-fixed"
+        style={{
+          backgroundImage: `url(${imagePatent})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+        }}
+      >
+        <Typography variant="small">
+          Foto de{" "}
+          <a href="https://unsplash.com/es/@skyestudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Skye Studios
+          </a>{" "}
+          en{" "}
+          <a href="https://unsplash.com/es/fotos/NDLLFxTELrU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+            Unsplash
+          </a>
+        </Typography>
+        <div class="w-full h-full flex justify-center items-center">
+          <p class="text-5xl sm:text-7xl font-bold text-white text-center">
+            Nanopartículas Inorgánicas
+          </p>
+        </div>
+      </div>
       <Typography variant="h1">Nanotecnología</Typography>
       <Typography variant="h2">Tecnología TRL 6</Typography>
       <Typography variant="h6">
