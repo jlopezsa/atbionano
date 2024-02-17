@@ -29,7 +29,7 @@ const Footer = () => {
       <div
         class={`relative h-[80px] mb-[0px] bg-primary text-white flex flex-row flex-wrap place-content-evenly items-center`}
       >
-        <p>&copy; 2023 A&T-BioNano</p>
+        <p>&copy; {new Date().getFullYear()} A&T-BioNano</p>
       </div>
     </div>
   );
