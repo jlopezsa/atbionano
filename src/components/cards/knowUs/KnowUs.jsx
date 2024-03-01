@@ -6,7 +6,7 @@ const KnowUs = ({ props }) => {
       data-te-animation-reset="true"
       data-te-animation="[slide-right_1s_ease-in-out]"
     >
-      <div class="w-[300px]">
+      <div id={`${props.title}-knowus`} class="w-[300px]">
         <div class="h-[170px]">
           <img
             class="w-[120px] h-[120px] pt-[20px]"
