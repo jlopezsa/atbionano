@@ -28,7 +28,11 @@ const CarouselSpecificContent = ({
       </div>
 
       <div class="z-10 w-full h-16 flex items-center justify-center sm:justify-start">
-        <ButtonLight message={messageButton} navigateRoute={navigateRoute} />
+        <ButtonLight
+          id={`${messageButton.replace(/\s+/g, "-")}-button`}
+          message={messageButton}
+          navigateRoute={navigateRoute}
+        />
       </div>
     </div>
   );

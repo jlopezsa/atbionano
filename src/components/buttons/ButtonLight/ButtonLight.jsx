@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 
-export const ButtonLight = ({ message, navigateRoute }) => {
+export const ButtonLight = ({
+  message,
+  navigateRoute,
+  id = "default-button",
+}) => {
   return (
     <Link to={`${navigateRoute}`}>
       <button
+        id={id}
         type="button"
         data-te-ripple-init
         data-te-ripple-color="light"
