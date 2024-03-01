@@ -21,7 +21,7 @@ const UserTeam = ({ props }) => {
         </Typography>
       </CardBody>
       <CardFooter className="flex justify-center gap-7 pt-0">
-        <a href={props.linkLinkedin}>
+        <a id={`${props.role}-linkedin`} href={props.linkLinkedin}>
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
