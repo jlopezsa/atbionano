@@ -20,9 +20,7 @@ const Footer = () => {
           <p>aytbionano@gmail.com</p>
         </div>
         <div class="w-[300px] flex flex-col text-white">
-          <p class="text-center pb-[20px]">
-            ...próximanten síguenos en nuestras redes
-          </p>
+          <p class="text-center pb-[20px]">Síguenos en nuestras redes</p>
           <SocialMediaIcons />
         </div>
       </div>
