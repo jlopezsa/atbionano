@@ -176,15 +176,17 @@ const ProductsPage = () => {
 
         <div class="my-10"></div>
 
-        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center justify-center">
+        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center align-middle">
           <div class="sm:w-1/4">
             <Typography variant="h4">Para el negocio</Typography>
           </div>
           <div class="w-3/4">
-            <ul class="text-base mt-5">
+            <ul class="text-base">
               <li>
-                Eficiencia del 99% en pseudomonas sp, Bacillus sp, Fasarium
-                oxysporum.
+                Eficiencia del 99% en{" "}
+                <span class="italic">
+                  Pseudomonas sp, Bacillus sp, Fusarium oxysporum.
+                </span>
               </li>
             </ul>
           </div>
