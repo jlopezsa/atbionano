@@ -21,10 +21,10 @@ const NavListMenu = ({
 
   const renderItems = itemsList.map(({ title, description, linkTo }) => (
     <a href={`${linkPage}#${linkTo}`} key={title}>
-      <MenuItem>
+      <MenuItem className="">
         <Typography
           variant="paragraph"
-          color="text-blue-gray-500 lg:gray"
+          color="text-blue-gray-200 lg:gray"
           className="mb-1"
         >
           {title}
@@ -58,7 +58,7 @@ const NavListMenu = ({
           </Typography>
         </MenuHandler>
         <MenuList className="hidden w-[20rem] overflow-visible lg:grid">
-          <ul className="col-span-4 flex w-full flex-col gap-1">
+          <ul className="col-span-4 flex w-full flex-col gap-1 focus:outline-none">
             {renderItems}
           </ul>
         </MenuList>
