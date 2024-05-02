@@ -183,9 +183,10 @@ const ProductsPage = () => {
           <div class="w-3/4">
             <ul class="text-base">
               <li>
-                Eficiencia del 99% en{" "}
+                Eficiencia del 99.99% en{" "}
                 <span class="italic">
-                  Pseudomonas sp, Bacillus sp, Fusarium oxysporum.
+                  Pseudomonas sp, Salmonella sp, E. coli, Bacillus sp, Fusarium
+                  oxysporum, Botrytis sp
                 </span>
               </li>
             </ul>
