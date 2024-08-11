@@ -12,7 +12,6 @@ import {
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
   ROUTE_ZCLEAN_PRODUCT_PAGE,
-  ROUTE_PRODUCTS,
 } from "../../routes/routes";
 import NavListMenu from "./NavListMenu";
 
@@ -51,6 +50,7 @@ const navListMenuItemsTech = [
     title: "Patente",
     description:
       "Solución acuosa que sirve para el control de hongos y bacterias.",
+    linkTo: ROUTE_PATENT_PAGE,
   },
 ];
 
@@ -81,12 +81,12 @@ function NavList() {
       <NavListMenu
         sectionName={"Tecnología"}
         itemsList={navListMenuItemsTech}
-        linkPage={ROUTE_PATENT_PAGE}
+        // linkPage={ROUTE_PATENT_PAGE}
       />
       <NavListMenu
         sectionName={"Productos"}
         itemsList={navListMenuItemsProducts}
-        linkPage={ROUTE_PRODUCTS}
+        // linkPage={ROUTE_PRODUCTS}
       />
     </ul>
   );

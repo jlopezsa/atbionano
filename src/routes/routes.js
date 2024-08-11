@@ -7,7 +7,8 @@ export const ROUTE_SECTION_PROCESS = "process";
 export const ROUTE_SECTION_CONTACT = "contact";
 
 export const ROUTE_PRODUCTS = "/products";
-export const ROUTE_BIONANOAXUS_PRODUCT_PAGE = ROUTE_PRODUCTS + "/bionanoaxus";
-export const ROUTE_ZCLEAN_PRODUCT_PAGE = ROUTE_PRODUCTS + "/z-clean";
 
-export const ROUTE_PATENT_PAGE = "/patent";
+export const ROUTE_BIONANOAXUS_PRODUCT_PAGE = "/products/bionanoaxus";
+export const ROUTE_ZCLEAN_PRODUCT_PAGE = "/products/z-clean";
+
+export const ROUTE_PATENT_PAGE = "/technology/patent";
