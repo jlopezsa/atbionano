@@ -5,12 +5,14 @@ import logoAtbionano from "../../images/logo_letraBlanca.png";
 import {
   ROUTE_HOME,
   ROUTE_PATENT_PAGE,
-  ROUTE_PRODUCTS_PAGE,
+  ROUTE_BIONANOAXUS_PRODUCT_PAGE,
   ROUTE_SECTION_CONTACT,
   ROUTE_SECTION_KNOW_US,
   ROUTE_SECTION_TEAM,
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
+  ROUTE_ZCLEAN_PRODUCT_PAGE,
+  ROUTE_PRODUCTS,
 } from "../../routes/routes";
 import NavListMenu from "./NavListMenu";
 
@@ -58,6 +60,13 @@ const navListMenuItemsProducts = [
     title: "Bionanoaxus",
     description:
       "Alternativa ecológica a las composiciones antimicrobianas tradicionales.",
+    linkTo: ROUTE_BIONANOAXUS_PRODUCT_PAGE,
+  },
+  {
+    title: "Z-Clean",
+    description:
+      "Alternativa ecológica a la limpieza de superficies y productos.", // TODO: Definir descripción breve
+    linkTo: ROUTE_ZCLEAN_PRODUCT_PAGE,
   },
 ];
 
@@ -77,7 +86,7 @@ function NavList() {
       <NavListMenu
         sectionName={"Productos"}
         itemsList={navListMenuItemsProducts}
-        linkPage={ROUTE_PRODUCTS_PAGE}
+        linkPage={ROUTE_PRODUCTS}
       />
     </ul>
   );

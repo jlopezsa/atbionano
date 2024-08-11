@@ -12,13 +12,15 @@ import {
   ROUTE_SECTION_KNOW_US,
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
-  ROUTE_PRODUCTS_PAGE,
+  ROUTE_BIONANOAXUS_PRODUCT_PAGE,
+  ROUTE_ZCLEAN_PRODUCT_PAGE,
   ROUTE_PATENT_PAGE,
   ROUTE_SECTION_TEAM,
 } from "./routes";
-import ProductsPage from "../screens/products/ProductsPage";
+import BionanoaxusProductPage from "../screens/products/bionanoaxus/BionanoaxusProductPage";
 import PatentPage from "../screens/patent/PatentPage";
 import ContainerTeam from "../screens/landing/ContainerTeam";
+import ZcleanProductPage from "../screens/products/zclean/ZcleanProductPage";
 
 const MainRouter = () => {
   return (
@@ -32,7 +34,14 @@ const MainRouter = () => {
         <Route path={ROUTE_SECTION_PROCESS} element={<CallsProcesses />} />
         <Route path={ROUTE_SECTION_CONTACT} element={<Footer />} />
         <Route path={ROUTE_PATENT_PAGE} element={<PatentPage />} />
-        <Route path={ROUTE_PRODUCTS_PAGE} element={<ProductsPage />} />
+        <Route
+          path={ROUTE_BIONANOAXUS_PRODUCT_PAGE}
+          element={<BionanoaxusProductPage />}
+        />
+        <Route
+          path={ROUTE_ZCLEAN_PRODUCT_PAGE}
+          element={<ZcleanProductPage />}
+        />
       </Routes>
       <Footer />
     </div>

@@ -2,13 +2,14 @@
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
-import bionanoaxusPetri from "../../images/products/petri.jpeg";
-import circleVinheta from "../../images/icons/circle-vinheta.jpeg";
-import ApplicationSectors from "../../components/cards/applicationSectors/ApplicationSectors";
-import { ApplicationsMessages } from "../../configs/applicationsMessages";
-import ItemListWithBackground from "../../components/cards/itemListWithBackground/ItemListWithBackground";
+import bionanoaxusPetri from "../../../images/products/petri.jpeg";
+import circleVinheta from "../../../images/icons/circle-vinheta.jpeg";
+import ApplicationSectors from "../../../components/cards/applicationSectors/ApplicationSectors";
+import { ApplicationsMessages } from "../../../configs/applicationsMessages";
+import ItemListWithBackground from "../../../components/cards/itemListWithBackground/ItemListWithBackground";
+import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
 
-const ProductsPage = () => {
+const BionanoaxusProductPage = () => {
   return (
     <div class="h-full mt-[80px]">
       <div class="w-[100vw]">
@@ -32,7 +33,9 @@ const ProductsPage = () => {
             </a>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
-            <p class="text-6xl sm:text-7xl font-bold text-white">Bionanoaxus</p>
+            <p class="text-6xl sm:text-7xl font-bold text-white">
+              {BionanoaxusProductMessages.title}
+            </p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
@@ -42,10 +45,7 @@ const ProductsPage = () => {
             </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
-                Alternativa ecológica a las composiciones antimicrobianas
-                tradicionales de especial interés para el tratamiento de agentes
-                patógenos de la industria agrícola, así como para desinfección
-                de múltiples materiales en la industria de alimentos y textil.
+                {BionanoaxusProductMessages.description}
               </Typography>
             </div>
           </div>
@@ -199,4 +199,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default BionanoaxusProductPage;
