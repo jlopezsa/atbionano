@@ -2,11 +2,12 @@
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
-import bionanoaxusPetri from "../../../images/products/petri.jpeg";
+import zcleanBackground from "../../../images/products/brooke-lark-08bOYnH_r_E-zclean.jpg";
 import circleVinheta from "../../../images/icons/circle-vinheta.jpeg";
 import ApplicationSectors from "../../../components/cards/applicationSectors/ApplicationSectors";
 import { ApplicationsMessages } from "../../../configs/applicationsMessages";
 import ItemListWithBackground from "../../../components/cards/itemListWithBackground/ItemListWithBackground";
+import { ApplicationProducts } from "../../../components/cards/applicationSectors/ApplicationsProducts";
 
 const ZcleanProductPage = () => {
   return (
@@ -15,24 +16,26 @@ const ZcleanProductPage = () => {
         <div
           class="w-full h-[400px] bg-fixed"
           style={{
-            backgroundImage: `url(${bionanoaxusPetri})`,
+            backgroundImage: `url(${zcleanBackground})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
           }}
         >
           <Typography variant="small">
-            Foto de{" "}
-            <a href="https://unsplash.com/es/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-              CDC
-            </a>{" "}
-            en{" "}
-            <a href="https://unsplash.com/es/fotos/y--8fqaK1kY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-              Unsplash
-            </a>
+            <div class="w-full flex justify-end">
+              Foto de{" "}
+              <a href="https://unsplash.com/es/@brookelark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Brooke Lark
+              </a>{" "}
+              en{" "}
+              <a href="https://unsplash.com/es/fotos/variedad-de-frutas-en-rodajas-08bOYnH_r_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                Unsplash
+              </a>
+            </div>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
-            <p class="text-6xl sm:text-7xl font-bold text-white">Z-Clean</p>
+            <p class="text-6xl sm:text-7xl font-bold text-black">Z-Clean</p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
@@ -58,31 +61,23 @@ const ZcleanProductPage = () => {
 
       <div class="flex justify-center h-20">
         <Typography variant="h2" class="color text-base">
-          Sectores de aplicación
+          Aplicaciones
         </Typography>
       </div>
       {/* <div class="bg-gradient-to-b from-green-50 to-green-900 bg-fixed"> // TODO: verificar si se deja el fondo verde */}
-      <div class="max-w-screen-xl mx-auto w-[100vw]">
-        <div class="flex flex-row flex-wrap justify-center items-center">
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.cosecha}
+      <div class="fmx-auto w-[100vw]">
+        <div class="flex flex-row flex-wrap justify-evenly">
+          <ApplicationProducts
+            description={
+              "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
+            }
+            title={"Frutas y Verduras"}
           />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.poscosecha}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.pecuario}
-          />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.colchones}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.construccion}
+          <ApplicationProducts
+            description={
+              "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
+            }
+            title={"Superficies"}
           />
         </div>
       </div>
@@ -134,7 +129,7 @@ const ZcleanProductPage = () => {
 
       <section>
         <div class="text-center">
-          <Typography variant="h2">Oportunidades</Typography>
+          <Typography variant="h2">Adquisición de productos</Typography>
         </div>
 
         <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center justify-center">
