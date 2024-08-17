@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
-import imagePatent from "../../images/patent/skye-studios-NDLLFxTELrU-patent.jpeg";
-import bionanoaxusLabelImage from "../../images/atbionano/bionanoaxus-label.jpeg";
+import imagePatent from "images/patent/skye-studios-NDLLFxTELrU-patent.jpeg";
+import bionanoaxusLabelImage from "images/atbionano/bionanoaxus-label.jpeg";
 
 const PatentPage = () => {
   return (

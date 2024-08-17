@@ -1,8 +1,8 @@
-import backgroundImageGreen from "../../images/background_green_geometric.jpg";
-import backgroundImageBlack from "../../images/background_green_black.jpg";
+import backgroundImageGreen from "images/background_green_geometric.jpg";
+import backgroundImageBlack from "images/background_green_black.jpg";
 // import backgroundImageBlack from "../../images/main-background.jpg";
-import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
-import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
+import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
+import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel, Typography } from "@material-tailwind/react";
 import CarouselSpecificContent from "./CarouselSpecificContent";
 import {

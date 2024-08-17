@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, IconButton, Collapse } from "@material-tailwind/react";
 import { Bars2Icon } from "@heroicons/react/24/outline";
-import logoAtbionano from "../../images/logo_letraBlanca.png";
+import logoAtbionano from "images/logo_letraBlanca.png";
 import {
   ROUTE_HOME,
   ROUTE_PATENT_PAGE,
@@ -12,7 +12,7 @@ import {
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
   ROUTE_ZCLEAN_PRODUCT_PAGE,
-} from "../../routes/routes";
+} from "routes/routes";
 import NavListMenu from "./NavListMenu";
 
 // nav list menu KnowUs

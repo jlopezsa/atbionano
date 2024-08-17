@@ -1,4 +1,5 @@
-import { ButtonLight } from "./../buttons/ButtonLight/ButtonLight";
+import { ButtonLight } from "components/buttons/ButtonLight/ButtonLight";
+
 const CarouselSpecificContent = ({
   title,
   topMessage,

@@ -1,7 +1,7 @@
-import { Fade } from 'react-awesome-reveal';
-import CallsProcesses from './../../components/cards/callsProcesses/CallsProcesses';
-import { CallsMessages } from './../../configs/callsMessages';
-import { ROUTE_SECTION_PROCESS } from './../../routes/routes';
+import { Fade } from "react-awesome-reveal";
+import CallsProcesses from "components/cards/callsProcesses/CallsProcesses";
+import { CallsMessages } from "configs/callsMessages";
+import { ROUTE_SECTION_PROCESS } from "routes/routes";
 
 const ContainerCallProccess = () => {
   return (

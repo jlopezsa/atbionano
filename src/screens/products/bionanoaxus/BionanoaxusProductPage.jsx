@@ -2,12 +2,12 @@
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
-import bionanoaxusPetri from "../../../images/products/petri.jpeg";
-import circleVinheta from "../../../images/icons/circle-vinheta.jpeg";
-import ApplicationSectors from "../../../components/cards/applicationSectors/ApplicationSectors";
-import { ApplicationsMessages } from "../../../configs/applicationsMessages";
-import ItemListWithBackground from "../../../components/cards/itemListWithBackground/ItemListWithBackground";
+import bionanoaxusPetri from "images/products/petri.jpeg";
+import circleVinheta from "images/icons/circle-vinheta.jpeg";
+import ApplicationSectors from "components/cards/applicationSectors/ApplicationSectors";
+import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
+import { ApplicationsMessages } from "configs/applicationsMessages";
 
 const BionanoaxusProductPage = () => {
   return (

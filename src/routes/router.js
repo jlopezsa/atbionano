@@ -1,9 +1,9 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import PatentPage from "../screens/patent/PatentPage";
-import LandingPage from "../screens/landing/LandingPage";
-import { HomePage } from "../screens/HomePage";
-import BionanoaxusProductPage from "../screens/products/bionanoaxus/BionanoaxusProductPage";
-import ZcleanProductPage from "../screens/products/zclean/ZcleanProductPage";
+import PatentPage from "screens/patent/PatentPage";
+import LandingPage from "screens/landing/LandingPage";
+import { HomePage } from "screens/HomePage";
+import BionanoaxusProductPage from "screens/products/bionanoaxus/BionanoaxusProductPage";
+import ZcleanProductPage from "screens/products/zclean/ZcleanProductPage";
 import {
   ROUTE_BIONANOAXUS_PRODUCT_PAGE,
   ROUTE_HOME,

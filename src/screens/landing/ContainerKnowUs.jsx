@@ -1,7 +1,7 @@
 import { Fade } from "react-awesome-reveal";
-import { InformativeMessages } from "../../configs/InformativeMessages";
-import KnowUs from "./../../components/cards/knowUs/KnowUs";
-import { ROUTE_SECTION_KNOW_US } from "./../../routes/routes";
+import KnowUs from "components/cards/knowUs/KnowUs";
+import { ROUTE_SECTION_KNOW_US } from "routes/routes";
+import { InformativeMessages } from "configs/InformativeMessages";
 
 const ContainerKnowUs = () => {
   return (

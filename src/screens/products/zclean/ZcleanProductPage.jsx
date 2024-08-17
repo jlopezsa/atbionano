@@ -2,12 +2,10 @@
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
-import zcleanBackground from "../../../images/products/brooke-lark-08bOYnH_r_E-zclean.jpg";
-import circleVinheta from "../../../images/icons/circle-vinheta.jpeg";
-import ApplicationSectors from "../../../components/cards/applicationSectors/ApplicationSectors";
-import { ApplicationsMessages } from "../../../configs/applicationsMessages";
-import ItemListWithBackground from "../../../components/cards/itemListWithBackground/ItemListWithBackground";
-import { ApplicationProducts } from "../../../components/cards/applicationSectors/ApplicationsProducts";
+import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg";
+import circleVinheta from "images/icons/circle-vinheta.jpeg";
+import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
+import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
 
 const ZcleanProductPage = () => {
   return (
@@ -35,7 +33,9 @@ const ZcleanProductPage = () => {
             </div>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
-            <p class="text-6xl sm:text-7xl font-bold text-black">Z-Clean</p>
+            <p class="text-6xl sm:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent">
+              Z-Clean
+            </p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">

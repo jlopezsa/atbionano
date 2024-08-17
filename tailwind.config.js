@@ -1,15 +1,13 @@
 //import withMT from "@material-tailwind/react/utils/withMT";
 
-const withMT = require('@material-tailwind/react/utils/withMT');
+const withMT = require("@material-tailwind/react/utils/withMT");
 
 /** @type {import('tailwindcss').Config} */
 
-const colors = require('./src/configs/colors');
+const colors = require("./src/configs/colors");
 
 module.exports = withMT({
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -21,13 +19,14 @@ module.exports = withMT({
         linkedin: colors.linkedin,
       },
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif'],
-        serif: ['Congenial Black', 'serif'],
-        custom: ['Amaranth', 'serif'],
+        sans: ["Helvetica", "Arial", "sans-serif"],
+        serif: ["Congenial Black", "serif"],
+        custom: ["Amaranth", "serif"],
+      },
+      backgroundImage: {
+        "gradient-text": "linear-gradient(135deg, #C0382B, #2ECC70)",
       },
     },
   },
-  plugins: [
-    require("tailwindcss")
-  ],
-})
+  plugins: [require("tailwindcss")],
+});

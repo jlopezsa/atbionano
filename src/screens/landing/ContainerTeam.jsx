@@ -1,6 +1,6 @@
-import UserTeam from "../../components/cards/userTeam/UserTeam";
-import { UsersTeamInfo } from "../../configs/usersTeamInfo";
-import { ROUTE_SECTION_TEAM } from "../../routes/routes";
+import UserTeam from "components/cards/userTeam/UserTeam";
+import { UsersTeamInfo } from "configs/usersTeamInfo";
+import { ROUTE_SECTION_TEAM } from "routes/routes";
 
 const ContainerTeam = () => {
   return (
