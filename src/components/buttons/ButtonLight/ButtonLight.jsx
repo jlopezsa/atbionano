@@ -1,3 +1,4 @@
+import { Typography } from "@material-tailwind/react";
 import { useNavigate } from "react-router-dom";
 
 export const ButtonLight = ({
@@ -24,7 +25,9 @@ export const ButtonLight = ({
                     active:shadow-[0_8px_9px_-4px] bg-primary
                     "
     >
-      <strong>{message}</strong>
+      <Typography variant="caption">
+        <strong>{message}</strong>
+      </Typography>
     </button>
   );
 };
