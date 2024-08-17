@@ -23,6 +23,7 @@ module.exports = withMT({
         serif: ["Congenial Black", "serif"],
         custom: ["Amaranth", "serif"],
       },
+      // https://www.cssgradienttext.com/
       backgroundImage: {
         "gradient-text": "linear-gradient(135deg, #C0382B, #2ECC70)",
       },

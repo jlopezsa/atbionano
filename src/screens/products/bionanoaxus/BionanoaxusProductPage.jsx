@@ -8,6 +8,7 @@ import ApplicationSectors from "components/cards/applicationSectors/ApplicationS
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
 import { ApplicationsMessages } from "configs/applicationsMessages";
+import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
 
 const BionanoaxusProductPage = () => {
   return (
@@ -62,7 +63,7 @@ const BionanoaxusProductPage = () => {
         </Typography>
       </div>
       {/* <div class="bg-gradient-to-b from-green-50 to-green-900 bg-fixed"> // TODO: verificar si se deja el fondo verde */}
-      <div class="max-w-screen-xl mx-auto w-[100vw]">
+      {/* <div class="max-w-screen-xl mx-auto w-[100vw]">
         <div class="flex flex-row flex-wrap justify-center items-center">
           <ApplicationSectors
             isFigureTop={true}
@@ -85,8 +86,35 @@ const BionanoaxusProductPage = () => {
             {...ApplicationsMessages.construccion}
           />
         </div>
-      </div>
+      </div> */}
       {/* </div> */}
+      <div className="flex flex-row flex-wrap justify-center">
+        <ApplicationProducts
+          title={ApplicationsMessages.cosecha.title}
+          description={ApplicationsMessages.cosecha.description}
+          imagePath={ApplicationsMessages.cosecha.imagePath}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.poscosecha.title}
+          description={ApplicationsMessages.poscosecha.description}
+          imagePath={ApplicationsMessages.poscosecha.imagePath}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.pecuario.title}
+          description={ApplicationsMessages.pecuario.description}
+          imagePath={ApplicationsMessages.pecuario.imagePath}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.colchones.title}
+          description={ApplicationsMessages.colchones.description}
+          imagePath={ApplicationsMessages.colchones.imagePath}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.construccion.title}
+          description={ApplicationsMessages.construccion.description}
+          imagePath={ApplicationsMessages.construccion.imagePath}
+        />
+      </div>
 
       <div class="my-10"></div>
 
