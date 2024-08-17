@@ -4,7 +4,6 @@
 import { Typography } from "@material-tailwind/react";
 import bionanoaxusPetri from "images/products/petri.jpeg";
 import circleVinheta from "images/icons/circle-vinheta.jpeg";
-import ApplicationSectors from "components/cards/applicationSectors/ApplicationSectors";
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
 import { ApplicationsMessages } from "configs/applicationsMessages";
@@ -62,32 +61,6 @@ const BionanoaxusProductPage = () => {
           Sectores de aplicación
         </Typography>
       </div>
-      {/* <div class="bg-gradient-to-b from-green-50 to-green-900 bg-fixed"> // TODO: verificar si se deja el fondo verde */}
-      {/* <div class="max-w-screen-xl mx-auto w-[100vw]">
-        <div class="flex flex-row flex-wrap justify-center items-center">
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.cosecha}
-          />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.poscosecha}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.pecuario}
-          />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.colchones}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.construccion}
-          />
-        </div>
-      </div> */}
-      {/* </div> */}
       <div className="flex flex-row flex-wrap justify-center">
         <ApplicationProducts
           title={ApplicationsMessages.cosecha.title}
