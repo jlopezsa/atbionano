@@ -1,17 +1,18 @@
 import React from "react";
 import { Navbar, IconButton, Collapse } from "@material-tailwind/react";
 import { Bars2Icon } from "@heroicons/react/24/outline";
-import logoAtbionano from "../../images/logo_letraBlanca.png";
+import logoAtbionano from "images/logo_letraBlanca.png";
 import {
   ROUTE_HOME,
   ROUTE_PATENT_PAGE,
-  ROUTE_PRODUCTS_PAGE,
+  ROUTE_BIONANOAXUS_PRODUCT_PAGE,
   ROUTE_SECTION_CONTACT,
   ROUTE_SECTION_KNOW_US,
   ROUTE_SECTION_TEAM,
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
-} from "../../routes/routes";
+  ROUTE_ZCLEAN_PRODUCT_PAGE,
+} from "routes/routes";
 import NavListMenu from "./NavListMenu";
 
 // nav list menu KnowUs
@@ -49,6 +50,7 @@ const navListMenuItemsTech = [
     title: "Patente",
     description:
       "Solución acuosa que sirve para el control de hongos y bacterias.",
+    linkTo: ROUTE_PATENT_PAGE,
   },
 ];
 
@@ -58,6 +60,13 @@ const navListMenuItemsProducts = [
     title: "Bionanoaxus",
     description:
       "Alternativa ecológica a las composiciones antimicrobianas tradicionales.",
+    linkTo: ROUTE_BIONANOAXUS_PRODUCT_PAGE,
+  },
+  {
+    title: "Z-Clean",
+    description:
+      "Alternativa ecológica a la limpieza de superficies y productos.", // TODO: Definir descripción breve
+    linkTo: ROUTE_ZCLEAN_PRODUCT_PAGE,
   },
 ];
 
@@ -72,12 +81,12 @@ function NavList() {
       <NavListMenu
         sectionName={"Tecnología"}
         itemsList={navListMenuItemsTech}
-        linkPage={ROUTE_PATENT_PAGE}
+        // linkPage={ROUTE_PATENT_PAGE}
       />
       <NavListMenu
         sectionName={"Productos"}
         itemsList={navListMenuItemsProducts}
-        linkPage={ROUTE_PRODUCTS_PAGE}
+        // linkPage={ROUTE_PRODUCTS}
       />
     </ul>
   );

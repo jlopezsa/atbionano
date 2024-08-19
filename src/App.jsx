@@ -1,18 +1,14 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import MainRouter from "./routes/MainRouter";
+import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "@material-tailwind/react";
 import { customTheme } from "./theme/customTheme";
+import { RouterApp } from "./routes/router";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider value={customTheme}>
-        <div class="min-w-[350px] font-custom">
-          <MainRouter />
-        </div>
-      </ThemeProvider>
-    </BrowserRouter>
+    <ThemeProvider value={customTheme}>
+      <RouterProvider router={RouterApp.router} />
+    </ThemeProvider>
   );
 }
 

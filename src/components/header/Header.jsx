@@ -1,4 +1,4 @@
-import NavBarWithSections from "../navBar/NavBarWithSections";
+import NavBarWithSections from "components/navBar/NavBarWithSections";
 
 const Header = () => {
   return (

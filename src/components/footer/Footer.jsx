@@ -1,6 +1,6 @@
-import logoAtbionano from "../../images/logo_letraBlanca.png";
-import { ROUTE_HOME, ROUTE_SECTION_CONTACT } from "../../routes/routes";
-import SocialMediaIcons from "../socialMediaIcons/SocialMediaIcons";
+import SocialMediaIcons from "components/socialMediaIcons/SocialMediaIcons";
+import logoAtbionano from "images/logo_letraBlanca.png";
+import { ROUTE_HOME, ROUTE_SECTION_CONTACT } from "routes/routes";
 
 const Footer = () => {
   return (

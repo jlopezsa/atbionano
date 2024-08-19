@@ -1,11 +1,14 @@
-import backgroundImageGreen from "../../images/background_green_geometric.jpg";
-import backgroundImageBlack from "../../images/background_green_black.jpg";
+import backgroundImageGreen from "images/background_green_geometric.jpg";
+import backgroundImageBlack from "images/background_green_black.jpg";
 // import backgroundImageBlack from "../../images/main-background.jpg";
-import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
-import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
+import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
+import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel, Typography } from "@material-tailwind/react";
 import CarouselSpecificContent from "./CarouselSpecificContent";
-import { ROUTE_PATENT_PAGE, ROUTE_PRODUCTS_PAGE } from "../../routes/routes";
+import {
+  ROUTE_PATENT_PAGE,
+  ROUTE_BIONANOAXUS_PRODUCT_PAGE,
+} from "../../routes/routes";
 
 const CarouselMain = () => {
   return (
@@ -60,7 +63,7 @@ const CarouselMain = () => {
             }
             image={atbionanoProductBionanoaxus}
             messageButton={"Conoce nuestros productos"}
-            navigateRoute={ROUTE_PRODUCTS_PAGE}
+            navigateRoute={ROUTE_BIONANOAXUS_PRODUCT_PAGE}
           />
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
