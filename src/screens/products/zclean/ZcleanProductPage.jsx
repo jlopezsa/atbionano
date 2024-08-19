@@ -6,6 +6,7 @@ import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg
 import circleVinheta from "images/icons/circle-vinheta.jpeg";
 import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
+import FruitsZKlean from "./images/Applications/FruitsZKlean";
 
 const ZcleanProductPage = () => {
   return (
@@ -72,15 +73,19 @@ const ZcleanProductPage = () => {
               "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
             }
             title={"Frutas y Verduras"}
-            imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          />
+            // imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+          >
+            <FruitsZKlean />
+          </ApplicationProducts>
           <ApplicationProducts
             description={
               "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
             }
             title={"Superficies"}
             imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-          />
+          >
+            <div></div>
+          </ApplicationProducts>
         </div>
       </div>
       {/* </div> */}
