@@ -42,7 +42,7 @@ const NavListMenu = ({
       );
     } else {
       return (
-        <a onClick={() => navigate(linkTo)} key={title}>
+        <button onClick={() => navigate(linkTo)} key={title}>
           <MenuItem className="">
             <Typography
               variant="paragraph"
@@ -55,7 +55,7 @@ const NavListMenu = ({
               {}
             </Typography>
           </MenuItem>
-        </a>
+        </button>
       );
     }
   });
@@ -64,7 +64,7 @@ const NavListMenu = ({
     <Fragment>
       <Menu allowHover={true} open={isMenuOpen} handler={setIsMenuOpen}>
         <MenuHandler>
-          <a
+          <button
             onClick={() => linkPage !== undefined && navigate(linkPage)}
             key={`${sectionName}-page`}
           >
@@ -85,7 +85,7 @@ const NavListMenu = ({
                 />
               </MenuItem>
             </Typography>
-          </a>
+          </button>
         </MenuHandler>
         <MenuList className="hidden w-[20rem] overflow-visible lg:grid">
           <ul className="col-span-4 flex w-full flex-col gap-1 focus:outline-none">
@@ -93,14 +93,14 @@ const NavListMenu = ({
           </ul>
         </MenuList>
       </Menu>
-      <a
+      <button
         onClick={() => linkPage !== undefined && navigate(linkPage)}
         key={`${sectionName}-page`}
       >
         <MenuItem className="flex items-center gap-2 text-blue-gray-100 lg:hidden">
           <Square3Stack3DIcon className="h-[18px] w-[18px]" /> {sectionName}{" "}
         </MenuItem>
-      </a>
+      </button>
       <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
         {renderItems}
       </ul>
