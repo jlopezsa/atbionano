@@ -63,7 +63,7 @@ const navListMenuItemsProducts = [
     linkTo: ROUTE_BIONANOAXUS_PRODUCT_PAGE,
   },
   {
-    title: "Z-Clean",
+    title: "Z-Klean",
     description:
       "Alternativa ecológica a la limpieza de superficies y productos.", // TODO: Definir descripción breve
     linkTo: ROUTE_ZCLEAN_PRODUCT_PAGE,
@@ -105,7 +105,7 @@ const NavBarWithSections = () => {
   }, []);
 
   return (
-    <Navbar className="bg-primary border-transparent mx-auto max-w-screen-xl px-4 my-0 lg:rounded-full lg:pl-6">
+    <Navbar className="bg-primary border-transparent mx-auto max-w-full px-4 my-0 rounded-none lg:pl-20">
       <div className="relative mx-auto flex items-center text-blue-gray-100">
         <a href={`${ROUTE_HOME}`}>
           <img
@@ -128,7 +128,10 @@ const NavBarWithSections = () => {
         </IconButton>
         {/* <ProfileMenu /> */}
       </div>
-      <Collapse open={isNavOpen} className="overflow-scroll text-blue-gray-100">
+      <Collapse
+        open={isNavOpen}
+        className="overflow-scroll h-screen text-blue-gray-100"
+      >
         <NavList />
       </Collapse>
     </Navbar>

@@ -35,21 +35,21 @@ const ZcleanProductPage = () => {
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
             <p class="text-6xl sm:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent">
-              Z-Clean
+              Z-KLEAN
             </p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
           <div class="w-1/2 flex flex-col justify-center items-center">
             <div style={{ textAlign: "center" }}>
-              <Typography variant="h3">Producto bionanotecnologico</Typography>
+              <Typography variant="h3">
+                Producto bionanotecnológico - línea hogar
+              </Typography>
             </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
-                Alternativa ecológica a las composiciones antimicrobianas
-                tradicionales de especial interés para el tratamiento de agentes
-                patógenos de la industria agrícola, así como para desinfección
-                de múltiples materiales en la industria de alimentos y textil.
+                Biocida natural que actua sobre los principales microorganismos
+                eliminando bactérias como e-coli
               </Typography>
             </div>
           </div>
@@ -69,22 +69,24 @@ const ZcleanProductPage = () => {
       <div class="fmx-auto w-[100vw]">
         <div class="flex flex-row flex-wrap justify-evenly">
           <ApplicationProducts
-            description={
-              "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
-            }
+            description={"No genera problemas de desgaste ..."}
             title={"Frutas y Verduras"}
             // imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
           >
-            <FruitsZKlean />
+            <FruitsZKlean
+              imagePath={"atbionano/z-klean-application-fruits.jpg"}
+            />
           </ApplicationProducts>
           <ApplicationProducts
             description={
               "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
             }
-            title={"Superficies"}
-            imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+            title={"Superficies y utensilios de cocina"}
+            //imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
           >
-            <div></div>
+            <FruitsZKlean
+              imagePath={"atbionano/z-klean-application-table-surface"}
+            />
           </ApplicationProducts>
         </div>
       </div>
@@ -99,21 +101,15 @@ const ZcleanProductPage = () => {
         <div class="grid grid-rows-4 grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-2 px-10">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={
-              "Potencializa la eficacia en la cinética de acción y efecto fungicida usando menores concentraciones de la tecnología debido a la nanotecnología empleada en la producción de la composición antimicrobiana."
-            }
+            description={"No oxida superficies"}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={
-              "Se realiza con modelos de producción más limpia generando agricultura sostenible al ser un producto de base biológica y tecnológica."
-            }
+            description={"No genera gases"}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={
-              "Genera menores tiempos de entrega y costos en los cultivos debido a la mitigación del daño directo e indirecto que pueden ocasionar las enfermedades a estos."
-            }
+            description={"No irrita la piel"}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}

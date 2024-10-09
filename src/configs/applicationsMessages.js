@@ -9,11 +9,11 @@ export const ApplicationsMessages = {
     imagePath: `${imageCosecha}`,
     description: "Cosecha, como biopesticida.",
     credits: "https://ecosphairacolombia.com/",
-    title: "Cosecha",
+    title: "Cultivos",
   },
   poscosecha: {
     imagePath: `${imagePosCosecha}`,
-    description: "Post cosecha, como biopesticida.",
+    description: "Poscosecha, como biopesticida.",
     credits: "https://ecosphairacolombia.com/",
     title: "Poscosecha",
   },
@@ -27,7 +27,7 @@ export const ApplicationsMessages = {
   colchones: {
     imagePath: `${imageColchon}`,
     description:
-      "Industria de fabricación de Colchones, como agente antifúngico y bactericida.",
+      "Industria de fabricación de colchones y espumas como agente antifúngico y bactericida.",
     credits: "https://ecosphairacolombia.com/",
     title: "Colchones",
   },

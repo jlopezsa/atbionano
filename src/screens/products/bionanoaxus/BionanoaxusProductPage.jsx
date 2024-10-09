@@ -41,7 +41,7 @@ const BionanoaxusProductPage = () => {
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
           <div class="w-1/2 flex flex-col justify-center items-center">
             <div style={{ textAlign: "center" }}>
-              <Typography variant="h3">Producto bionanotecnologico</Typography>
+              <Typography variant="h3">Producto bionanotecnológico</Typography>
             </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
