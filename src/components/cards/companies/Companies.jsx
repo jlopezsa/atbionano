@@ -4,7 +4,7 @@ const Companies = ({ props }) => {
       <div
         class={`w-80 h-80 mt-3 bg-white rounded-full grid justify-items-center items-center`}
       >
-        <a id={`${props.title}-company`} href={props.link}>
+        <a id={`${props.title}-company`} href={props.link} target="_blank">
           <img
             class="hover:scale-105 ease-in duration-200"
             src={props.imagePath}

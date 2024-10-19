@@ -37,9 +37,11 @@ const CarouselMain = () => {
           />
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
-              Imagen de{" "}
-              <a href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais">
-                Freepik
+              <a
+                href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais"
+                target="_blank"
+              >
+                Imagen de freepik
               </a>
             </Typography>
           </div>
@@ -67,10 +69,15 @@ const CarouselMain = () => {
           />
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
-              <a href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm#query=background%20green&position=38&from_view=search&track=ais">
-                Imagen de pikisuperstar
-              </a>{" "}
-              en Freepik
+              <div>
+                <a
+                  href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm"
+                  target="_blank"
+                >
+                  Imagen de pikisuperstar
+                </a>{" "}
+                en Freepik
+              </div>
             </Typography>
           </div>
         </div>
