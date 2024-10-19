@@ -7,6 +7,7 @@ import circleVinheta from "images/icons/circle-vinheta.jpeg";
 import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
 import FruitsZKlean from "./images/Applications/FruitsZKlean";
+import { ZkleanMessages } from "./messages/zkleanMessages";
 
 const ZcleanProductPage = () => {
   return (
@@ -23,14 +24,7 @@ const ZcleanProductPage = () => {
         >
           <Typography variant="small">
             <div class="w-full flex justify-end">
-              Foto de{" "}
-              <a href="https://unsplash.com/es/@brookelark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                Brooke Lark
-              </a>{" "}
-              en{" "}
-              <a href="https://unsplash.com/es/fotos/variedad-de-frutas-en-rodajas-08bOYnH_r_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                Unsplash
-              </a>
+              {ZkleanMessages.mainContent.imageCredits}
             </div>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
@@ -43,13 +37,12 @@ const ZcleanProductPage = () => {
           <div class="w-1/2 flex flex-col justify-center items-center">
             <div style={{ textAlign: "center" }}>
               <Typography variant="h3">
-                Producto bionanotecnológico - línea hogar
+                {ZkleanMessages.mainContent.subtitle}
               </Typography>
             </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
-                Biocida natural que actua sobre los principales microorganismos
-                eliminando bactérias como e-coli
+                {ZkleanMessages.mainContent.paragraphOne}
               </Typography>
             </div>
           </div>
@@ -69,23 +62,21 @@ const ZcleanProductPage = () => {
       <div class="fmx-auto w-[100vw]">
         <div class="flex flex-row flex-wrap justify-evenly">
           <ApplicationProducts
-            description={"No genera problemas de desgaste ..."}
-            title={"Frutas y Verduras"}
-            // imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+            description={ZkleanMessages.applicationFruits.description}
+            title={ZkleanMessages.applicationFruits.title}
+            credits={ZkleanMessages.applicationFruits.imageCredits}
           >
             <FruitsZKlean
-              imagePath={"atbionano/z-klean-application-fruits.jpg"}
+              imagePath={ZkleanMessages.applicationFruits.imagePath}
             />
           </ApplicationProducts>
           <ApplicationProducts
-            description={
-              "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to &quot;Naviglio&quot; where you can enjoy the main night life in Barcelona."
-            }
-            title={"Superficies y utensilios de cocina"}
-            //imagePath="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+            description={ZkleanMessages.applicationSurface.description}
+            title={ZkleanMessages.applicationSurface.title}
+            credits={ZkleanMessages.applicationSurface.imageCredits}
           >
             <FruitsZKlean
-              imagePath={"atbionano/z-klean-application-table-surface"}
+              imagePath={ZkleanMessages.applicationSurface.imagePath}
             />
           </ApplicationProducts>
         </div>

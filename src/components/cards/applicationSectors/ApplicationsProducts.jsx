@@ -25,6 +25,7 @@ export const ApplicationProducts = ({
         </CardHeader>
       )}
 
+      <Typography variant="small">{credits}</Typography>
       <CardBody>
         <Typography variant="h5" color="black" className="mb-2">
           {title}
