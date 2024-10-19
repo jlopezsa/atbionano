@@ -3,7 +3,11 @@ const SocialMediaIcons = () => {
     <div class="flex justify-around">
       {/* <!-- Linkedin --> */}
       <div>
-        <a href={"https://www.linkedin.com/company/aytbionano/about/"}>
+        <a
+          href={"https://www.linkedin.com/company/aytbionano/about/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"

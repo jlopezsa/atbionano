@@ -25,6 +25,7 @@ const UserTeam = ({ props }) => {
           id={`${props.role}-linkedin`}
           href={props.linkLinkedin}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <span>
             <svg

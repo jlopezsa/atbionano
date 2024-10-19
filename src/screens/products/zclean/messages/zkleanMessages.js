@@ -6,6 +6,7 @@ const mainContent = {
       <a
         href="https://unsplash.com/es/@brookelark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Brooke Lark
       </a>
@@ -13,6 +14,7 @@ const mainContent = {
       <a
         href="https://unsplash.com/es/fotos/variedad-de-frutas-en-rodajas-08bOYnH_r_E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Unsplash
       </a>
@@ -34,6 +36,7 @@ const applicationFruits = {
       <a
         href="https://unsplash.com/es/@lotusdnp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Lotus Design N Print
       </a>{" "}
@@ -41,6 +44,7 @@ const applicationFruits = {
       <a
         href="https://unsplash.com/es/fotos/mueble-de-cocina-de-madera-blanca-con-lampara-colgante-negra-KiUg-4xmTwo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Unsplash
       </a>
@@ -59,6 +63,7 @@ const applicationSurface = {
       <a
         href="https://unsplash.com/es/@dirtjoy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Zoe Schaeffer
       </a>{" "}
@@ -66,6 +71,7 @@ const applicationSurface = {
       <a
         href="https://unsplash.com/es/fotos/tomates-amarillos-y-rojos-en-una-caja-de-plastico-verde-hmoDcZnB7uw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
         target="_blank"
+        rel="noopener noreferrer"
       >
         Unsplash
       </a>

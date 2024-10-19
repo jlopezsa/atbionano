@@ -40,6 +40,7 @@ const CarouselMain = () => {
               <a
                 href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Imagen de freepik
               </a>
@@ -73,6 +74,7 @@ const CarouselMain = () => {
                 <a
                   href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Imagen de pikisuperstar
                 </a>{" "}
