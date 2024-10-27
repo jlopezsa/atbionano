@@ -1,3 +1,5 @@
+import { Typography } from "@material-tailwind/react";
+
 const KnowUs = ({ props }) => {
   return (
     <div
@@ -7,7 +9,7 @@ const KnowUs = ({ props }) => {
       data-te-animation="[slide-right_1s_ease-in-out]"
     >
       <div id={`${props.title}-knowus`} class="w-[300px]">
-        <div class="h-[170px]">
+        <div class="h-[140px]">
           <img
             class="w-[120px] h-[120px] pt-[20px]"
             src={props.imagePath}
@@ -15,10 +17,10 @@ const KnowUs = ({ props }) => {
           />
         </div>
         <div class="h-[35px]">
-          <p class="text-xl font-bold">{props.title}</p>
+          <Typography className="font-bold">{props.title}</Typography>
         </div>
         <div>
-          <p class="text-base h-[195px]">{props.content}</p>
+          <Typography class="text-base h-[195px]">{props.content}</Typography>
         </div>
       </div>
     </div>

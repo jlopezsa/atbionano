@@ -1,11 +1,14 @@
-import backgroundImageGreen from "../../images/background_green_geometric.jpg";
-import backgroundImageBlack from "../../images/background_green_black.jpg";
+import backgroundImageGreen from "images/background_green_geometric.jpg";
+import backgroundImageBlack from "images/background_green_black.jpg";
 // import backgroundImageBlack from "../../images/main-background.jpg";
-import atbionanoPatenteHorizantal from "../../images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
-import atbionanoProductBionanoaxus from "../../images/atbionano/bionanoaxus-product-edited.jpeg";
+import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
+import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg";
 import { Carousel, Typography } from "@material-tailwind/react";
 import CarouselSpecificContent from "./CarouselSpecificContent";
-import { ROUTE_PATENT_PAGE, ROUTE_PRODUCTS_PAGE } from "../../routes/routes";
+import {
+  ROUTE_PATENT_PAGE,
+  ROUTE_BIONANOAXUS_PRODUCT_PAGE,
+} from "../../routes/routes";
 
 const CarouselMain = () => {
   return (
@@ -34,9 +37,12 @@ const CarouselMain = () => {
           />
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
-              Imagen de{" "}
-              <a href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais">
-                Freepik
+              <a
+                href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Imagen de freepik
               </a>
             </Typography>
           </div>
@@ -60,14 +66,20 @@ const CarouselMain = () => {
             }
             image={atbionanoProductBionanoaxus}
             messageButton={"Conoce nuestros productos"}
-            navigateRoute={ROUTE_PRODUCTS_PAGE}
+            navigateRoute={ROUTE_BIONANOAXUS_PRODUCT_PAGE}
           />
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
-              <a href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm#query=background%20green&position=38&from_view=search&track=ais">
-                Imagen de pikisuperstar
-              </a>{" "}
-              en Freepik
+              <div>
+                <a
+                  href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Imagen de pikisuperstar
+                </a>{" "}
+                en Freepik
+              </div>
             </Typography>
           </div>
         </div>
