@@ -5,7 +5,7 @@ import {
   ROUTE_SECTION_PARTNERS,
   ROUTE_SECTION_PROCESS,
   ROUTE_SECTION_CONTACT,
-} from "../../routes/routes";
+} from "routes/routes";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
