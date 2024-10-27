@@ -66,27 +66,33 @@ const BionanoaxusProductPage = () => {
           title={ApplicationsMessages.cosecha.title}
           description={ApplicationsMessages.cosecha.description}
           imagePath={ApplicationsMessages.cosecha.imagePath}
+          credits={ApplicationsMessages.cosecha.credits}
         />
         <ApplicationProducts
           title={ApplicationsMessages.poscosecha.title}
           description={ApplicationsMessages.poscosecha.description}
           imagePath={ApplicationsMessages.poscosecha.imagePath}
           isReadMoreOption={true}
+          urlLink="https://elpalmicultor.com/biomasa-palma-reducir-crecimiento-microorganismos/"
+          credits={ApplicationsMessages.poscosecha.credits}
         />
         <ApplicationProducts
           title={ApplicationsMessages.pecuario.title}
           description={ApplicationsMessages.pecuario.description}
           imagePath={ApplicationsMessages.pecuario.imagePath}
+          credits={ApplicationsMessages.pecuario.credits}
         />
         <ApplicationProducts
           title={ApplicationsMessages.colchones.title}
           description={ApplicationsMessages.colchones.description}
           imagePath={ApplicationsMessages.colchones.imagePath}
+          credits={ApplicationsMessages.colchones.credits}
         />
         <ApplicationProducts
           title={ApplicationsMessages.construccion.title}
           description={ApplicationsMessages.construccion.description}
           imagePath={ApplicationsMessages.construccion.imagePath}
+          credits={ApplicationsMessages.construccion.credits}
         />
       </div>
 

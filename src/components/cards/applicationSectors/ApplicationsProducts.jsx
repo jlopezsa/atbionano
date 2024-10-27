@@ -13,7 +13,8 @@ export const ApplicationProducts = ({
   imagePath = "",
   credits = "",
   children,
-  isReadMoreOption = false
+  isReadMoreOption = false,
+  urlLink = ""
 }) => {
   return (
     <Card className="mt-6 w-96 m-10 hover:shadow-[6px_7px_20px_1px_rgba(115,115,115,1)] ease-in duration-200">
@@ -26,8 +27,7 @@ export const ApplicationProducts = ({
           <div>{children}</div>
         </CardHeader>
       )}
-
-      <Typography variant="small">{credits}</Typography>
+      <Typography variant="small" className="text-right pr-4">{credits}</Typography>
       <CardBody className="max-h-40 min-h-40 h-40">
         <Typography variant="h5" color="black" className="mb-2">
           {title}
@@ -35,8 +35,7 @@ export const ApplicationProducts = ({
         <Typography color="black">{description}</Typography>
       </CardBody>
       <CardFooter className="p-4 bottom-0">
-      {/* {isReadMoreOption && <a className="m-0 p-0" href="https://elpalmicultor.com/biomasa-palma-reducir-crecimiento-microorganismos/">Conoce mas </a>} */}
-      {isReadMoreOption && <ButtonLink message={"Conoce más"} urlLink={"https://elpalmicultor.com/biomasa-palma-reducir-crecimiento-microorganismos/"}/>}
+      {isReadMoreOption && <ButtonLink message={"Conoce más"} urlLink={urlLink}/>}
       </CardFooter>
     </Card>
   );

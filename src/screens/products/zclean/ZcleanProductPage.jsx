@@ -121,68 +121,6 @@ const ZcleanProductPage = () => {
 
       <div class="my-10"></div>
 
-      <section>
-        <div class="text-center">
-          <Typography variant="h2">Adquisición de productos</Typography>
-        </div>
-
-        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center justify-center">
-          <div class="sm:w-1/4">
-            <Typography variant="h4">De mercado</Typography>
-          </div>
-          <div class="w-3/4">
-            <dl class="text-base mt-5 list-disc">
-              <dt>
-                <Typography variant="h5">BIOINSUMOS</Typography>
-              </dt>
-              <dd>
-                - Ventas 2021: 5.607.593,4 Kg y 730.644 L. Tasa de crecimiento
-                interanual promedio: 29,56% para los bioinsumos sólidos y 15,91%
-                para los líquidos
-              </dd>
-              <dt>
-                <Typography variant="h5">PECUARIO</Typography>
-              </dt>
-              <dd>
-                - Con un mercado potencial de $ 215.217.692 millones de pesos,
-                un 95,7% alcanzable puesto que corresponde con aves de predios
-                tecnificados. *Numero de aves en Colombia: 45’782,312
-              </dd>
-              <dt>
-                <Typography variant="h5">MANUFACTURA (COLCHONES)</Typography>
-              </dt>
-              <dd>
-                - Una cuota de mercado aproximada del 12%; en ese sentido,
-                considerando que de las validaciones efectuadas se estima un
-                consumo del productos asociado a la Tecnología (Bionanoaxus) de
-                10 a 16 litros por mes eso supondría que a nivel de industria la
-                demanda potencial podría estar en un rango, de por lo menos,
-                unos 84 a 133 litros por mes.
-              </dd>
-            </dl>
-          </div>
-        </div>
-
-        <div class="my-10"></div>
-
-        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center align-middle">
-          <div class="sm:w-1/4">
-            <Typography variant="h4">Para el negocio</Typography>
-          </div>
-          <div class="w-3/4">
-            <ul class="text-base">
-              <li>
-                Eficiencia del 99.99% en{' '}
-                <span class="italic">
-                  Pseudomonas sp, Salmonella sp, E. coli, Bacillus sp, Fusarium
-                  oxysporum, Botrytis sp
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <div class="my-20"></div>
     </div>
   );
