@@ -1,4 +1,4 @@
-import CarouselMain from "../carouselMain/CarouselMain";
+import CarouselMain from "components/carouselMain/CarouselMain";
 
 const Slides = () => {
   return (

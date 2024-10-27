@@ -2,13 +2,14 @@
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
 import { Typography } from "@material-tailwind/react";
-import bionanoaxusPetri from "../../images/products/petri.jpeg";
-import circleVinheta from "../../images/icons/circle-vinheta.jpeg";
-import ApplicationSectors from "../../components/cards/applicationSectors/ApplicationSectors";
-import { ApplicationsMessages } from "../../configs/applicationsMessages";
-import ItemListWithBackground from "../../components/cards/itemListWithBackground/ItemListWithBackground";
+import bionanoaxusPetri from "images/products/petri.jpeg";
+import circleVinheta from "images/icons/circle-vinheta.jpeg";
+import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
+import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
+import { ApplicationsMessages } from "configs/applicationsMessages";
+import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
 
-const ProductsPage = () => {
+const BionanoaxusProductPage = () => {
   return (
     <div class="h-full mt-[80px]">
       <div class="w-[100vw]">
@@ -32,20 +33,19 @@ const ProductsPage = () => {
             </a>
           </Typography>
           <div class="w-full h-full flex justify-center items-center">
-            <p class="text-6xl sm:text-7xl font-bold text-white">Bionanoaxus</p>
+            <p class="text-6xl sm:text-7xl font-bold text-white">
+              {BionanoaxusProductMessages.title}
+            </p>
           </div>
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
           <div class="w-1/2 flex flex-col justify-center items-center">
             <div style={{ textAlign: "center" }}>
-              <Typography variant="h3">Producto bionanotecnologico</Typography>
+              <Typography variant="h3">Producto bionanotecnológico</Typography>
             </div>
             <div style={{ textAlign: "center" }}>
               <Typography variant="lead">
-                Alternativa ecológica a las composiciones antimicrobianas
-                tradicionales de especial interés para el tratamiento de agentes
-                patógenos de la industria agrícola, así como para desinfección
-                de múltiples materiales en la industria de alimentos y textil.
+                {BionanoaxusProductMessages.description}
               </Typography>
             </div>
           </div>
@@ -61,32 +61,40 @@ const ProductsPage = () => {
           Sectores de aplicación
         </Typography>
       </div>
-      {/* <div class="bg-gradient-to-b from-green-50 to-green-900 bg-fixed"> // TODO: verificar si se deja el fondo verde */}
-      <div class="max-w-screen-xl mx-auto w-[100vw]">
-        <div class="flex flex-row flex-wrap justify-center items-center">
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.cosecha}
-          />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.poscosecha}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.pecuario}
-          />
-          <ApplicationSectors
-            isFigureTop={false}
-            {...ApplicationsMessages.colchones}
-          />
-          <ApplicationSectors
-            isFigureTop={true}
-            {...ApplicationsMessages.construccion}
-          />
-        </div>
+      <div className="flex flex-row flex-wrap justify-center">
+        <ApplicationProducts
+          title={ApplicationsMessages.cosecha.title}
+          description={ApplicationsMessages.cosecha.description}
+          imagePath={ApplicationsMessages.cosecha.imagePath}
+          credits={ApplicationsMessages.cosecha.credits}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.poscosecha.title}
+          description={ApplicationsMessages.poscosecha.description}
+          imagePath={ApplicationsMessages.poscosecha.imagePath}
+          isReadMoreOption={true}
+          urlLink="https://elpalmicultor.com/biomasa-palma-reducir-crecimiento-microorganismos/"
+          credits={ApplicationsMessages.poscosecha.credits}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.pecuario.title}
+          description={ApplicationsMessages.pecuario.description}
+          imagePath={ApplicationsMessages.pecuario.imagePath}
+          credits={ApplicationsMessages.pecuario.credits}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.colchones.title}
+          description={ApplicationsMessages.colchones.description}
+          imagePath={ApplicationsMessages.colchones.imagePath}
+          credits={ApplicationsMessages.colchones.credits}
+        />
+        <ApplicationProducts
+          title={ApplicationsMessages.construccion.title}
+          description={ApplicationsMessages.construccion.description}
+          imagePath={ApplicationsMessages.construccion.imagePath}
+          credits={ApplicationsMessages.construccion.credits}
+        />
       </div>
-      {/* </div> */}
 
       <div class="my-10"></div>
 
@@ -199,4 +207,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default BionanoaxusProductPage;

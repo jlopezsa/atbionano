@@ -1,4 +1,4 @@
-import Slides from "../../components/slides/Slides";
+import Slides from "components/slides/Slides";
 import ContainerKnowUs from "./ContainerKnowUs";
 import ContainerCompanies from "./ContainerCompanies";
 import ContainerCallProccess from "./ContainerCallProccess";
