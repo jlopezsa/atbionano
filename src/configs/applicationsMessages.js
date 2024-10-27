@@ -13,7 +13,7 @@ export const ApplicationsMessages = {
   },
   poscosecha: {
     imagePath: `${imagePosCosecha}`,
-    description: "Poscosecha, como biopesticida.",
+    description: "Poscosecha, como biopesticida. Residuos de palma.",
     credits: "https://ecosphairacolombia.com/",
     title: "Poscosecha",
   },

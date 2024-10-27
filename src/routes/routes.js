@@ -9,6 +9,6 @@ export const ROUTE_SECTION_CONTACT = "contact";
 export const ROUTE_PRODUCTS = "/products";
 
 export const ROUTE_BIONANOAXUS_PRODUCT_PAGE = "/products/bionanoaxus";
-export const ROUTE_ZCLEAN_PRODUCT_PAGE = "/products/z-clean";
+export const ROUTE_ZCLEAN_PRODUCT_PAGE = "/products/z-klean";
 
 export const ROUTE_PATENT_PAGE = "/technology/patent";

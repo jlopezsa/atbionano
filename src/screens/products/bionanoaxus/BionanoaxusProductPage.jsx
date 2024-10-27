@@ -71,6 +71,7 @@ const BionanoaxusProductPage = () => {
           title={ApplicationsMessages.poscosecha.title}
           description={ApplicationsMessages.poscosecha.description}
           imagePath={ApplicationsMessages.poscosecha.imagePath}
+          isReadMoreOption={true}
         />
         <ApplicationProducts
           title={ApplicationsMessages.pecuario.title}

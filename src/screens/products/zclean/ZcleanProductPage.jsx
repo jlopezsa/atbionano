@@ -1,13 +1,13 @@
 // https://www.material-tailwind.com/docs/react/typography
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
-import { Typography } from "@material-tailwind/react";
-import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg";
-import circleVinheta from "images/icons/circle-vinheta.jpeg";
-import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
-import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
-import FruitsZKlean from "./images/Applications/FruitsZKlean";
-import { ZkleanMessages } from "./messages/zkleanMessages";
+import { Typography } from '@material-tailwind/react';
+import zcleanBackground from 'images/products/brooke-lark-08bOYnH_r_E-zclean.jpg';
+import circleVinheta from 'images/icons/circle-vinheta.jpeg';
+import { ApplicationProducts } from 'components/cards/applicationSectors/ApplicationsProducts';
+import ItemListWithBackground from 'components/cards/itemListWithBackground/ItemListWithBackground';
+import FruitsZKlean from './images/Applications/FruitsZKlean';
+import { ZkleanMessages } from './messages/zkleanMessages';
 
 const ZcleanProductPage = () => {
   return (
@@ -17,9 +17,9 @@ const ZcleanProductPage = () => {
           class="w-full h-[400px] bg-fixed"
           style={{
             backgroundImage: `url(${zcleanBackground})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
           }}
         >
           <Typography variant="small">
@@ -35,12 +35,12 @@ const ZcleanProductPage = () => {
         </div>
         <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
           <div class="w-1/2 flex flex-col justify-center items-center">
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: 'center' }}>
               <Typography variant="h3">
                 {ZkleanMessages.mainContent.subtitle}
               </Typography>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: 'center' }}>
               <Typography variant="lead">
                 {ZkleanMessages.mainContent.paragraphOne}
               </Typography>
@@ -92,20 +92,20 @@ const ZcleanProductPage = () => {
         <div class="grid grid-rows-4 grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-2 px-10">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={"No oxida superficies"}
+            description={'No oxida superficies'}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={"No genera gases"}
+            description={'No genera gases'}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={"No irrita la piel"}
+            description={'No irrita la piel'}
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
             description={
-              "Genera un sistema de biocompatibilidad al ser de síntesis biológica."
+              'Genera un sistema de biocompatibilidad al ser de síntesis biológica.'
             }
           />
         </div>
@@ -113,7 +113,7 @@ const ZcleanProductPage = () => {
           <Typography variant="small">
             <a href="https://www.freepik.com/author/myriammira">
               Image by myriammira
-            </a>{" "}
+            </a>{' '}
             on Freepik
           </Typography>
         </div>
@@ -172,7 +172,7 @@ const ZcleanProductPage = () => {
           <div class="w-3/4">
             <ul class="text-base">
               <li>
-                Eficiencia del 99.99% en{" "}
+                Eficiencia del 99.99% en{' '}
                 <span class="italic">
                   Pseudomonas sp, Salmonella sp, E. coli, Bacillus sp, Fusarium
                   oxysporum, Botrytis sp
