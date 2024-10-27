@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
-import imagePatent from "../../images/patent/skye-studios-NDLLFxTELrU-patent.jpeg";
-import bionanoaxusLabelImage from "../../images/atbionano/bionanoaxus-label.jpeg";
+import imagePatent from "images/patent/skye-studios-NDLLFxTELrU-patent.jpeg";
+import bionanoaxusLabelImage from "images/atbionano/bionanoaxus-label.jpeg";
 
 const PatentPage = () => {
   return (
@@ -15,12 +15,20 @@ const PatentPage = () => {
         }}
       >
         <Typography variant="small">
-          Foto de{" "}
-          <a href="https://unsplash.com/es/@skyestudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Foto de:
+          <a
+            href="https://unsplash.com/es/@skyestudios?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Skye Studios
-          </a>{" "}
-          en{" "}
-          <a href="https://unsplash.com/es/fotos/NDLLFxTELrU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          </a>
+          , en:
+          <a
+            href="https://unsplash.com/es/fotos/NDLLFxTELrU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Unsplash
           </a>
         </Typography>
