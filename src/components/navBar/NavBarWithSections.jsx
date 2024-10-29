@@ -65,27 +65,30 @@ const navListMenuItemsProducts = [
   {
     title: "Z-Klean",
     description:
-      "Alternativa ecológica a la limpieza de superficies y productos.", // TODO: Definir descripción breve
+      "Alternativa ecológica a la limpieza de superficies y productos.",
     linkTo: ROUTE_ZCLEAN_PRODUCT_PAGE,
   },
 ];
 
-function NavList() {
+function NavList( {onSelect} ) {
   return (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
       <NavListMenu
         sectionName={"Conocenos"}
         itemsList={navListMenuItemsKnowUs}
         linkPage={ROUTE_HOME}
+        onSelect={onSelect}
       />
       <NavListMenu
         sectionName={"Tecnología"}
         itemsList={navListMenuItemsTech}
+        onSelect={onSelect}
         // linkPage={ROUTE_PATENT_PAGE}
       />
       <NavListMenu
         sectionName={"Productos"}
         itemsList={navListMenuItemsProducts}
+        onSelect={onSelect}
         // linkPage={ROUTE_PRODUCTS}
       />
     </ul>
@@ -95,7 +98,7 @@ function NavList() {
 const NavBarWithSections = () => {
   const [isNavOpen, setIsNavOpen] = React.useState(false);
 
-  const toggleIsNavOpen = () => setIsNavOpen((cur) => !cur);
+  const toggleIsNavOpen = () => setIsNavOpen((current) => !current);
 
   React.useEffect(() => {
     window.addEventListener(
@@ -121,7 +124,9 @@ const NavBarWithSections = () => {
           size="sm"
           color="blue-gray"
           variant="text"
-          onClick={toggleIsNavOpen}
+          onClick={()=>{
+            toggleIsNavOpen();
+          }}
           className="ml-auto mr-2 lg:hidden"
         >
           <Bars2Icon className="h-6 w-6" />
@@ -130,9 +135,9 @@ const NavBarWithSections = () => {
       </div>
       <Collapse
         open={isNavOpen}
-        className="overflow-scroll h-screen text-blue-gray-100"
+        className="h-screen w-screen text-blue-gray-100"
       >
-        <NavList />
+        <NavList onSelect={toggleIsNavOpen}/>
       </Collapse>
     </Navbar>
   );
