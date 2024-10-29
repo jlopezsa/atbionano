@@ -129,7 +129,7 @@ const NavBarWithSections = () => {
           }}
           className="ml-auto mr-2 lg:hidden"
         >
-          <Bars2Icon className="h-6 w-6" />
+          <Bars2Icon className="h-6 w-6 text-blue-gray-100" />
         </IconButton>
         {/* <ProfileMenu /> */}
       </div>
