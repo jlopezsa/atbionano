@@ -23,14 +23,15 @@ const mainContent = {
   subtitle: "Producto bionanotecnológico - línea hogar",
   paragraphOne:
     "Un potente biocida natural, este producto de desinfección está diseñado para actuar eficazmente contra los principales microorganismos, eliminando bacterias como E. coli y Salmonella spp. Es ideal para mantener la seguridad alimentaria en el hogar y en entornos profesionales, con aplicaciones versátiles en diversas áreas.",
-};
+}
 
 const applicationFruits = {
   title: "Frutas y Verduras",
-  description: "Desinfecta frutas y verduras, prolonga su frescura y disfruta ensaladas seguras con alimentos sin cocción.",
+  description:
+    "Desinfecta frutas y verduras, prolonga su frescura y disfruta ensaladas seguras con alimentos sin cocción.",
   imagePath: "atbionano/z-klean-application-fruits.jpg",
   imageCredits: (
-    <div class="w-full flex justify-end pr-4">
+    <div class="flex w-full justify-end pr-4">
       Foto de:
       <a
         href="https://unsplash.com/es/@lotusdnp?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -49,7 +50,7 @@ const applicationFruits = {
       </a>
     </div>
   ),
-};
+}
 
 const applicationSurface = {
   title: "Superficies y utensilios de cocina",
@@ -57,7 +58,7 @@ const applicationSurface = {
     "Protege cocinas y alimentos eliminando microorganismos potencialmente.",
   imagePath: "atbionano/z-klean-application-table-surface",
   imageCredits: (
-    <div class="w-full flex justify-end pr-4">
+    <div class="flex w-full justify-end pr-4">
       Foto de:{" "}
       <a
         href="https://unsplash.com/es/@dirtjoy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -76,10 +77,10 @@ const applicationSurface = {
       </a>
     </div>
   ),
-};
+}
 
 export const ZkleanMessages = {
   mainContent,
   applicationFruits,
   applicationSurface,
-};
+}
