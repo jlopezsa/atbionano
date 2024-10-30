@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal"
 import { ROUTE_SECTION_KNOW_US } from "routes/routes"
 import { InformativeMessages } from "configs/InformativeMessages"
 import { Typography } from "@material-tailwind/react"
+import KnowUs from "components/cards/knowUs/KnowUs"
 
 const ContainerKnowUs = () => {
   return (
