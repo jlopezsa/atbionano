@@ -8,7 +8,7 @@ const ContainerKnowUs = () => {
   return (
     <div id={ROUTE_SECTION_KNOW_US}>
       <Typography variant="h3" className="pt-[80px] text-center">
-        Propósito empresarial!
+        ¡Propósito empresarial!
       </Typography>
       <div class="relative -z-10 flex flex-row flex-wrap justify-around">
         <Fade cascade triggerOnce>
