@@ -17,6 +17,7 @@ const NavListMenu = ({
   sectionName,
   itemsList = [{ title: "", description: "", linkTo: "" }],
   linkPage,
+  onSelect = ()=>{},
 }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -25,8 +26,8 @@ const NavListMenu = ({
   const renderItems = itemsList.map(({ title, description, linkTo }) => {
     if (linkPage === "/") {
       return (
-        <a href={`${linkPage}#${linkTo}`} key={title}>
-          <MenuItem className="">
+        <a href={`${linkPage}#${linkTo}`} key={title} onClick={onSelect}>
+          <MenuItem className="w-4/5 sm:w-full">
             <Typography
               variant="paragraph"
               color="text-blue-gray-200 lg:gray"
@@ -42,8 +43,13 @@ const NavListMenu = ({
       );
     } else {
       return (
-        <button onClick={() => navigate(linkTo)} key={title}>
-          <MenuItem className="">
+        <button 
+          onClick={() => {
+            navigate(linkTo); 
+            onSelect();
+            }} 
+          key={title}>
+          <MenuItem className="w-4/5 sm:w-full">
             <Typography
               variant="paragraph"
               color="text-blue-gray-200 lg:gray"

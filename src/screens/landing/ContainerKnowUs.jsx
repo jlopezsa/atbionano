@@ -1,16 +1,16 @@
-import { Fade } from "react-awesome-reveal";
-import KnowUs from "components/cards/knowUs/KnowUs";
-import { ROUTE_SECTION_KNOW_US } from "routes/routes";
-import { InformativeMessages } from "configs/InformativeMessages";
-import { Typography } from "@material-tailwind/react";
+import { Fade } from "react-awesome-reveal"
+import { ROUTE_SECTION_KNOW_US } from "routes/routes"
+import { InformativeMessages } from "configs/InformativeMessages"
+import { Typography } from "@material-tailwind/react"
+import KnowUs from "components/cards/knowUs/KnowUs"
 
 const ContainerKnowUs = () => {
   return (
     <div id={ROUTE_SECTION_KNOW_US}>
-      <Typography variant="h3" className="text-center pt-[80px]">
-        Propósito empresarial!
+      <Typography variant="h3" className="pt-[80px] text-center">
+        ¡Propósito empresarial!
       </Typography>
-      <div class="flex flex-row justify-around flex-wrap relative -z-10">
+      <div class="relative -z-10 flex flex-row flex-wrap justify-around">
         <Fade cascade triggerOnce>
           <KnowUs props={InformativeMessages.quienesSomos} />
           <KnowUs props={InformativeMessages.queHacemos} />
@@ -18,7 +18,7 @@ const ContainerKnowUs = () => {
         </Fade>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContainerKnowUs;
+export default ContainerKnowUs
