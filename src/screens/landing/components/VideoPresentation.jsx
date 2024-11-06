@@ -42,12 +42,20 @@ const VideoPresentation = () => {
             nuestro producto desde la formulación hasta la producción de lotes a
             gran escala.
           </Typography>
-          <div className="mx-8 mt-3 rounded-md border-2 border-solid shadow-[7px_4px_6px_0px_rgba(0,_0,_0,_0.1)]">
+          <div className="mx-8 mt-3 rounded-md border-2 border-solid border-green-100 shadow-[7px_4px_6px_0px_rgba(0,_0,_0,_0.1)]">
             <Typography variant="lead" className="text-center md:px-2">
               ¡Acompáñanos en este video para conocer el proceso que nos ha
               llevado a desarrollar una solución innovadora que contribuye a un
-              futuro más sostenible, en línea con los objetivos de la Agenda
-              2030!
+              futuro más sostenible, en línea con los objetivos de la{" "}
+              <a
+                href="https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/"
+                className="text-secondary underline hover:text-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Agenda 2030
+              </a>
+              !
             </Typography>
           </div>
         </div>
