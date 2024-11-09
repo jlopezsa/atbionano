@@ -18,7 +18,7 @@ export const CardHistory = ({ props }) => {
     >
       <div className="mb-4 w-11/12 rounded-lg border border-gray-100 bg-green-50 p-5 dark:border-gray-700 dark:bg-gray-800 md:w-3/4">
         <time
-          datetime={new Date(referenceDate)}
+          dateTime={new Date(referenceDate)}
           className="text-lg font-semibold text-gray-900 dark:text-white"
         >
           <Typography variant="h4" color="blue-gray" className="mb-2">
