@@ -4,6 +4,7 @@ import ContainerCompanies from "./ContainerCompanies"
 import ContainerCallProccess from "./ContainerCallProccess"
 import ContainerTeam from "./ContainerTeam"
 import VideoPresentation from "./components/VideoPresentation"
+import { ContainerHistoryLine } from "./ContainerHistoryLine"
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <ContainerTeam />
       <ContainerCompanies />
       <ContainerCallProccess />
+      <ContainerHistoryLine />
       <div class="h-[100px]"></div>
     </div>
   )
