@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react"
-import { CardHistory } from "./components/CardHistory"
 import imagePatente from "../../images/callsAndProccesses/logo-patente.png"
+import { CardHistory } from "./components/CardHistory"
 
 export const ContainerHistoryLine = () => {
   const exampleData = [
@@ -10,7 +10,7 @@ export const ContainerHistoryLine = () => {
       actionsByYear: [
         {
           title: "Concepción de la idea",
-          description: "Alguna descripción",
+          description: "Identificamos una oportunidad en el mercado y desarrollamos una propuesta de valor innovadora, alineada con las necesidades del sector y nuestra visión estratégica.",
           imagePath: imagePatente,
         },
       ],
@@ -21,12 +21,12 @@ export const ContainerHistoryLine = () => {
       actionsByYear: [
         {
           title: "Pruebas invitro",
-          description: "Alguna descripción",
+          description: "Validamos la eficacia y seguridad de nuestra solución en condiciones controladas, obteniendo resultados clave que respaldan su potencial antes de su aplicación en campo.",
           imagePath: imagePatente,
         },
         {
           title: "Pruebas en campo",
-          description: "Alguna descripción para las pruebas en campo",
+          description: "Implementamos la solución en entornos reales para evaluar su desempeño, adaptabilidad y resultados en condiciones operativas, fortaleciendo su validación técnica y comercial.",
           imagePath: imagePatente,
         },
       ],
@@ -37,7 +37,7 @@ export const ContainerHistoryLine = () => {
       actionsByYear: [
         {
           title: "Patente",
-          description: "Alguna descripción",
+          description: "Protegimos nuestra innovación mediante el registro de patente, asegurando la propiedad intelectual y fortaleciendo la competitividad y proyección comercial del proyecto.",
           imagePath: imagePatente,
         },
       ],
@@ -48,7 +48,7 @@ export const ContainerHistoryLine = () => {
       actionsByYear: [
         {
           title: "Validación del producto",
-          description: "Alguna descripción",
+          description: "Comprobamos la efectividad, estabilidad y aceptación del producto final, garantizando su calidad y cumplimiento con los estándares del mercado.",
           imagePath: imagePatente,
         },
       ],
@@ -59,7 +59,7 @@ export const ContainerHistoryLine = () => {
       actionsByYear: [
         {
           title: "Venta del producto",
-          description: "Alguna descripción",
+          description: "Iniciamos la comercialización, posicionando nuestra solución en el mercado y generando impacto a través de alianzas estratégicas y canales de distribución efectivos.",
           imagePath: imagePatente,
         },
       ],

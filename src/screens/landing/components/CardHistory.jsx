@@ -16,7 +16,7 @@ export const CardHistory = ({ props }) => {
       style={{ scale: scrollYProgress, opacity: scrollYProgress }}
       className="flex justify-center"
     >
-      <div className="mb-4 w-11/12 rounded-lg border border-gray-100 bg-green-50 p-5 dark:border-gray-700 dark:bg-gray-800 md:w-3/4">
+      <div className="mb-4 w-11/12 rounded-lg border border-gray-100 bg-green-50 p-5 dark:border-gray-700 dark:bg-gray-800 md:w-2/4">
         <time
           dateTime={new Date(referenceDate)}
           className="text-lg font-semibold text-gray-900 dark:text-white"
