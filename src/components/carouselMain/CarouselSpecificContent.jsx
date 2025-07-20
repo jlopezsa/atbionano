@@ -1,5 +1,5 @@
-import { Typography } from "@material-tailwind/react";
-import { ButtonLight } from "components/buttons/ButtonLight/ButtonLight";
+import { Typography } from "@material-tailwind/react"
+import { ButtonLight } from "components/buttons/ButtonLight/ButtonLight"
 
 const CarouselSpecificContent = ({
   title,
@@ -10,8 +10,8 @@ const CarouselSpecificContent = ({
   navigateRoute,
 }) => {
   return (
-    <div class="absolute max-w-screen-2xl flex flex-wrap items-center w-[80%] top-[15%] text-white">
-      <div class="z-10 w-full h-28">
+    <div class="absolute top-[5%] flex w-[80%] max-w-screen-2xl flex-wrap items-center text-white md:top-[15%]">
+      <div class="z-10 h-28 w-full">
         <Typography variant="h3">
           <strong>{title}</strong>
         </Typography>
@@ -25,17 +25,17 @@ const CarouselSpecificContent = ({
               <strong>{topMessage}</strong>
             </Typography>
           </div>
-          <div class="text-lg  text-white">
+          <div class="text-lg text-white">
             {/* <p>{bottomMessage}</p> */}
             <Typography variant="h5">{bottomMessage}</Typography>
           </div>
         </div>
-        <div class="w-[40%] min-w-[250px] min-h-[200px] flex items-center">
+        <div class="flex min-h-[200px] w-[40%] min-w-[250px] items-center">
           <img src={image} alt="atbionano patente" class="rounded-xl" />
         </div>
       </div>
 
-      <div class="z-10 w-full h-16 flex items-center justify-center sm:justify-start">
+      <div class="z-10 flex h-16 w-full items-center justify-center sm:justify-start">
         <ButtonLight
           id={`${messageButton.replace(/\s+/g, "-")}-button`}
           message={messageButton}
@@ -43,7 +43,7 @@ const CarouselSpecificContent = ({
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CarouselSpecificContent;
+export default CarouselSpecificContent
