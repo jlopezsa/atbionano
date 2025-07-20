@@ -6,8 +6,8 @@ const CardHistoryFigures = ({ imagePath }) => {
 
   const { handleImageLoad, img, isLoading } = useCloudinary({
     imagePath: imagePath,
-    heighImage: 200,
-    widthImage: 300,
+    heighImage: 210,
+    widthImage: 350,
   })
 
   return (

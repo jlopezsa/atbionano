@@ -6,7 +6,7 @@ export const ContainerHistoryLine = () => {
   const exampleData = [
     {
       id: uuidv4(),
-      date: "Enero 2019",
+      date: "2019",
       referenceDate: "2019-01-10",
       actionsByYear: [
         {
@@ -20,7 +20,7 @@ export const ContainerHistoryLine = () => {
     },
     {
       id: uuidv4(),
-      date: "Enero 2020",
+      date: "2020",
       referenceDate: "2020-01-10",
       actionsByYear: [
         {
@@ -34,50 +34,50 @@ export const ContainerHistoryLine = () => {
           id: uuidv4(),
           title: "Pruebas en campo",
           description:
-            "Implementamos la solución en entornos reales para evaluar su desempeño, adaptabilidad y resultados en condiciones operativas, fortaleciendo su validación técnica y comercial.",
+            "Llevamos nuestra solución del laboratorio al entorno operativo, implementándola en empresas como Capiro (industria agrícola), Coatings (industria de recubrimientos). Evaluamos su desempeño, adaptabilidad y resultados en condiciones reales, consolidando su validación técnica y abriendo camino para su adopción comercial.",
           imagePath: "atbionano/field_test_s7hhza",
         },
       ],
     },
     {
       id: uuidv4(),
-      date: "Enero 2021",
+      date: "2021",
       referenceDate: "2021-01-10",
       actionsByYear: [
         {
           id: uuidv4(),
           title: "Patente",
           description:
-            "Protegimos nuestra innovación mediante el registro de patente, asegurando la propiedad intelectual y fortaleciendo la competitividad y proyección comercial del proyecto.",
-          imagePath: "atbionano/begin_microscopy_eqkhhr",
+            "Dimos un paso clave en nuestra estrategia de sostenibilidad y liderazgo tecnológico: registramos la patente de nuestra solución, con el apoyo de Tecnova, Ministerio de Ciencia y Tecnología (programa Crearlo no es suficiente), asegurando su propiedad intelectual y fortaleciendo su posicionamiento en el mercado nacional.",
+          imagePath: "atbionano/mintic-crearlo-no-es-suficiente_ozg7nn",
         },
       ],
     },
     {
       id: uuidv4(),
-      date: "Enero 2022 - 2024",
+      date: "2022 - 2023",
       referenceDate: "2022-01-10",
       actionsByYear: [
         {
           id: uuidv4(),
           title: "Validación del producto",
           description:
-            "Comprobamos la efectividad, estabilidad y aceptación del producto final, garantizando su calidad y cumplimiento con los estándares del mercado.",
-          imagePath: "atbionano/begin_microscopy_eqkhhr",
+            "Consolidamos nuestro desarrollo al comprobar la efectividad, estabilidad y aceptación del producto en su versión final. A través de pruebas técnicas, sensoriales y de desempeño, garantizamos su calidad, seguridad y cumplimiento con los estándares exigidos por el mercado, fortaleciendo así su potencial de escalabilidad y comercialización.",
+          imagePath: "atbionano/validation-ai-product_01",
         },
       ],
     },
     {
       id: uuidv4(),
-      date: "Enero 2023 - 2024",
+      date: "2024 - 2025",
       referenceDate: "2023-01-10",
       actionsByYear: [
         {
           id: uuidv4(),
           title: "Venta del producto",
           description:
-            "Iniciamos la comercialización, posicionando nuestra solución en el mercado y generando impacto a través de alianzas estratégicas y canales de distribución efectivos.",
-          imagePath: "atbionano/begin_microscopy_eqkhhr",
+            "Lanzamos al mercado nuestras soluciones Bionanoaxus (BNX) y Z-Klean, iniciando su distribución a través de alianzas estratégicas y canales efectivos. Este paso marca el comienzo de su introducción al mercado y del proceso de posicionamiento en los sectores objetivo, avanzando con una visión clara de innovación con propósito.",
+          imagePath: "atbionano/bionanoaxus-product-01",
         },
       ],
     },

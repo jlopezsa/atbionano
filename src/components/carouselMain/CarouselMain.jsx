@@ -1,10 +1,8 @@
-// import backgroundImageGreen from "images/background_green_geometric.jpg"
-import backgroundImageGreen from "images/main-background-2.jpg"
-// import backgroundImageBlack from "images/background_green_black.jpg";
 import { Carousel, Typography } from "@material-tailwind/react"
+import backgroundImageGreen from "images/ai-hierba-fresca.jpg"
 import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg"
 import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg"
-import backgroundImageBlack from "../../images/main-background.jpg"
+import backgroundImageBlack from "images/hierba-verde.jpg"
 import {
   ROUTE_BIONANOAXUS_PRODUCT_PAGE,
   ROUTE_PATENT_PAGE,
@@ -39,11 +37,11 @@ const CarouselMain = () => {
           <div class="absolute bottom-0 left-0">
             <Typography variant="paragraph">
               <a
-                href="https://www.freepik.es/vector-gratis/fondo-tecnologia-verde-degradado_21534796.htm#query=background%20green&position=10&from_view=search&track=ais"
+                href="https://www.freepik.es/foto-gratis/fondo-hierba-verde_26979058.htm#fromView=image_search_similar&page=1&position=0&uuid=9125a8e4-fb5b-4f19-9fa5-082687b9c678&query=naturaleza+pasto+rocio+fondo+verde"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Imagen de freepik
+                Diseñado por freepik
               </a>
             </Typography>
           </div>
@@ -73,26 +71,17 @@ const CarouselMain = () => {
             <Typography variant="paragraph">
               <div>
                 <a
-                  href="https://www.freepik.es/vector-gratis/fondo-geometrico-verde-abstracto_6072246.htm"
+                  href="https://www.freepik.es/imagen-ia-gratis/hierba-fresca-gotas-rocio-imagen-generada-ia_43066153.htm#fromView=image_search&page=4&position=1&uuid=bb1f7b6c-c33c-40cd-bade-72139a49fd88"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Imagen de pikisuperstar
-                </a>{" "}
-                en Freepik
+                  Imagen de Freepik
+                </a>
               </div>
             </Typography>
           </div>
         </div>
       </div>
-
-      {/* <div className="relative m-[0] p-[0] h-[700px] sm:h-[90vh]">
-        <img
-          src={backgroundImageGreenBlue}
-          alt="Colorful artwork"
-          className="h-full w-full object-cover"
-        />
-      </div> */}
     </Carousel>
   )
 }

@@ -11,7 +11,7 @@ const Companies = ({ props }) => {
           rel="noopener noreferrer"
         >
           <img
-            className="max-w-80 h-auto w-80 duration-200 ease-in hover:scale-105"
+            className="max-w-60 h-auto w-60 duration-200 ease-in hover:scale-105"
             src={props.imagePath}
             alt="logo"
           />

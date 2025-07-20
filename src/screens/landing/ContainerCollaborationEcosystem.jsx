@@ -1,22 +1,22 @@
 import { Typography } from "@material-tailwind/react"
 import Companies from "components/cards/companies/Companies"
-import { CompaniesMessages } from "configs/companiesMessages"
+import { CollaborationEcosystemMessages } from "configs/collaborationEcosystem"
 import { ROUTE_SECTION_PARTNERS } from "routes/routes"
 
 // Help to inifinite scroll
 // https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/
 
-const ContainerCompanies = () => {
+const ContainerCollaborationEcosystem = () => {
   const allCompanies = [
-    CompaniesMessages.company1,
-    CompaniesMessages.company2,
-    CompaniesMessages.company3,
-    CompaniesMessages.company4,
+    CollaborationEcosystemMessages.company1,
+    CollaborationEcosystemMessages.company2,
+    CollaborationEcosystemMessages.company3,
+    CollaborationEcosystemMessages.company4,
   ]
   return (
     <div id={ROUTE_SECTION_PARTNERS}>
       <Typography variant="h3" className="pt-[80px] text-center">
-        Empresas aliadas
+        Ecosistema de Colaborativo
       </Typography>
       <div className="inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         <ul class="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
@@ -37,4 +37,4 @@ const ContainerCompanies = () => {
   )
 }
 
-export default ContainerCompanies
+export default ContainerCollaborationEcosystem
