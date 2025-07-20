@@ -1,23 +1,24 @@
-import backgroundImageGreen from "images/background_green_geometric.jpg";
-import backgroundImageBlack from "images/background_green_black.jpg";
-// import backgroundImageBlack from "../../images/main-background.jpg";
-import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg";
-import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg";
-import { Carousel, Typography } from "@material-tailwind/react";
-import CarouselSpecificContent from "./CarouselSpecificContent";
+// import backgroundImageGreen from "images/background_green_geometric.jpg"
+import backgroundImageGreen from "images/main-background-2.jpg"
+// import backgroundImageBlack from "images/background_green_black.jpg";
+import { Carousel, Typography } from "@material-tailwind/react"
+import atbionanoPatenteHorizantal from "images/atbionano/atbionano-lab-erlen-meyer-edited.jpeg"
+import atbionanoProductBionanoaxus from "images/atbionano/bionanoaxus-product-edited.jpeg"
+import backgroundImageBlack from "../../images/main-background.jpg"
 import {
-  ROUTE_PATENT_PAGE,
   ROUTE_BIONANOAXUS_PRODUCT_PAGE,
-} from "../../routes/routes";
+  ROUTE_PATENT_PAGE,
+} from "../../routes/routes"
+import CarouselSpecificContent from "./CarouselSpecificContent"
 
 const CarouselMain = () => {
   return (
     <Carousel
-      className="relative rounded-sm w-[100%] z-0 mt-[80px]"
+      className="relative z-0 mt-[80px] w-[100%] rounded-sm"
       loop={true}
     >
       <div class="relative">
-        <div class="h-[90vh] min-h-[600px] flex flex-row justify-center">
+        <div class="flex h-[90vh] min-h-[600px] flex-row justify-center">
           <img
             src={backgroundImageBlack}
             alt="main background carousel"
@@ -50,7 +51,7 @@ const CarouselMain = () => {
       </div>
 
       <div className="relative">
-        <div class="h-[90vh] min-h-[600px] flex flex-row justify-center">
+        <div class="flex h-[90vh] min-h-[600px] flex-row justify-center">
           <img
             src={backgroundImageGreen}
             alt="Beautiful landscape"
@@ -93,7 +94,7 @@ const CarouselMain = () => {
         />
       </div> */}
     </Carousel>
-  );
-};
+  )
+}
 
-export default CarouselMain;
+export default CarouselMain
