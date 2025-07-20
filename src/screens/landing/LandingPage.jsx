@@ -1,9 +1,11 @@
 import Slides from "components/slides/Slides"
-import ContainerKnowUs from "./ContainerKnowUs"
-import ContainerCompanies from "./ContainerCompanies"
-import ContainerCallProccess from "./ContainerCallProccess"
-import ContainerTeam from "./ContainerTeam"
 import VideoPresentation from "./components/VideoPresentation"
+import ContainerCallProccess from "./ContainerCallProccess"
+import ContainerCollaborationEcosystem from "./ContainerCollaborationEcosystem"
+import ContainerCompanies from "./ContainerCompanies"
+import { ContainerHistoryLine } from "./ContainerHistoryLine"
+import ContainerKnowUs from "./ContainerKnowUs"
+import ContainerTeam from "./ContainerTeam"
 
 const LandingPage = () => {
   return (
@@ -13,7 +15,9 @@ const LandingPage = () => {
       <VideoPresentation />
       <ContainerTeam />
       <ContainerCompanies />
+      <ContainerCollaborationEcosystem />
       <ContainerCallProccess />
+      <ContainerHistoryLine />
       <div class="h-[100px]"></div>
     </div>
   )
