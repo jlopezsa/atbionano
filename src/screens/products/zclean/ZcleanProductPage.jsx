@@ -46,9 +46,9 @@ const ZcleanProductPage = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productLdJson) }}
       />
-      <div class="w-[100vw]">
+      <div class="w-full">
         <div
-          class="h-[400px] w-full bg-cover bg-fixed bg-center pt-10 sm:h-[600px]"
+          class="h-[400px] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]"
           style={{
             backgroundImage: `url(${zcleanBackground})`,
             backgroundSize: "cover",
@@ -62,14 +62,14 @@ const ZcleanProductPage = () => {
               {ZkleanMessages.mainContent.imageCredits}
             </div>
           </Typography>
-          <div class="flex h-full w-full flex-col items-center justify-evenly gap-4 px-6 text-center">
+          <div class="flex h-full w-full flex-col items-center justify-evenly text-center">
             <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               <Typography variant="paragraph" class="color text-base">
                 Producto bionanotecnológico — línea hogar
               </Typography>
             </p>
-            <h1 class="bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
+            <h1 class="w-full bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
               Z-KLEAN
             </h1>
             <div class="flex flex-wrap justify-center gap-3">
@@ -91,26 +91,28 @@ const ZcleanProductPage = () => {
             </div>
           </div>
         </div>
-        <section
-          class="mx-auto mt-10 flex max-w-screen-xl items-center justify-center"
-          aria-labelledby="zklean-subtitle"
-        >
-          <div class="flex w-1/2 flex-col items-center justify-center">
-            <div style={{ textAlign: "center" }}>
-              <Typography variant="h3">
-                <span id="zklean-subtitle">
-                  {ZkleanMessages.mainContent.subtitle}
-                </span>
-              </Typography>
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <Typography variant="lead">
-                {ZkleanMessages.mainContent.paragraphOne}
-              </Typography>
-            </div>
-          </div>
-        </section>
       </div>
+
+      <div class="my-20"></div>
+      <section
+        class="mx-auto mt-10 flex max-w-screen-2xl items-center justify-center"
+        aria-labelledby="zklean-subtitle"
+      >
+        <div class="flex w-1/2 flex-col items-center justify-center">
+          <div style={{ textAlign: "center" }}>
+            <Typography variant="h3">
+              <span id="zklean-subtitle">
+                {ZkleanMessages.mainContent.subtitle}
+              </span>
+            </Typography>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Typography variant="lead">
+              {ZkleanMessages.mainContent.paragraphOne}
+            </Typography>
+          </div>
+        </div>
+      </section>
 
       <div class="my-20"></div>
 
@@ -127,7 +129,7 @@ const ZcleanProductPage = () => {
         </Typography>
       </section>
       <section
-        class="fmx-auto w-[100vw]"
+        class="fmx-auto w-full"
         aria-label="Tarjetas de aplicaciones de Z-KLEAN"
       >
         <motion.div

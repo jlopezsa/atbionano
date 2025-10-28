@@ -1,20 +1,20 @@
 // https://www.material-tailwind.com/docs/react/typography
 // template: https://es.squarespace.com/plantillas/sackett-fluid-demo-es
 
-import { Typography } from "@material-tailwind/react";
-import bionanoaxusPetri from "images/products/petri.jpeg";
-import circleVinheta from "images/icons/circle-vinheta.jpeg";
-import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground";
-import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages";
-import { ApplicationsMessages } from "configs/applicationsMessages";
-import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts";
+import { Typography } from "@material-tailwind/react"
+import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts"
+import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground"
+import { ApplicationsMessages } from "configs/applicationsMessages"
+import circleVinheta from "images/icons/circle-vinheta.jpeg"
+import bionanoaxusPetri from "images/products/petri.jpeg"
+import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages"
 
 const BionanoaxusProductPage = () => {
   return (
-    <div class="h-full mt-[80px]">
-      <div class="w-[100vw]">
+    <div class="mt-[80px] h-full">
+      <div class="w-full">
         <div
-          class="w-full h-[400px] bg-fixed"
+          class="h-[400px] bg-fixed bg-center pt-10 sm:h-[600px]"
           style={{
             backgroundImage: `url(${bionanoaxusPetri})`,
             backgroundSize: "cover",
@@ -32,31 +32,32 @@ const BionanoaxusProductPage = () => {
               Unsplash
             </a>
           </Typography>
-          <div class="w-full h-full flex justify-center items-center">
-            <p class="text-6xl sm:text-7xl font-bold text-white">
+          <div class="flex h-full w-full items-center justify-center">
+            <p class="text-6xl font-bold text-white sm:text-7xl">
               {BionanoaxusProductMessages.title}
             </p>
           </div>
         </div>
-        <section class="flex mx-auto max-w-screen-xl items-center justify-center mt-10">
-          <div class="w-1/2 flex flex-col justify-center items-center">
-            <div style={{ textAlign: "center" }}>
-              <Typography variant="h3">Producto bionanotecnológico</Typography>
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <Typography variant="lead">
-                {BionanoaxusProductMessages.description}
-              </Typography>
-            </div>
-          </div>
-        </section>
       </div>
 
       <div class="my-20"></div>
 
+      <section class="mx-auto mt-10 flex max-w-screen-xl items-center justify-center">
+        <div class="flex w-1/2 flex-col items-center justify-center">
+          <div style={{ textAlign: "center" }}>
+            <Typography variant="h3">Producto bionanotecnológico</Typography>
+          </div>
+          <div style={{ textAlign: "center" }}>
+            <Typography variant="lead">
+              {BionanoaxusProductMessages.description}
+            </Typography>
+          </div>
+        </div>
+      </section>
+
       <div class="my-20"></div>
 
-      <div class="flex justify-center h-20">
+      <div class="flex h-20 justify-center">
         <Typography variant="h2" class="color text-base">
           Sectores de aplicación
         </Typography>
@@ -98,11 +99,11 @@ const BionanoaxusProductPage = () => {
 
       <div class="my-10"></div>
 
-      <section class="flex flex-col mx-auto max-w-screen-xl items-center justify-center">
+      <section class="mx-auto flex max-w-screen-xl flex-col items-center justify-center">
         <Typography variant="h2" class="color text-base">
           Beneficios
         </Typography>
-        <div class="grid grid-rows-4 grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-2 px-10">
+        <div class="grid grid-cols-1 grid-rows-4 px-10 sm:grid sm:grid-cols-2 sm:grid-rows-2">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
             description={
@@ -145,12 +146,12 @@ const BionanoaxusProductPage = () => {
           <Typography variant="h2">Oportunidades</Typography>
         </div>
 
-        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center justify-center">
+        <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center sm:flex-row">
           <div class="sm:w-1/4">
             <Typography variant="h4">De mercado</Typography>
           </div>
           <div class="w-3/4">
-            <dl class="text-base mt-5 list-disc">
+            <dl class="mt-5 list-disc text-base">
               <dt>
                 <Typography variant="h5">BIOINSUMOS</Typography>
               </dt>
@@ -184,7 +185,7 @@ const BionanoaxusProductPage = () => {
 
         <div class="my-10"></div>
 
-        <div class="flex flex-col sm:flex-row mx-auto max-w-screen-xl items-center align-middle">
+        <div class="mx-auto flex max-w-screen-xl flex-col items-center align-middle sm:flex-row">
           <div class="sm:w-1/4">
             <Typography variant="h4">Para el negocio</Typography>
           </div>
@@ -204,7 +205,7 @@ const BionanoaxusProductPage = () => {
 
       <div class="my-20"></div>
     </div>
-  );
-};
+  )
+}
 
-export default BionanoaxusProductPage;
+export default BionanoaxusProductPage
