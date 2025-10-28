@@ -4,6 +4,7 @@
 import { Typography } from "@material-tailwind/react"
 import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts"
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground"
+import { motion } from "framer-motion"
 import circleVinheta from "images/icons/circle-vinheta.jpeg"
 import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg"
 import React from "react"
@@ -106,7 +107,13 @@ const ZcleanProductPage = () => {
         class="fmx-auto w-[100vw]"
         aria-label="Tarjetas de aplicaciones de Z-KLEAN"
       >
-        <div class="flex flex-row flex-wrap justify-evenly">
+        <motion.div
+          className="flex flex-row flex-wrap justify-evenly"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <ApplicationProducts
             description={ZkleanMessages.applicationFruits.description}
             title={ZkleanMessages.applicationFruits.title}
@@ -125,7 +132,7 @@ const ZcleanProductPage = () => {
               imagePath={ZkleanMessages.applicationSurface.imagePath}
             />
           </ApplicationProducts>
-        </div>
+        </motion.div>
       </section>
 
       <div class="my-10"></div>
@@ -143,7 +150,13 @@ const ZcleanProductPage = () => {
         </Typography>
 
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
-          <div className="flex flex-col items-center rounded-xl bg-gray-50 p-6 shadow-sm">
+          <motion.div
+            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.05 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <span className="mb-3 text-4xl">🧽</span>
             <Typography variant="h5" className="mb-2 text-primary">
               Limpieza directa
@@ -152,9 +165,15 @@ const ZcleanProductPage = () => {
               Pulveriza el producto sobre la superficie o alimento a tratar y
               deja actuar durante 30 segundos.
             </Typography>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center rounded-xl bg-gray-50 p-6 shadow-sm">
+          <motion.div
+            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <span className="mb-3 text-4xl">💧</span>
             <Typography variant="h5" className="mb-2 text-primary">
               Enjuague opcional
@@ -163,9 +182,15 @@ const ZcleanProductPage = () => {
               Si se usa sobre frutas y verduras, puede enjuagarse con agua
               potable para retirar residuos.
             </Typography>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center rounded-xl bg-gray-50 p-6 shadow-sm">
+          <motion.div
+            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.15 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <span className="mb-3 text-4xl">🌿</span>
             <Typography variant="h5" className="mb-2 text-primary">
               Uso frecuente
@@ -174,7 +199,7 @@ const ZcleanProductPage = () => {
               Apto para uso diario, no daña materiales ni piel, manteniendo su
               efectividad prolongada.
             </Typography>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -227,7 +252,7 @@ const ZcleanProductPage = () => {
 
       {/* 📘 Ficha Técnica */}
       <section
-        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-gray-50 px-6 py-12 shadow-sm"
+        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-greenPastelLight px-6 py-12 shadow-sm"
         aria-labelledby="ficha-tecnica-heading"
       >
         <Typography
@@ -279,7 +304,7 @@ const ZcleanProductPage = () => {
             href="/docs/Zklean_Ficha_Tecnica.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:bg-primary-dark inline-block rounded-full bg-primary px-6 py-3 font-semibold text-white transition-colors"
+            className="inline-block rounded-full bg-primary px-6 py-3 font-semibold text-white transition-opacity hover:opacity-90"
           >
             Descargar ficha técnica (PDF)
           </a>
@@ -288,7 +313,7 @@ const ZcleanProductPage = () => {
 
       {/* 🧾 Certificaciones */}
       <section
-        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-gray-50 px-6 py-12 shadow-sm"
+        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-greenPastelLight px-6 py-12 shadow-sm"
         aria-labelledby="certificaciones-heading"
       >
         <Typography
