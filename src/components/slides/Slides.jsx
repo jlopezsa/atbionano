@@ -1,4 +1,4 @@
-import CarouselMain from "components/carouselMain/CarouselMain";
+import { CarouselMain } from "components/carouselMain/CarouselMain"
 
 const Slides = () => {
   return (
@@ -9,7 +9,7 @@ const Slides = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Slides;
+export default Slides
