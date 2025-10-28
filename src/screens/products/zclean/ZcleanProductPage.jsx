@@ -46,17 +46,17 @@ const ZcleanProductPage = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productLdJson) }}
       />
-      <div class="w-full">
-        <div
-          class="h-[400px] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]"
-          style={{
-            backgroundImage: `url(${zcleanBackground})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-          }}
-          aria-label="Imagen de fondo con frutas para el producto Z-KLEAN"
-        >
+      <div
+        class="h-[100vh] w-full"
+        style={{
+          backgroundImage: `url(${zcleanBackground})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+        }}
+        aria-label="Imagen de fondo con frutas para el producto Z-KLEAN"
+      >
+        <div class="h-[100vh] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]">
           <Typography variant="small">
             <div class="flex w-full justify-end">
               {ZkleanMessages.mainContent.imageCredits}
@@ -478,7 +478,9 @@ const ZcleanProductPage = () => {
         <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
           <div class="relative rounded-3xl bg-white/90 px-8 py-12 text-center shadow-sm backdrop-blur-md">
             <p class="mx-auto inline-flex items-center gap-2 rounded-full bg-greenPastelLight px-3 py-1 text-xs font-medium text-primary ring-1 ring-tertiary">
-              Contacto y demo
+              <Typography variant="paragraph" class="color text-base">
+                Contacto y demo
+              </Typography>
             </p>
             <h2 id="cta-title" class="mt-3 text-3xl font-bold text-primary">
               ¿Listo para probar Z‑KLEAN?

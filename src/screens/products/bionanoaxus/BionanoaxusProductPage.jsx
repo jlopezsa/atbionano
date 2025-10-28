@@ -11,17 +11,17 @@ import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessage
 
 const BionanoaxusProductPage = () => {
   return (
-    <div class="mt-[80px] h-full">
-      <div class="w-full">
-        <div
-          class="h-[400px] bg-fixed bg-center pt-10 sm:h-[600px]"
-          style={{
-            backgroundImage: `url(${bionanoaxusPetri})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
-          }}
-        >
+    <main class="mt-[80px] h-full" role="main">
+      <div
+        class="h-[100vh] w-full"
+        style={{
+          backgroundImage: `url(${bionanoaxusPetri})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+        }}
+      >
+        <div class="h-[100vh] bg-fixed bg-center pt-10 sm:h-[600px]">
           <Typography variant="small">
             Foto de{" "}
             <a href="https://unsplash.com/es/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -204,7 +204,7 @@ const BionanoaxusProductPage = () => {
       </section>
 
       <div class="my-20"></div>
-    </div>
+    </main>
   )
 }
 
