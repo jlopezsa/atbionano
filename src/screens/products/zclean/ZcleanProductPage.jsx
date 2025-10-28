@@ -161,6 +161,7 @@ const ZcleanProductPage = () => {
       </section>
 
       <div class="my-10"></div>
+
       {/* 🧴 Modo de uso */}
       <section
         className="mx-auto mt-24 max-w-screen-xl px-6"
@@ -175,61 +176,68 @@ const ZcleanProductPage = () => {
         </Typography>
 
         <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
-          <motion.div
-            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.05 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <span className="mb-3 text-4xl">🧽</span>
-            <Typography variant="h5" className="mb-2 text-primary">
-              Limpieza directa
-            </Typography>
-            <Typography variant="paragraph">
-              Pulveriza el producto sobre la superficie o alimento a tratar y
-              deja actuar durante 30 segundos.
-            </Typography>
-          </motion.div>
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.08)]">
+            <motion.div
+              className="relative flex flex-col items-center rounded-2xl bg-white/90 p-6 shadow-sm backdrop-blur-md"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.05 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="mb-3 text-4xl">🧽</span>
+              <Typography variant="h5" className="mb-2 text-primary">
+                Limpieza directa
+              </Typography>
+              <Typography variant="paragraph">
+                Pulveriza el producto sobre la superficie o alimento a tratar y
+                deja actuar durante 30 segundos.
+              </Typography>
+            </motion.div>
+          </div>
 
-          <motion.div
-            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.1 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <span className="mb-3 text-4xl">💧</span>
-            <Typography variant="h5" className="mb-2 text-primary">
-              Enjuague opcional
-            </Typography>
-            <Typography variant="paragraph">
-              Si se usa sobre frutas y verduras, puede enjuagarse con agua
-              potable para retirar residuos.
-            </Typography>
-          </motion.div>
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.08)]">
+            <motion.div
+              className="relative flex flex-col items-center rounded-2xl bg-white/90 p-6 shadow-sm backdrop-blur-md"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="mb-3 text-4xl">💧</span>
+              <Typography variant="h5" className="mb-2 text-primary">
+                Enjuague opcional
+              </Typography>
+              <Typography variant="paragraph">
+                Si se usa sobre frutas y verduras, puede enjuagarse con agua
+                potable para retirar residuos.
+              </Typography>
+            </motion.div>
+          </div>
 
-          <motion.div
-            className="flex flex-col items-center rounded-xl bg-greenPastelLight p-6 shadow-sm"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.15 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <span className="mb-3 text-4xl">🌿</span>
-            <Typography variant="h5" className="mb-2 text-primary">
-              Uso frecuente
-            </Typography>
-            <Typography variant="paragraph">
-              Apto para uso diario, no daña materiales ni piel, manteniendo su
-              efectividad prolongada.
-            </Typography>
-          </motion.div>
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.08)]">
+            <motion.div
+              className="relative flex flex-col items-center rounded-2xl bg-white/90 p-6 shadow-sm backdrop-blur-md"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.15 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <span className="mb-3 text-4xl">🌿</span>
+              <Typography variant="h5" className="mb-2 text-primary">
+                Uso frecuente
+              </Typography>
+              <Typography variant="paragraph">
+                Apto para uso diario, no daña materiales ni piel, manteniendo su
+                efectividad prolongada.
+              </Typography>
+            </motion.div>
+          </div>
         </div>
       </section>
 
       <div class="my-20"></div>
 
+      {/* 📘 Beneficios */}
       <section
         class="mx-auto flex max-w-screen-xl flex-col items-center justify-center"
         aria-labelledby="beneficios-heading"
@@ -244,20 +252,26 @@ const ZcleanProductPage = () => {
         <div class="grid grid-cols-1 grid-rows-4 px-10 sm:grid sm:grid-cols-2 sm:grid-rows-2">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
-            description={"No oxida superficies"}
-          />
-          <ItemListWithBackground
-            backgroundImageList={circleVinheta}
-            description={"No genera gases"}
-          />
-          <ItemListWithBackground
-            backgroundImageList={circleVinheta}
-            description={"No irrita la piel"}
+            description={
+              "Protege las superficies sin dañarlas. Su formulación no corrosiva evita la oxidación y mantiene el brillo natural de los materiales, incluso con uso frecuente."
+            }
           />
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
             description={
-              "Genera un sistema de biocompatibilidad al ser de síntesis biológica."
+              "Fórmula libre de gases tóxicos. No genera vapores ni residuos volátiles, garantizando un ambiente más seguro para personas, mascotas y alimentos."
+            }
+          />
+          <ItemListWithBackground
+            backgroundImageList={circleVinheta}
+            description={
+              "Suave con la piel y los sentidos. Diseñado para minimizar la irritación dérmica y los olores intensos, ideal para hogares, cocinas y entornos sensibles."
+            }
+          />
+          <ItemListWithBackground
+            backgroundImageList={circleVinheta}
+            description={
+              "Alta biocompatibilidad gracias a su origen biológico. Desarrollado mediante procesos de síntesis biológica, crea un equilibrio natural entre eficacia antimicrobiana y respeto por el entorno."
             }
           />
         </div>
@@ -277,122 +291,141 @@ const ZcleanProductPage = () => {
 
       {/* 📘 Ficha Técnica */}
       <section
-        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-greenPastelLight px-6 py-12 shadow-sm"
+        className="mx-auto mt-24 max-w-screen-xl px-6"
         aria-labelledby="ficha-tecnica-heading"
       >
-        <Typography
-          variant="h2"
-          className="mb-8 text-center"
-          id="ficha-tecnica-heading"
-        >
-          Ficha técnica
-        </Typography>
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
+          <div className="relative rounded-3xl bg-white/90 px-8 py-12 text-left shadow-sm backdrop-blur-md">
+            <Typography
+              variant="h2"
+              className="mb-8 text-center"
+              id="ficha-tecnica-heading"
+            >
+              Ficha técnica
+            </Typography>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <Typography variant="h5" className="mb-2 text-primary">
-              Composición
-            </Typography>
-            <Typography variant="paragraph">
-              Nanoemulsión acuosa con agentes biocidas de origen biológico.
-            </Typography>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <Typography variant="h5" className="mb-2 text-primary">
+                  Composición
+                </Typography>
+                <Typography variant="paragraph">
+                  Nanoemulsión acuosa con agentes biocidas de origen biológico.
+                </Typography>
+              </div>
+
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <Typography variant="h5" className="mb-2 text-primary">
+                  Presentación
+                </Typography>
+                <Typography variant="paragraph">
+                  Envases de 500 ml, 1 L y 5 L con pulverizador o tapa de
+                  seguridad.
+                </Typography>
+              </div>
+
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <Typography variant="h5" className="mb-2 text-primary">
+                  pH del producto
+                </Typography>
+                <Typography variant="paragraph">6.5 ± 0.2 (neutro)</Typography>
+              </div>
+
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <Typography variant="h5" className="mb-2 text-primary">
+                  Vida útil
+                </Typography>
+                <Typography variant="paragraph">
+                  24 meses en condiciones normales de almacenamiento.
+                </Typography>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <a
+                href="/docs/Zklean_Ficha_Tecnica.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-primary px-6 py-3 font-semibold text-white transition-opacity hover:opacity-90"
+              >
+                Descargar ficha técnica (PDF)
+              </a>
+            </div>
+
+            <div className="pointer-events-none absolute inset-0 -z-10 opacity-10">
+              <div className="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-secondary blur-2xl"></div>
+              <div className="absolute -bottom-12 -right-12 h-40 w-40 rounded-full bg-tertiary blur-2xl"></div>
+            </div>
           </div>
-
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <Typography variant="h5" className="mb-2 text-primary">
-              Presentación
-            </Typography>
-            <Typography variant="paragraph">
-              Envases de 500 ml, 1 L y 5 L con pulverizador o tapa de seguridad.
-            </Typography>
-          </div>
-
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <Typography variant="h5" className="mb-2 text-primary">
-              pH del producto
-            </Typography>
-            <Typography variant="paragraph">6.5 ± 0.2 (neutro)</Typography>
-          </div>
-
-          <div className="rounded-xl bg-white p-6 shadow-sm">
-            <Typography variant="h5" className="mb-2 text-primary">
-              Vida útil
-            </Typography>
-            <Typography variant="paragraph">
-              24 meses en condiciones normales de almacenamiento.
-            </Typography>
-          </div>
-        </div>
-
-        <div className="mt-10 text-center">
-          <a
-            href="/docs/Zklean_Ficha_Tecnica.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-primary px-6 py-3 font-semibold text-white transition-opacity hover:opacity-90"
-          >
-            Descargar ficha técnica (PDF)
-          </a>
         </div>
       </section>
 
       {/* 🧾 Certificaciones */}
       <section
-        className="mx-auto mt-24 max-w-screen-xl rounded-2xl bg-greenPastelLight px-6 py-12 shadow-sm"
+        className="mx-auto mt-24 max-w-screen-xl px-6"
         aria-labelledby="certificaciones-heading"
       >
-        <Typography
-          variant="h2"
-          className="mb-8 text-center"
-          id="certificaciones-heading"
-        >
-          Certificaciones y normativas
-        </Typography>
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
+          <div className="relative rounded-3xl bg-white/90 px-8 py-12 text-left shadow-sm backdrop-blur-md">
+            <Typography
+              variant="h2"
+              className="mb-8 text-center"
+              id="certificaciones-heading"
+            >
+              Certificaciones y normativas
+            </Typography>
 
-        <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
-          <div className="flex flex-col items-center p-6">
-            <img
-              src="/images/certifications/iso9001.png"
-              alt="Certificación ISO 9001"
-              className="mb-4 h-16"
-            />
-            <Typography variant="h5" className="mb-2 text-primary">
-              ISO 9001
-            </Typography>
-            <Typography variant="paragraph">
-              Certifica procesos de gestión de calidad en la fabricación del
-              producto.
-            </Typography>
-          </div>
+            <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
+              <div className="flex flex-col items-center p-6">
+                <img
+                  src="/images/certifications/iso9001.png"
+                  alt="Certificación ISO 9001"
+                  className="mb-4 h-16"
+                />
+                <Typography variant="h5" className="mb-2 text-primary">
+                  ISO 9001
+                </Typography>
+                <Typography variant="paragraph">
+                  Certifica procesos de gestión de calidad en la fabricación del
+                  producto.
+                </Typography>
+              </div>
 
-          <div className="flex flex-col items-center p-6">
-            <img
-              src="/images/certifications/ecologico.png"
-              alt="Certificación ecológica"
-              className="mb-4 h-16"
-            />
-            <Typography variant="h5" className="mb-2 text-primary">
-              Producto ecológico
-            </Typography>
-            <Typography variant="paragraph">
-              Cumple con los lineamientos de sostenibilidad ambiental y no
-              toxicidad.
-            </Typography>
-          </div>
+              <div className="flex flex-col items-center p-6">
+                <img
+                  src="/images/certifications/ecologico.png"
+                  alt="Certificación ecológica"
+                  className="mb-4 h-16"
+                />
+                <Typography variant="h5" className="mb-2 text-primary">
+                  Producto ecológico
+                </Typography>
+                <Typography variant="paragraph">
+                  Cumple con los lineamientos de sostenibilidad ambiental y no
+                  toxicidad.
+                </Typography>
+              </div>
 
-          <div className="flex flex-col items-center p-6">
-            <img
-              src="/images/certifications/bpa-free.png"
-              alt="Certificación BPA Free"
-              className="mb-4 h-16"
-            />
-            <Typography variant="h5" className="mb-2 text-primary">
-              BPA Free
-            </Typography>
-            <Typography variant="paragraph">
-              Libre de bisfenoles y metales pesados, apto para contacto con
-              alimentos.
-            </Typography>
+              <div className="flex flex-col items-center p-6">
+                <img
+                  src="/images/certifications/bpa-free.png"
+                  alt="Certificación BPA Free"
+                  className="mb-4 h-16"
+                />
+                <Typography variant="h5" className="mb-2 text-primary">
+                  BPA Free
+                </Typography>
+                <Typography variant="paragraph">
+                  Libre de bisfenoles y metales pesados, apto para contacto con
+                  alimentos.
+                </Typography>
+              </div>
+            </div>
+
+            <div className="pointer-events-none absolute inset-0 -z-10 opacity-10">
+              <div className="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-secondary blur-2xl"></div>
+              <div className="absolute -bottom-12 -right-12 h-40 w-40 rounded-full bg-tertiary blur-2xl"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -434,6 +467,45 @@ const ZcleanProductPage = () => {
               </Typography>
             </details>
           ))}
+        </div>
+      </section>
+
+      {/* CTA final */}
+      <section
+        class="mx-auto max-w-screen-xl px-6 pb-24"
+        aria-labelledby="cta-title"
+      >
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
+          <div class="relative rounded-3xl bg-white/90 px-8 py-12 text-center shadow-sm backdrop-blur-md">
+            <p class="mx-auto inline-flex items-center gap-2 rounded-full bg-greenPastelLight px-3 py-1 text-xs font-medium text-primary ring-1 ring-tertiary">
+              Contacto y demo
+            </p>
+            <h2 id="cta-title" class="mt-3 text-3xl font-bold text-primary">
+              ¿Listo para probar Z‑KLEAN?
+            </h2>
+            <p class="mx-auto mt-2 max-w-2xl text-gray-700">
+              Solicita una muestra o asesoría con nuestro equipo.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-3">
+              <a
+                href="/contacto"
+                class="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+              >
+                Contactar ventas
+              </a>
+              <a
+                href="/docs/Zklean_Ficha_Tecnica.pdf"
+                class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary ring-1 ring-tertiary transition hover:bg-greenPastelLight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+              >
+                Ficha técnica
+              </a>
+            </div>
+            {/* decoraciones sutiles */}
+            <div class="pointer-events-none absolute inset-0 -z-10 opacity-20">
+              <div class="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-secondary blur-2xl"></div>
+              <div class="absolute -bottom-12 -right-12 h-40 w-40 rounded-full bg-tertiary blur-2xl"></div>
+            </div>
+          </div>
         </div>
       </section>
 
