@@ -7,13 +7,13 @@ import ItemListWithBackground from "components/cards/itemListWithBackground/Item
 import { motion } from "framer-motion"
 import circleVinheta from "images/icons/circle-vinheta.jpeg"
 import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg"
-import React from "react"
+import { useEffect } from "react"
 import FruitsZKlean from "./images/Applications/FruitsZKlean"
 import { ZkleanMessages } from "./messages/zkleanMessages"
 
 const ZcleanProductPage = () => {
   // SEO básico
-  React.useEffect(() => {
+  useEffect(() => {
     document.title = "Z-KLEAN | AT Bionano"
     const desc =
       "Z-KLEAN es un biocida de origen biológico para uso en el hogar y ámbitos profesionales. Ayuda a controlar microorganismos comunes y aporta una alternativa más amable con las superficies y el usuario."
@@ -48,7 +48,7 @@ const ZcleanProductPage = () => {
       />
       <div class="w-[100vw]">
         <div
-          class="h-[400px] w-full bg-fixed"
+          class="h-[400px] w-full bg-cover bg-fixed bg-center pt-10 sm:h-[600px]"
           style={{
             backgroundImage: `url(${zcleanBackground})`,
             backgroundSize: "cover",
@@ -62,10 +62,33 @@ const ZcleanProductPage = () => {
               {ZkleanMessages.mainContent.imageCredits}
             </div>
           </Typography>
-          <div class="flex h-full w-full items-center justify-center">
+          <div class="flex h-full w-full flex-col items-center justify-evenly gap-4 px-6 text-center">
+            <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+              <Typography variant="paragraph" class="color text-base">
+                Producto bionanotecnológico — línea hogar
+              </Typography>
+            </p>
             <h1 class="bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
               Z-KLEAN
             </h1>
+            <div class="flex flex-wrap justify-center gap-3">
+              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
+                <Typography variant="paragraph" class="color text-base">
+                  No oxida superficies
+                </Typography>
+              </p>
+              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
+                <Typography variant="paragraph" class="color text-base">
+                  No genera gases
+                </Typography>
+              </p>
+              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
+                <Typography variant="paragraph" class="color text-base">
+                  No irrita la piel
+                </Typography>
+              </p>
+            </div>
           </div>
         </div>
         <section
@@ -369,6 +392,46 @@ const ZcleanProductPage = () => {
               alimentos.
             </Typography>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section
+        className="mx-auto max-w-5xl px-6 py-16"
+        aria-labelledby="faq-title"
+      >
+        <Typography variant="h2" className="mb-8 text-center" id="faq-title">
+          Preguntas frecuentes
+        </Typography>
+        <div className="mt-8 divide-y divide-gray-200 rounded-2xl border border-gray-200 bg-white">
+          {[
+            {
+              q: "¿Es seguro para alimentos?",
+              a: "Sí. Siga el modo de uso indicado. En frutas y verduras puede enjuagar con agua potable si lo desea.",
+            },
+            {
+              q: "¿Deja residuos o manchas?",
+              a: "No deja manchas ni maltrata materiales; no oxida superficies y no genera gases.",
+            },
+            {
+              q: "¿Tiene aroma fuerte?",
+              a: "No, su composición evita olores fuertes e irritantes.",
+            },
+          ].map((item) => (
+            <details key={item.q} className="group px-6 py-5 open:bg-gray-50">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+                <Typography variant="h5" id="modo-uso-heading">
+                  <span className="font-medium text-gray-900">{item.q}</span>
+                </Typography>
+                <span className="text-gray-400 transition group-open:rotate-180">
+                  ⌄
+                </span>
+              </summary>
+              <Typography variant="lead" id="modo-uso-heading">
+                <p className="mt-2 text-gray-600">{item.a}</p>
+              </Typography>
+            </details>
+          ))}
         </div>
       </section>
 
