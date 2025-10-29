@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
+import Footer from "components/footer/Footer"
+import { Outlet } from "react-router-dom"
+import Header from "../components/header/Header"
 
 export const HomePage = () => {
   return (
@@ -11,5 +11,5 @@ export const HomePage = () => {
       </div>
       <Footer />
     </div>
-  );
-};
+  )
+}

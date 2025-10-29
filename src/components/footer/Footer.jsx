@@ -1,36 +1,46 @@
-import SocialMediaIcons from "components/socialMediaIcons/SocialMediaIcons";
-import logoAtbionano from "images/logo_letraBlanca.png";
-import { ROUTE_HOME, ROUTE_SECTION_CONTACT } from "routes/routes";
+import { Typography } from "@material-tailwind/react"
+import SocialMediaIcons from "components/socialMediaIcons/SocialMediaIcons"
+import logoAtbionano from "images/logo_letraBlanca.png"
+import { ROUTE_HOME, ROUTE_SECTION_CONTACT } from "routes/routes"
 
 const Footer = () => {
   return (
     <div id={ROUTE_SECTION_CONTACT}>
       <div
-        class={`relative h-[400px] bg-primary flex flex-row flex-wrap place-content-evenly items-center`}
+        class={`relative flex h-[400px] flex-row flex-wrap place-content-evenly items-center bg-primary`}
       >
-        <div class="w-[300px]">
+        <div class="flex w-[300px] flex-col items-center">
           <a href={`${ROUTE_HOME}`}>
             <img class="float-right h-[100px]" src={logoAtbionano} alt="logo" />
           </a>
+          <Typography
+            variant="paragraph"
+            className="font-size-[14px] text-center text-white"
+          >
+            Innovación bionanotecnológica para un mundo más limpio y sostenible.
+          </Typography>
         </div>
-        <div class="w-[300px] flex flex-col text-white items-center">
+        <div class="flex w-[300px] flex-col items-center text-white">
           <p>Contacto</p>
           <p>+57 305 4 60 22 46</p>
           <p>Email</p>
           <p>aytbionano@gmail.com</p>
         </div>
-        <div class="w-[300px] flex flex-col text-white">
-          <p class="text-center pb-[20px]">Síguenos en nuestras redes</p>
+        <div class="flex w-[300px] flex-col text-white">
+          <p class="pb-[20px] text-center">Síguenos en nuestras redes</p>
           <SocialMediaIcons />
         </div>
       </div>
       <div
-        class={`relative h-[80px] mb-[0px] bg-primary text-white flex flex-row flex-wrap place-content-evenly items-center`}
+        class={`relative mb-[0px] flex h-[80px] flex-row flex-wrap place-content-evenly items-center bg-primary text-white`}
       >
-        <p>&copy; {new Date().getFullYear()} A&T-BioNano</p>
+        <p>
+          &copy; {new Date().getFullYear()} A&T-BioNano S.A.S — Todos los
+          derechos reservados
+        </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
