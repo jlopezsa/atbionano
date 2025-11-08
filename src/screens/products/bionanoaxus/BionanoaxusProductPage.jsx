@@ -72,9 +72,7 @@ const BionanoaxusProductPage = () => {
       <div className="my-20"></div>
 
       <div className="flex h-20 justify-center">
-        <Typography variant="h2" className="color text-base">
-          Sectores de aplicación
-        </Typography>
+        <Typography variant="h2">Sectores de aplicación</Typography>
       </div>
       <div className="flex flex-row flex-wrap justify-center">
         <ApplicationProducts
@@ -114,9 +112,7 @@ const BionanoaxusProductPage = () => {
       <div className="my-10"></div>
 
       <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center">
-        <Typography variant="h2" className="color text-base">
-          Beneficios
-        </Typography>
+        <Typography variant="h2">Beneficios</Typography>
         <div className="grid grid-cols-1 grid-rows-4 px-10 sm:grid sm:grid-cols-2 sm:grid-rows-2">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
