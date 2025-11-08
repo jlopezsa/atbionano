@@ -4,11 +4,10 @@ import { useRef } from "react"
 import CardHistoryFigures from "./CardHistoryFigures"
 
 export const CardHistory = ({ props }) => {
-  const { date, referenceDate, actionsByYear, id } = props
+  const { date, referenceDate, actionsByYear } = props
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["0 1", "1.33 1"],
     offset: ["start end", "end end"],
   })
 
@@ -30,7 +29,10 @@ export const CardHistory = ({ props }) => {
         <ol className="divider-gray-200 mt-3 divide-y dark:divide-gray-700">
           {actionsByYear.map(({ title, description, imagePath, id }) => (
             <li key={id}>
-              <a className="mb-5 block items-center rounded-lg bg-gray-50 p-3 dark:hover:bg-gray-700 sm:flex">
+              <a
+                href={`history-atbionano-${title}`}
+                className="mb-5 block items-center rounded-lg bg-gray-50 p-3 dark:hover:bg-gray-700 sm:flex"
+              >
                 <div className="mb-3 me-3 h-20 min-h-[150px] w-52 min-w-[250px] rounded-lg sm:mb-0">
                   <CardHistoryFigures imagePath={imagePath} />
                 </div>
