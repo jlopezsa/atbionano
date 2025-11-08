@@ -9,15 +9,16 @@ import circleVinheta from "images/icons/circle-vinheta.jpeg"
 // import bionanoaxusPetri from "images/products/petri.jpeg"
 import { Tag } from "components/tags/Tag"
 import { TagWithCircle } from "components/tags/TagWithCircle"
-import bionanoaxsBottles from "images/products/ohtilly-B8_YF4fjPwo-unsplash.jpg"
+import bionanoaxsBottles from "images/products/luca-romano-sSfSsI1szmM-unsplash.jpg"
+// import bionanoaxsBottles from "images/products/ohtilly-B8_YF4fjPwo-unsplash.jpg"
 // import bionanoaxsBottles from "images/products/chuttersnap-UmncJq4KPcA-unsplash.jpg"
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages"
 
 const BionanoaxusProductPage = () => {
   return (
-    <main class="mt-[80px] h-full" role="main">
+    <main className="mt-[80px] h-full" role="main">
       <div
-        class="h-[100vh] w-full"
+        className="h-[100vh] w-full"
         style={{
           backgroundImage: `url(${bionanoaxsBottles})`,
           backgroundSize: "cover",
@@ -26,7 +27,7 @@ const BionanoaxusProductPage = () => {
         }}
         aria-label="Imagen de fondo con elementos quimicos para el producto Bionanoaxus"
       >
-        <div class="h-[100vh] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]">
+        <div className="h-[100vh] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]">
           <Typography variant="small">
             Foto de{" "}
             <a href="https://unsplash.com/es/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -37,14 +38,14 @@ const BionanoaxusProductPage = () => {
               Unsplash
             </a>
           </Typography>
-          <div class="flex h-full w-full flex-col items-center justify-evenly text-center">
+          <div className="flex h-full w-full flex-col items-center justify-evenly text-center">
             <TagWithCircle
               message={"Producto bionanotecnológico — línea industrial"}
             />
-            <h1 class="w-full bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
+            <h1 className="w-full bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
               {BionanoaxusProductMessages.title}
             </h1>
-            <div class="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-3">
               <Tag message={"Tecnología verde"} />
               <Tag message={"Protección natural"} />
               <Tag message={"Uso multisectorial"} />
@@ -53,10 +54,10 @@ const BionanoaxusProductPage = () => {
         </div>
       </div>
 
-      <div class="my-20"></div>
+      <div className="my-20"></div>
 
-      <section class="mx-auto mt-10 flex max-w-screen-xl items-center justify-center">
-        <div class="flex w-1/2 flex-col items-center justify-center">
+      <section className="mx-auto mt-10 flex max-w-screen-xl items-center justify-center">
+        <div className="flex w-1/2 flex-col items-center justify-center">
           <div style={{ textAlign: "center" }}>
             <Typography variant="h3">Producto bionanotecnológico</Typography>
           </div>
@@ -68,10 +69,10 @@ const BionanoaxusProductPage = () => {
         </div>
       </section>
 
-      <div class="my-20"></div>
+      <div className="my-20"></div>
 
-      <div class="flex h-20 justify-center">
-        <Typography variant="h2" class="color text-base">
+      <div className="flex h-20 justify-center">
+        <Typography variant="h2" className="color text-base">
           Sectores de aplicación
         </Typography>
       </div>
@@ -110,13 +111,13 @@ const BionanoaxusProductPage = () => {
         />
       </div>
 
-      <div class="my-10"></div>
+      <div className="my-10"></div>
 
-      <section class="mx-auto flex max-w-screen-xl flex-col items-center justify-center">
-        <Typography variant="h2" class="color text-base">
+      <section className="mx-auto flex max-w-screen-xl flex-col items-center justify-center">
+        <Typography variant="h2" className="color text-base">
           Beneficios
         </Typography>
-        <div class="grid grid-cols-1 grid-rows-4 px-10 sm:grid sm:grid-cols-2 sm:grid-rows-2">
+        <div className="grid grid-cols-1 grid-rows-4 px-10 sm:grid sm:grid-cols-2 sm:grid-rows-2">
           <ItemListWithBackground
             backgroundImageList={circleVinheta}
             description={
@@ -142,7 +143,7 @@ const BionanoaxusProductPage = () => {
             }
           />
         </div>
-        <div class="text-tertiary">
+        <div className="text-tertiary">
           <Typography variant="small">
             <a href="https://www.freepik.com/author/myriammira">
               Image by myriammira
@@ -152,71 +153,101 @@ const BionanoaxusProductPage = () => {
         </div>
       </section>
 
-      <div class="my-10"></div>
+      <div className="my-10"></div>
 
-      <section>
-        <div class="text-center">
-          <Typography variant="h2">Oportunidades</Typography>
-        </div>
+      <section
+        className="mx-auto mt-24 max-w-screen-xl px-6"
+        aria-labelledby="oportunidades-heading"
+      >
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-secondary to-tertiary p-[1px] shadow-[0_8px_28px_rgba(0,0,0,0.12)]">
+          <div className="relative rounded-3xl bg-white/90 px-8 py-12 text-left shadow-sm backdrop-blur-md">
+            <Typography
+              variant="h2"
+              className="mb-8 text-center"
+              id="oportunidades-heading"
+            >
+              Oportunidades
+            </Typography>
 
-        <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center sm:flex-row">
-          <div class="sm:w-1/4">
-            <Typography variant="h4">De mercado</Typography>
-          </div>
-          <div class="w-3/4">
-            <dl class="mt-5 list-disc text-base">
-              <dt>
-                <Typography variant="h5">BIOINSUMOS</Typography>
-              </dt>
-              <dd>
-                - Ventas 2021: 5.607.593,4 Kg y 730.644 L. Tasa de crecimiento
-                interanual promedio: 29,56% para los bioinsumos sólidos y 15,91%
-                para los líquidos
-              </dd>
-              <dt>
-                <Typography variant="h5">PECUARIO</Typography>
-              </dt>
-              <dd>
-                - Con un mercado potencial de $ 215.217.692 millones de pesos,
-                un 95,7% alcanzable puesto que corresponde con aves de predios
-                tecnificados. *Numero de aves en Colombia: 45’782,312
-              </dd>
-              <dt>
-                <Typography variant="h5">MANUFACTURA (COLCHONES)</Typography>
-              </dt>
-              <dd>
-                - Una cuota de mercado aproximada del 12%; en ese sentido,
-                considerando que de las validaciones efectuadas se estima un
-                consumo del productos asociado a la Tecnología (Bionanoaxus) de
-                10 a 16 litros por mes eso supondría que a nivel de industria la
-                demanda potencial podría estar en un rango, de por lo menos,
-                unos 84 a 133 litros por mes.
-              </dd>
-            </dl>
-          </div>
-        </div>
+            <div className="grid auto-rows-auto grid-cols-1 gap-6">
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <div className="md:grid md:grid-cols-[minmax(0,12rem),1fr] md:items-start md:gap-6">
+                  <div className="mb-4 md:mb-0">
+                    <Typography variant="h4" className="text-primary">
+                      De mercado
+                    </Typography>
+                  </div>
+                  <dl className="space-y-4 text-base">
+                    <div>
+                      <dt>
+                        <Typography variant="h5">BIOINSUMOS</Typography>
+                      </dt>
+                      <Typography variant="lead" className="text-gray-700">
+                        Ventas 2021: 5.607.593,4 Kg y 730.644 L. Tasa de
+                        crecimiento interanual promedio: 29,56% para los
+                        bioinsumos sólidos y 15,91% para los líquidos
+                      </Typography>
+                    </div>
+                    <div>
+                      <dt>
+                        <Typography variant="h5">PECUARIO</Typography>
+                      </dt>
+                      <Typography variant="lead" className="text-gray-700">
+                        Con un mercado potencial de $ 215.217.692 millones de
+                        pesos, un 95,7% alcanzable puesto que corresponde con
+                        aves de predios tecnificados. *Numero de aves en
+                        Colombia: 45’782,312
+                      </Typography>
+                    </div>
+                    <div>
+                      <dt>
+                        <Typography variant="h5">
+                          MANUFACTURA (COLCHONES)
+                        </Typography>
+                      </dt>
+                      <Typography variant="lead" className="text-gray-700">
+                        Una cuota de mercado aproximada del 12%; en ese sentido,
+                        considerando que de las validaciones efectuadas se
+                        estima un consumo del productos asociado a la Tecnología
+                        (Bionanoaxus) de 10 a 16 litros por mes eso supondría
+                        que a nivel de industria la demanda potencial podría
+                        estar en un rango, de por lo menos, unos 84 a 133 litros
+                        por mes.
+                      </Typography>
+                    </div>
+                  </dl>
+                </div>
+              </div>
 
-        <div class="my-10"></div>
+              <div className="rounded-xl bg-white p-6 shadow-sm">
+                <div className="md:grid md:grid-cols-[minmax(0,12rem),1fr] md:items-start md:gap-6">
+                  <div className="mb-4 md:mb-0">
+                    <Typography variant="h4" className="text-primary">
+                      Para el negocio
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography variant="lead" className="text-gray-700">
+                      Eficiencia del 99.99% en{" "}
+                      <span className="italic">
+                        Pseudomonas sp, Salmonella sp, E. coli, Bacillus sp,
+                        Fusarium oxysporum, Botrytis sp
+                      </span>
+                    </Typography>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="mx-auto flex max-w-screen-xl flex-col items-center align-middle sm:flex-row">
-          <div class="sm:w-1/4">
-            <Typography variant="h4">Para el negocio</Typography>
-          </div>
-          <div class="w-3/4">
-            <ul class="text-base">
-              <li>
-                Eficiencia del 99.99% en{" "}
-                <span class="italic">
-                  Pseudomonas sp, Salmonella sp, E. coli, Bacillus sp, Fusarium
-                  oxysporum, Botrytis sp
-                </span>
-              </li>
-            </ul>
+            <div className="pointer-events-none absolute inset-0 -z-10 opacity-10">
+              <div className="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-secondary blur-2xl"></div>
+              <div className="absolute -bottom-12 -right-12 h-40 w-40 rounded-full bg-tertiary blur-2xl"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div class="my-20"></div>
+      <div className="my-20"></div>
     </main>
   )
 }
