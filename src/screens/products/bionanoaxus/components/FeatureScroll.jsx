@@ -5,12 +5,14 @@ import { useRef } from "react"
 const FeaturePanel = ({ feature, index, total, scrollYProgress }) => {
   const start = index / total
   const end = (index + 1) / total
+  const segment = end - start
+  const fadeOffset = Math.min(segment * 0.3, 0.12)
   const opacity = useTransform(
     scrollYProgress,
-    [start, start + 0.1, end - 0.1, end],
+    [start, start + fadeOffset, end - fadeOffset, end],
     [0, 1, 1, 0]
   )
-  const y = useTransform(scrollYProgress, [start, end], [100, -100])
+  const y = useTransform(scrollYProgress, [start, end], [60, -60])
 
   return (
     <motion.article
