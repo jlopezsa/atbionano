@@ -9,12 +9,44 @@ import circleVinheta from "images/icons/circle-vinheta.jpeg"
 // import bionanoaxusPetri from "images/products/petri.jpeg"
 import { Tag } from "components/tags/Tag"
 import { TagWithCircle } from "components/tags/TagWithCircle"
+import bionanoaxusProductImage from "images/atbionano/bionanoaxus-product-edited.jpeg"
 import bionanoaxsBottles from "images/products/luca-romano-sSfSsI1szmM-unsplash.jpg"
 // import bionanoaxsBottles from "images/products/ohtilly-B8_YF4fjPwo-unsplash.jpg"
 // import bionanoaxsBottles from "images/products/chuttersnap-UmncJq4KPcA-unsplash.jpg"
+import FeatureScroll from "./components/FeatureScroll"
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages"
 
 const BionanoaxusProductPage = () => {
+  const featureHighlights = [
+    {
+      title: "Nanoemulsión activa",
+      badge: "Liberación prolongada",
+      description:
+        "Microgotas inferiores a 200 nm que facilitan la penetración y permanencia del agente antimicrobiano en superficies porosas y biológicas.",
+      metric: "< 200 nm",
+    },
+    {
+      title: "Base biotecnológica",
+      badge: "Origen natural",
+      description:
+        "Activos obtenidos por síntesis biológica que reducen el impacto ambiental frente a biocidas sintéticos y aumentan la biocompatibilidad.",
+      metric: "99% libre de solventes",
+    },
+    {
+      title: "Compatibilidad multisectorial",
+      badge: "Industrial",
+      description:
+        "Formulación estable frente a variaciones de pH y temperatura, pensada para procesos en agro, pecuario y manufactura sin alterar equipos ni materiales.",
+      metric: "pH neutro 6.5 ± 0.2",
+    },
+    {
+      title: "Soporte técnico",
+      badge: "Escalabilidad",
+      description:
+        "Protocolos de dosificación, monitoreo microbiológico y acompañamiento para escalar desde pilotos hasta líneas productivas continuas.",
+      metric: "+25 plantas intervenidas",
+    },
+  ]
   return (
     <main className="mt-[80px] h-full" role="main">
       <div
@@ -108,6 +140,55 @@ const BionanoaxusProductPage = () => {
           credits={ApplicationsMessages.construccion.credits}
         />
       </div>
+
+      {/* <div className="my-10"></div> */}
+
+      <section
+        className="mx-auto mt-24 max-w-screen-xl px-6"
+        aria-labelledby="caracteristicas-heading"
+      >
+        <div className="grid gap-12 lg:grid-cols-[minmax(320px,0.9fr),1.1fr]">
+          <div className="space-y-6 pt-10 lg:sticky lg:top-20 lg:self-start">
+            <div className="space-y-3">
+              <Typography
+                variant="h2"
+                id="caracteristicas-heading"
+                className="mb-4"
+              >
+                Características del producto
+              </Typography>
+              <Typography variant="lead">
+                Una plataforma bionanotecnológica diseñada para maximizar la
+                acción antimicrobiana con una formulación estable y segura para
+                múltiples industrias.
+              </Typography>
+            </div>
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-secondary/80 to-tertiary/80 shadow-[0_20px_45px_rgba(0,0,0,0.18)]">
+              <img
+                src={bionanoaxusProductImage}
+                alt="Envase de Bionanoaxus"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <p className="text-xs uppercase tracking-[0.4em] text-greenPastelLight">
+                  Fórmula concentrada
+                </p>
+                <Typography variant="h4" className="text-white">
+                  Tecnología Bionanoaxus
+                </Typography>
+              </div>
+            </div>
+            <Typography variant="small" className="text-gray-600">
+              Imagen de referencia del prototipo industrial y envase piloto del
+              producto.
+            </Typography>
+          </div>
+
+          <FeatureScroll features={featureHighlights} />
+        </div>
+      </section>
 
       <div className="my-10"></div>
 

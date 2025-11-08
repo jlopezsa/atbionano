@@ -1,0 +1,19 @@
+*** Begin Patch
+*** Update File: src/screens/products/bionanoaxus/BionanoaxusProductPage.jsx
+@@
+-import circleVinheta from "images/icons/circle-vinheta.jpeg"
+-// import bionanoaxusPetri from "images/products/petri.jpeg"
+-import { Tag } from "components/tags/Tag"
+-import { TagWithCircle } from "components/tags/TagWithCircle"
+-import { motion } from "framer-motion"
+-import bionanoaxusProductImage from "images/atbionano/bionanoaxus-product-edited.jpeg"
+-import bionanoaxsBottles from "images/products/luca-romano-sSfSsI1szmM-unsplash.jpg"
++import circleVinheta from "images/icons/circle-vinheta.jpeg"
++// import bionanoaxusPetri from "images/products/petri.jpeg"
++import { Tag } from "components/tags/Tag"
++import { TagWithCircle } from "components/tags/TagWithCircle"
++import FeatureScroll from "./components/FeatureScroll"
++import { motion } from "framer-motion"
++import bionanoaxusProductImage from "images/atbionano/bionanoaxus-product-edited.jpeg"
++import bionanoaxsBottles from "images/products/luca-romano-sSfSsI1szmM-unsplash.jpg"
+*** End Patch
