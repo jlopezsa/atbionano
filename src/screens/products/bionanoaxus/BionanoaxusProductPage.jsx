@@ -6,7 +6,11 @@ import { ApplicationProducts } from "components/cards/applicationSectors/Applica
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground"
 import { ApplicationsMessages } from "configs/applicationsMessages"
 import circleVinheta from "images/icons/circle-vinheta.jpeg"
-import bionanoaxusPetri from "images/products/petri.jpeg"
+// import bionanoaxusPetri from "images/products/petri.jpeg"
+import { Tag } from "components/tags/Tag"
+import { TagWithCircle } from "components/tags/TagWithCircle"
+import bionanoaxsBottles from "images/products/ohtilly-B8_YF4fjPwo-unsplash.jpg"
+// import bionanoaxsBottles from "images/products/chuttersnap-UmncJq4KPcA-unsplash.jpg"
 import { BionanoaxusProductMessages } from "./messages/bionanoaxusProductMessages"
 
 const BionanoaxusProductPage = () => {
@@ -15,13 +19,14 @@ const BionanoaxusProductPage = () => {
       <div
         class="h-[100vh] w-full"
         style={{
-          backgroundImage: `url(${bionanoaxusPetri})`,
+          backgroundImage: `url(${bionanoaxsBottles})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundColor: "rgba(0, 0, 0, 0.8)",
         }}
+        aria-label="Imagen de fondo con elementos quimicos para el producto Bionanoaxus"
       >
-        <div class="h-[100vh] bg-fixed bg-center pt-10 sm:h-[600px]">
+        <div class="h-[100vh] bg-cover bg-fixed bg-center pt-10 sm:h-[600px]">
           <Typography variant="small">
             Foto de{" "}
             <a href="https://unsplash.com/es/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -32,10 +37,18 @@ const BionanoaxusProductPage = () => {
               Unsplash
             </a>
           </Typography>
-          <div class="flex h-full w-full items-center justify-center">
-            <p class="text-6xl font-bold text-white sm:text-7xl">
+          <div class="flex h-full w-full flex-col items-center justify-evenly text-center">
+            <TagWithCircle
+              message={"Producto bionanotecnológico — línea industrial"}
+            />
+            <h1 class="w-full bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
               {BionanoaxusProductMessages.title}
-            </p>
+            </h1>
+            <div class="flex flex-wrap justify-center gap-3">
+              <Tag message={"Tecnología verde"} />
+              <Tag message={"Protección natural"} />
+              <Tag message={"Uso multisectorial"} />
+            </div>
           </div>
         </div>
       </div>

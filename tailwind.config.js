@@ -26,6 +26,9 @@ module.exports = withMT({
       // https://www.cssgradienttext.com/
       backgroundImage: {
         "gradient-text": "linear-gradient(135deg, #C0382B, #2ECC70)",
+        "gradient-text-dark": "linear-gradient(135deg, #0F2A17, #1E7A2E)",
+        // Higher contrast over light/green backgrounds
+        "gradient-text-contrast": "linear-gradient(100deg, #00172A, #7C3A11)",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",

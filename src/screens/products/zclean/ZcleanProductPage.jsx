@@ -4,6 +4,8 @@
 import { Typography } from "@material-tailwind/react"
 import { ApplicationProducts } from "components/cards/applicationSectors/ApplicationsProducts"
 import ItemListWithBackground from "components/cards/itemListWithBackground/ItemListWithBackground"
+import { Tag } from "components/tags/Tag"
+import { TagWithCircle } from "components/tags/TagWithCircle"
 import { motion } from "framer-motion"
 import circleVinheta from "images/icons/circle-vinheta.jpeg"
 import zcleanBackground from "images/products/brooke-lark-08bOYnH_r_E-zclean.jpg"
@@ -63,31 +65,16 @@ const ZcleanProductPage = () => {
             </div>
           </Typography>
           <div class="flex h-full w-full flex-col items-center justify-evenly text-center">
-            <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              <Typography variant="paragraph" class="color text-base">
-                Producto bionanotecnológico — línea hogar
-              </Typography>
-            </p>
+            <TagWithCircle
+              message={"Producto bionanotecnológico — línea hogar"}
+            />
             <h1 class="w-full bg-gradient-text bg-clip-text text-6xl font-bold text-transparent sm:text-7xl">
               Z-KLEAN
             </h1>
             <div class="flex flex-wrap justify-center gap-3">
-              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
-                <Typography variant="paragraph" class="color text-base">
-                  No oxida superficies
-                </Typography>
-              </p>
-              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
-                <Typography variant="paragraph" class="color text-base">
-                  No genera gases
-                </Typography>
-              </p>
-              <p className="z-20 inline-flex items-center gap-2 rounded-full bg-gray-300 px-3 py-1 text-xs font-medium shadow-[0_8px_28px_rgba(0,0,0,0.45)] ring-1 ring-white/20 backdrop-blur">
-                <Typography variant="paragraph" class="color text-base">
-                  No irrita la piel
-                </Typography>
-              </p>
+              <Tag message={"No oxida superficies"} />
+              <Tag message={"No genera gases"} />
+              <Tag message={"No irrita la piel"} />
             </div>
           </div>
         </div>
